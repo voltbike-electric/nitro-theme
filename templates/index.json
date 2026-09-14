@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Fall_Kickoff_Main_image.png",
-            "image_mobile": "shopify://shop_images/image_bts_2_blank.png",
+            "image_mobile": "shopify://shop_images/Fall_Kickoff_Main_image.png",
             "heading": "The Fall Kickoff Sale",
             "extended": false,
             "heading_size": "h0",
