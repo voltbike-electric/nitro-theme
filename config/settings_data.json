@@ -20,8 +20,8 @@
     "spacing_sections": 0,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
-    "animations_reveal_on_scroll": false,
-    "animations_hover_elements": "3d-lift",
+    "animations_reveal_on_scroll": true,
+    "animations_hover_elements": "vertical-lift",
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 10,
@@ -197,8 +197,6 @@
         "settings": {
           "greeting_message": "Feel free to drop us a message with any bike or support question you have. A VoltBike member is here to help!",
           "button_color": "#2979ff",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "contact",
           "button_horizontal_position": "bottom_right",
@@ -285,9 +283,9 @@
       },
       "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a": {
         "settings": {
-          "background": "#E9E5D9",
+          "background": "#e9e5d9",
           "background_gradient": "",
-          "text": "#26353A",
+          "text": "#26353a",
           "button": "#000000",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
