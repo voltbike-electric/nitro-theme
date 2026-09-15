@@ -31,8 +31,7 @@
       "name": "Typografie",
       "settings": {
         "type_header_font": {
-          "label": "Písmo",
-          "info": "Výběr jiného písma může ovlivnit rychlost obchodu. [Zjistěte více o systémových písmech.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "label": "Písmo"
         },
         "header__1": {
           "content": "Nadpisy"
@@ -41,14 +40,13 @@
           "content": "Hlavní část"
         },
         "type_body_font": {
-          "label": "Písmo",
-          "info": "Výběr jiného písma může ovlivnit rychlost obchodu. [Zjistěte více o systémových písmech.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)"
+          "label": "Písmo"
         },
         "heading_scale": {
-          "label": "Škála velikostí písem"
+          "label": "Škálování"
         },
         "body_scale": {
-          "label": "Škála velikostí písem"
+          "label": "Škálování"
         }
       }
     },
@@ -56,8 +54,8 @@
       "name": "Sociální sítě",
       "settings": {
         "social_twitter_link": {
-          "label": "Twitter",
-          "info": "https://twitter.com/shopify"
+          "label": "X/Twitter",
+          "info": "https://x.com/shopify"
         },
         "social_facebook_link": {
           "label": "Facebook",
@@ -99,11 +97,10 @@
     "currency_format": {
       "name": "Formát měny",
       "settings": {
-        "content": "Kódy měn",
         "currency_code_enabled": {
-          "label": "Zobrazit kódy měn"
+          "label": "Kódy měn"
         },
-        "paragraph": "Košík a ceny na pokladně vždy zahrnují kódy měn. Příklad: 1,00 USD ($)"
+        "paragraph": "Košík a ceny na pokladně vždy zahrnují kódy měn."
       }
     },
     "layout": {
@@ -132,19 +129,16 @@
     "search_input": {
       "name": "Chování hledání",
       "settings": {
-        "header": {
-          "content": "Návrhy hledaných výrazů"
-        },
         "predictive_search_enabled": {
-          "label": "Povolit návrhy hledaných výrazů"
+          "label": "Návrhy hledaných výrazů"
         },
         "predictive_search_show_vendor": {
-          "label": "Zobrazit dodavatele produktu",
-          "info": "Zobrazuje se v případě, že jsou povoleny návrhy hledaných výrazů."
+          "label": "Dodavatel produktu",
+          "info": "Zobrazuje se, když jsou povoleny návrhy vyhledávání"
         },
         "predictive_search_show_price": {
-          "label": "Zobrazit cenu produktu",
-          "info": "Zobrazuje se v případě, že jsou povoleny návrhy hledaných výrazů."
+          "label": "Cena produktu",
+          "info": "Zobrazuje se, když jsou povoleny návrhy vyhledávání"
         }
       }
     },
@@ -222,7 +216,7 @@
     },
     "variant_pills": {
       "name": "Kulaté přepínače variant",
-      "paragraph": "Kulaté přepínače variant jsou jedním ze způsobů, jak zobrazit varianty produktu. [Zjistit více](https://help.shopify.com/en/manual/online-store/themes/theme-structure/page-types#variant-picker-block)"
+      "paragraph": "Kulaté přepínače variant jsou jedním ze způsobů, jak zobrazit [varianty produktu](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types/product-pages#variant-picker-block)."
     },
     "inputs": {
       "name": "Vstupy"
@@ -232,7 +226,7 @@
     },
     "popups": {
       "name": "Rozevírací nabídky a automaticky otevíraná okna",
-      "paragraph": "Ovlivňuje oblasti jako, rozevírací nabídky navigace, automaticky otevíraná modální okna nebo automaticky otevíraná okna košíku."
+      "paragraph": "Ovlivňuje oblasti jako rozevírací nabídky navigace, modální pop-up okna nebo pop-up okna košíku"
     },
     "media": {
       "name": "Multimédia"
@@ -244,7 +238,7 @@
       "name": "Košík",
       "settings": {
         "cart_type": {
-          "label": "Typ košíku",
+          "label": "Typ",
           "drawer": {
             "label": "Výsuvný panel"
           },
@@ -256,16 +250,16 @@
           }
         },
         "show_vendor": {
-          "label": "Zobrazit dodavatele"
+          "label": "Dodavatel"
         },
         "show_cart_note": {
-          "label": "Povolit poznámku ke košíku"
+          "label": "Poznámky ke košíku"
         },
         "cart_drawer": {
           "header": "Výsuvný košík",
           "collection": {
             "label": "Kolekce",
-            "info": "Zobrazí se v případě, že je výsuvný košík prázdný."
+            "info": "Zobrazí se v případě, že výsuvný košík je prázdný"
           }
         }
       }
@@ -319,12 +313,11 @@
           "label": "Logo"
         },
         "logo_width": {
-          "label": "Šířka loga v počítači",
-          "info": "Šířka loga se automaticky optimalizuje pro mobilní prostředí."
+          "label": "Šířka"
         },
         "favicon": {
-          "label": "Obrázek favikony",
-          "info": "Dojde ke zmenšení na 32 × 32 px"
+          "label": "Favikona",
+          "info": "Zobrazeno ve velikosti 32 x 32px"
         }
       }
     },
@@ -344,7 +337,7 @@
           "label": "Šířka obrázku"
         },
         "paragraph": {
-          "content": "Přidejte do zápatí obchodu popis značky."
+          "content": "Zobrazuje se v bloku informací o značce v zápatí."
         }
       }
     },
@@ -368,14 +361,25 @@
           }
         }
       }
+    },
+    "customer_accounts": {
+      "name": "Zákaznické účty",
+      "settings": {
+        "paragraph": {
+          "content": "[Spravovat viditelnost](/admin/settings/customer_accounts) v nastavení zákaznických účtů."
+        },
+        "customer_account_menu": {
+          "label": "Nabídka"
+        }
+      }
     }
   },
   "sections": {
     "all": {
       "padding": {
-        "section_padding_heading": "Vnitřní okraj sekce",
-        "padding_top": "Horní vnitřní okraj",
-        "padding_bottom": "Dolní vnitřní okraj"
+        "section_padding_heading": "Vnitřní okraj",
+        "padding_top": "Nahoře",
+        "padding_bottom": "Dole"
       },
       "spacing": "Rozestupy",
       "colors": {
@@ -395,6 +399,9 @@
         },
         "options__4": {
           "label": "Extra velká"
+        },
+        "options__5": {
+          "label": "Extra extra velká"
         }
       },
       "image_shape": {
@@ -422,8 +429,7 @@
         "options__8": {
           "label": "Kruh"
         },
-        "label": "Tvar obrázku",
-        "info": "Karty ve standardním stylu nemají ohraničení v případě, že je tvar obrázku aktivní."
+        "label": "Tvar obrázku"
       },
       "animation": {
         "content": "Animace",
@@ -434,7 +440,7 @@
           "options__2": {
             "label": "Krouživý pohyb"
           },
-          "label": "Chování obrázku",
+          "label": "Animace",
           "options__3": {
             "label": "Neměnná pozice na pozadí"
           },
@@ -451,7 +457,8 @@
           "name": "Oznámení",
           "settings": {
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Vítejte v našem obchodě"
             },
             "text_alignment": {
               "label": "Zarovnání textu",
@@ -478,29 +485,23 @@
         "change_slides_speed": {
           "label": "Změnit co"
         },
-        "header__1": {
-          "content": "Ikony sociálních sítí",
-          "info": "Pokud chcete zobrazit své účty na sociálních sítích, přidejte na ně v [nastavení motivu](/editor?context=theme&category=social%20media) příslušné odkazy."
-        },
-        "header__2": {
-          "content": "Oznámení"
-        },
         "show_social": {
-          "label": "Zobrazit ikony na ploše"
-        },
-        "header__3": {
-          "content": "Selektor země/oblasti",
-          "info": "Pokud chcete přidat zemi nebo oblast, přejděte na [nastavení trhu.](/admin/settings/markets)"
+          "label": "Ikony sociálních sítí",
+          "info": "[Správa účtů na sociálních sítích](/editor?context=theme&category=social%20media)"
         },
         "enable_country_selector": {
-          "label": "Povolit selektor země/oblasti"
-        },
-        "header__4": {
-          "content": "Selektor jazyka",
-          "info": "Pokud chcete přidat jazyk, přejděte na [jazykové nastavení.](/admin/settings/languages)"
+          "label": "Selektor země/oblasti",
+          "info": "[Spravovat země/oblasti](/admin/settings/markets)"
         },
         "enable_language_selector": {
-          "label": "Povolit selektor jazyka"
+          "label": "Selektor jazyka",
+          "info": "[Spravovat jazyky](/admin/settings/languages)"
+        },
+        "heading_utilities": {
+          "content": "Veřejné služby"
+        },
+        "paragraph": {
+          "content": "Zobrazují se pouze na velkých obrazovkách"
         }
       },
       "presets": {
@@ -511,15 +512,16 @@
       "name": "Koláž",
       "settings": {
         "heading": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Multimediální koláž"
         },
         "desktop_layout": {
-          "label": "Desktopové rozvržení",
+          "label": "Rozvržení",
           "options__1": {
-            "label": "Velký levý blok"
+            "label": "Velký blok jako první"
           },
           "options__2": {
-            "label": "Velký pravý blok"
+            "label": "Velký blok jako poslední"
           }
         },
         "mobile_layout": {
@@ -533,13 +535,16 @@
         },
         "card_styles": {
           "label": "Styl karty",
-          "info": "Styly karet produktů, kolekcí a blogů je možné aktualizovat v nastavení motivu.",
+          "info": "Správa jednotlivých stylů karet v [nastavení motivu](/editor?context=theme&category=product%20cards)",
           "options__1": {
             "label": "Použít individuální styly karet"
           },
           "options__2": {
             "label": "Nastavit všude styl karet produktů"
           }
+        },
+        "header_layout": {
+          "content": "Rozvržení"
         }
       },
       "blocks": {
@@ -586,7 +591,8 @@
             },
             "description": {
               "label": "Alternativní text videa",
-              "info": "Popište video pro zákazníky používající čtečky obrazovky. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)"
+              "info": "Popište video pro zákazníky používající čtečky obrazovky. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video-block)",
+              "default": "Popište video"
             }
           }
         }
@@ -599,11 +605,11 @@
       "name": "Seznam kolekcí",
       "settings": {
         "title": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Kolekce"
         },
         "image_ratio": {
           "label": "Poměr obrázku",
-          "info": "Přidejte obrázky tak, že začnete upravovat kolekce. [Zjistit více](https://help.shopify.com/manual/products/collections)",
           "options__1": {
             "label": "Přizpůsobení obrázku"
           },
@@ -615,25 +621,29 @@
           }
         },
         "swipe_on_mobile": {
-          "label": "Povolit potažení prstem na mobilním zařízení"
+          "label": "Karusel"
         },
         "show_view_all": {
-          "label": "Povolit tlačítko Zobrazit vše v případě, že seznam obsahuje více kolekcí, než kolik se zobrazuje"
+          "label": "Tlačítko „Zobrazit vše“",
+          "info": "Viditelné, pokud má seznam více kolekcí, než je jich zobrazeno"
         },
         "columns_desktop": {
-          "label": "Počet sloupců na počítači"
+          "label": "Sloupce"
         },
         "header_mobile": {
           "content": "Mobilní rozvržení"
         },
         "columns_mobile": {
-          "label": "Počet sloupců na mobilu",
+          "label": "Sloupce",
           "options__1": {
-            "label": "1 sloupec"
+            "label": "1"
           },
           "options__2": {
-            "label": "2 sloupce"
+            "label": "2"
           }
+        },
+        "header_layout": {
+          "content": "Rozvržení"
         }
       },
       "blocks": {
@@ -654,6 +664,12 @@
       "name": "Kontaktní formulář",
       "presets": {
         "name": "Kontaktní formulář"
+      },
+      "settings": {
+        "title": {
+          "default": "Kontaktní formulář",
+          "label": "Nadpis"
+        }
       }
     },
     "custom-liquid": {
@@ -672,29 +688,36 @@
       "name": "Blogové příspěvky",
       "settings": {
         "heading": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Blogové příspěvky"
         },
         "blog": {
           "label": "Blog"
         },
         "post_limit": {
-          "label": "Počet blogových příspěvků, které se mají zobrazit"
+          "label": "Počet příspěvků"
         },
         "show_view_all": {
-          "label": "Povolit tlačítko Zobrazit vše v případě, že blog obsahuje více blogových příspěvků, než kolik se zobrazuje"
+          "label": "Tlačítko „Zobrazit vše“",
+          "info": "Viditelné, pokud má blog více příspěvků, než je jich zobrazeno"
         },
         "show_image": {
-          "label": "Zobrazit propagovaný obrázek",
-          "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 3:2. [Zjistit více](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "label": "Propagovaný obrázek"
         },
         "show_date": {
-          "label": "Zobrazit datum"
+          "label": "Datum"
         },
         "show_author": {
-          "label": "Zobrazit autora"
+          "label": "Autor"
         },
         "columns_desktop": {
-          "label": "Počet sloupců na počítači"
+          "label": "Sloupce"
+        },
+        "layout_header": {
+          "content": "Rozvržení"
+        },
+        "text_header": {
+          "content": "Text"
         }
       },
       "presets": {
@@ -705,16 +728,18 @@
       "name": "Propagovaná kolekce",
       "settings": {
         "title": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Propagovaná kolekce"
         },
         "collection": {
           "label": "Kolekce"
         },
         "products_to_show": {
-          "label": "Maximální počet zobrazovaných produktů"
+          "label": "Počet produktů"
         },
         "show_view_all": {
-          "label": "Povolit možnost Zobrazit vše v případě, že kolekce obsahuje více produktů, než kolik se jich zobrazuje"
+          "label": "Tlačítko „Zobrazit vše“",
+          "info": "Viditelné, pokud kolekce obsahuje více produktů, než je jich zobrazeno"
         },
         "header": {
           "content": "Karta produktu"
@@ -735,14 +760,14 @@
           "label": "Zobrazit druhý obrázek po najetí myší/prstem"
         },
         "show_vendor": {
-          "label": "Zobrazit dodavatele"
+          "label": "Dodavatel"
         },
         "show_rating": {
-          "label": "Zobrazit hodnocení produktů",
-          "info": "Pokud chcete zobrazovat hodnocení, přidejte si aplikaci pro hodnocení produktů. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
+          "label": "Hodnocení produktu",
+          "info": "Pro hodnocení je nutná aplikace. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-collection-show-product-rating)"
         },
         "columns_desktop": {
-          "label": "Počet sloupců na počítači"
+          "label": "Sloupce"
         },
         "description": {
           "label": "Popis"
@@ -775,29 +800,34 @@
           }
         },
         "enable_desktop_slider": {
-          "label": "Povolit karusel na desktopovém zařízení"
+          "label": "Karusel"
         },
         "full_width": {
-          "label": "Nastavit plnou šířku produktů"
+          "label": "Produkty na celou šířku"
         },
         "header_mobile": {
           "content": "Mobilní rozvržení"
         },
         "columns_mobile": {
-          "label": "Počet sloupců na mobilu",
+          "label": "Sloupce",
           "options__1": {
-            "label": "1 sloupec"
+            "label": "1"
           },
           "options__2": {
-            "label": "2 sloupce"
+            "label": "2"
           }
         },
         "swipe_on_mobile": {
-          "label": "Povolit potažení prstem na mobilním zařízení"
+          "label": "Karusel"
         },
         "enable_quick_buy": {
-          "label": "Povolit tlačítko Rychlé přidání",
-          "info": "Je optimální pro košík typu vyskakovací okno nebo výsuvný košík."
+          "label": "Rychlé přidání"
+        },
+        "header_text": {
+          "content": "Text"
+        },
+        "header_collection": {
+          "content": "Rozložení sbírky"
         }
       },
       "presets": {
@@ -811,11 +841,11 @@
           "name": "Nabídka",
           "settings": {
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Rychlé odkazy"
             },
             "menu": {
-              "label": "Nabídka",
-              "info": "Umožňuje zobrazit jen položky nabídky na nejvyšší úrovni."
+              "label": "Nabídka"
             }
           }
         },
@@ -823,10 +853,12 @@
           "name": "Text",
           "settings": {
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Nadpis"
             },
             "subtext": {
-              "label": "Text nižší úrovně"
+              "label": "Text nižší úrovně",
+              "default": "<p>Uveďte pro zákazníky kontaktní informace a popište jim podrobně svůj obchod a značky nabízeného zboží.</p>"
             }
           }
         },
@@ -834,76 +866,55 @@
           "name": "Informace o značce",
           "settings": {
             "paragraph": {
-              "content": "Tento blok zobrazí informace o značce. [Upravte informace o značce.](/editor?context=theme&category=brand%20information)"
-            },
-            "header__1": {
-              "content": "Ikony sociálních sítí"
+              "content": "Spravovat informace o značce v [nastavení motivu](/editor?context=theme&category=brand%20information)"
             },
             "show_social": {
-              "label": "Zobrazit ikony sociálních sítí",
-              "info": "Pokud chcete zobrazit své účty na sociálních sítích, přidejte na ně v [nastavení motivu](/editor?context=theme&category=social%20media) příslušné odkazy."
+              "label": "Ikony sociálních sítí",
+              "info": "[Správa sociálních účtů](/editor?context=theme&category=social%20media)"
             }
           }
         }
       },
       "settings": {
         "newsletter_enable": {
-          "label": "Zobrazit přihlášení k odběru e-mailů"
+          "label": "Přihlášení k odběru e-mailů"
         },
         "newsletter_heading": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Přihlaste se k odběru našich e-mailů"
         },
         "header__1": {
           "content": "Přihlášení k odběru e-mailů",
-          "info": "Odběratelé byli automaticky přidáni do vašeho seznamu zákazníků, kteří přijímají marketing. [Zjistit více](https://help.shopify.com/manual/customers/manage-customers)"
-        },
-        "header__2": {
-          "content": "Ikony sociálních sítí",
-          "info": "Pokud chcete zobrazit své účty na sociálních sítích, přidejte na ně v [nastavení motivu](/editor?context=theme&category=social%20media) příslušné odkazy."
+          "info": "Registrace přidat [profily zákazníků](https://help.shopify.com/manual/customers/manage-customers)"
         },
         "show_social": {
-          "label": "Zobrazit ikony sociálních sítí"
-        },
-        "header__3": {
-          "content": "Selektor země/oblasti"
-        },
-        "header__4": {
-          "info": "Pokud chcete přidat zemi nebo oblast, přejděte na [nastavení trhu.](/admin/settings/markets)"
+          "label": "Ikony sociálních sítí",
+          "info": "[Správa účtů na sociálních sítích](/editor?context=theme&category=social%20media)"
         },
         "enable_country_selector": {
-          "label": "Povolit selektor země/oblasti"
-        },
-        "header__5": {
-          "content": "Selektor jazyka"
-        },
-        "header__6": {
-          "info": "Pokud chcete přidat jazyk, přejděte na [jazykové nastavení.](/admin/settings/languages)"
+          "label": "Selektor země/oblasti",
+          "info": "[Spravovat země/oblasti](/admin/settings/markets)"
         },
         "enable_language_selector": {
-          "label": "Povolit selektor jazyka"
-        },
-        "header__7": {
-          "content": "Platební metody"
+          "label": "Selektor jazyka",
+          "info": "[Spravovat jazyky](/admin/settings/languages)"
         },
         "payment_enable": {
-          "label": "Zobrazit ikony plateb"
+          "label": "Ikony platebních metod"
         },
         "margin_top": {
           "label": "Horní okraj"
         },
-        "header__8": {
-          "content": "Odkazy na zásady",
-          "info": "Pokud chcete přidat zásady obchodu, přejděte do [nastavení zásad](/admin/settings/legal)."
-        },
         "show_policy": {
-          "label": "Zobrazit odkazy na zásady"
+          "label": "Odkazy na zásady",
+          "info": "[Spravovat zásady](/admin/settings/legal)"
         },
         "header__9": {
-          "content": "Sledování v aplikaci Shop",
-          "info": "Pokud chcete zákazníkům umožnit sledování vašeho obchodu v aplikaci Shop přes cílovou stránku obchodu, musíte povolit Shop Pay. [Zjistit více](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+          "content": "Veřejné služby"
         },
         "enable_follow_on_shop": {
-          "label": "Povolit sledování v aplikaci Shop"
+          "label": "Sledování v aplikaci Shop",
+          "info": "Služba Shop Pay musí být povolena. [Zjistit více](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
         }
       }
     },
@@ -911,7 +922,7 @@
       "name": "Záhlaví",
       "settings": {
         "logo_position": {
-          "label": "Pozice loga na počítači",
+          "label": "Pozice loga",
           "options__1": {
             "label": "Uprostřed vlevo"
           },
@@ -929,14 +940,13 @@
           "label": "Nabídka"
         },
         "show_line_separator": {
-          "label": "Zobrazit oddělovací čáru"
+          "label": "Oddělovací linka"
         },
         "margin_bottom": {
           "label": "Dolní okraj"
         },
         "menu_type_desktop": {
-          "label": "Typ desktopové nabídky",
-          "info": "Typ nabídky se automaticky optimalizuje pro mobilní prostředí.",
+          "label": "Typ nabídky",
           "options__1": {
             "label": "Rozevírací nabídka"
           },
@@ -946,9 +956,6 @@
           "options__3": {
             "label": "Výsuvný panel"
           }
-        },
-        "mobile_layout": {
-          "content": "Mobilní rozvržení"
         },
         "mobile_logo_position": {
           "label": "Pozice loga v mobilním zařízení",
@@ -977,29 +984,25 @@
             "label": "Vždy, zmenšit logo"
           }
         },
-        "header__3": {
-          "content": "Selektor země/oblasti"
-        },
-        "header__4": {
-          "info": "Pokud chcete přidat zemi nebo oblast, přejděte na [nastavení trhu.](/admin/settings/markets)"
-        },
         "enable_country_selector": {
-          "label": "Povolit selektor země/oblasti"
-        },
-        "header__5": {
-          "content": "Selektor jazyka"
-        },
-        "header__6": {
-          "info": "Pokud chcete přidat jazyk, přejděte na [jazykové nastavení.](/admin/settings/languages)"
+          "label": "Selektor země/oblasti",
+          "info": "[Spravovat země/oblasti](/admin/settings/markets)"
         },
         "enable_language_selector": {
-          "label": "Povolit selektor jazyka"
+          "label": "Selektor jazyka",
+          "info": "[Spravovat jazyky](/admin/settings/languages)"
         },
         "header__1": {
           "content": "Barva"
         },
         "menu_color_scheme": {
           "label": "Barevné schéma nabídky"
+        },
+        "header__utilities": {
+          "content": "Veřejné služby"
+        },
+        "customer_account_menu": {
+          "content": "Zákaznické účty spravujte v [nastavení šablony](/editor?context=theme&category=customer%20accounts)."
         }
       }
     },
@@ -1007,25 +1010,25 @@
       "name": "Obrázkový banner",
       "settings": {
         "image": {
-          "label": "První obrázek"
+          "label": "Obrázek 1"
         },
         "image_2": {
-          "label": "Druhý obrázek"
+          "label": "Obrázek 2"
         },
         "stack_images_on_mobile": {
-          "label": "Zobrazit obrázky na mobilním zařízení nad sebou"
+          "label": "Vrstvit obrázky"
         },
         "show_text_box": {
-          "label": "Zobrazit kontejner na počítači"
+          "label": "Kontejner"
         },
         "image_overlay_opacity": {
-          "label": "Neprůhlednost překryvu obrázku"
+          "label": "Neprůhlednost překryvu"
         },
         "show_text_below": {
-          "label": "Zobrazit kontejner na mobilním zařízení"
+          "label": "Kontejner"
         },
         "image_height": {
-          "label": "Výška banneru",
+          "label": "Výška",
           "options__1": {
             "label": "Přizpůsobení prvnímu obrázku"
           },
@@ -1035,7 +1038,6 @@
           "options__3": {
             "label": "Střední"
           },
-          "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 3:2. [Zjistit více](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)",
           "options__4": {
             "label": "Velký"
           }
@@ -1068,7 +1070,7 @@
           "options__9": {
             "label": "Dole vpravo"
           },
-          "label": "Pozice obsahu na počítači"
+          "label": "Pozice"
         },
         "desktop_content_alignment": {
           "options__1": {
@@ -1080,7 +1082,7 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu na počítači"
+          "label": "Zarovnání"
         },
         "mobile_content_alignment": {
           "options__1": {
@@ -1092,10 +1094,13 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu v mobilním prostředí"
+          "label": "Zarovnání"
         },
         "mobile": {
           "content": "Mobilní rozvržení"
+        },
+        "content": {
+          "content": "obsah"
         }
       },
       "blocks": {
@@ -1103,7 +1108,8 @@
           "name": "Nadpis",
           "settings": {
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Obrázkový banner"
             }
           }
         },
@@ -1111,7 +1117,8 @@
           "name": "Text",
           "settings": {
             "text": {
-              "label": "Popis"
+              "label": "Text",
+              "default": "Poskytněte zákazníkům podrobnosti o obrázcích banneru nebo obsahu v šabloně."
             },
             "text_style": {
               "options__1": {
@@ -1123,7 +1130,7 @@
               "options__3": {
                 "label": "Velká písmena"
               },
-              "label": "Textový styl"
+              "label": "Styl"
             }
           }
         },
@@ -1131,24 +1138,32 @@
           "name": "Tlačítka",
           "settings": {
             "button_label_1": {
-              "label": "První text tlačítka",
-              "info": "Pokud chcete tlačítko skrýt, nezadávejte žádný text."
+              "label": "Štítek",
+              "info": "Pro skrytí nechte prázdné",
+              "default": "Text tlačítka"
             },
             "button_link_1": {
-              "label": "První tlačítkový odkaz"
+              "label": "Odkaz"
             },
             "button_style_secondary_1": {
-              "label": "Použít styl tlačítka s obrysem"
+              "label": "Styl osnovy"
             },
             "button_label_2": {
-              "label": "Druhý text tlačítka",
-              "info": "Pokud chcete tlačítko skrýt, nezadávejte žádný text."
+              "label": "Štítek",
+              "info": "Pro skrytí nechte prázdné",
+              "default": "Text tlačítka"
             },
             "button_link_2": {
-              "label": "Druhý tlačítkový odkaz"
+              "label": "Odkaz"
             },
             "button_style_secondary_2": {
-              "label": "Použít styl tlačítka s obrysem"
+              "label": "Styl osnovy"
+            },
+            "header_1": {
+              "content": "Tlačítko 1"
+            },
+            "header_2": {
+              "content": "Tlačítko 2"
             }
           }
         }
@@ -1173,7 +1188,7 @@
           "options__3": {
             "label": "Střední"
           },
-          "label": "Výška obrázku",
+          "label": "Výška",
           "options__4": {
             "label": "Velký"
           }
@@ -1185,8 +1200,7 @@
           "options__2": {
             "label": "Druhý obrázek"
           },
-          "label": "Poloha obrázku na počítači",
-          "info": "Výchozí mobilní rozvržení představuje možnost Obrázek jako první."
+          "label": "Umístění"
         },
         "desktop_image_width": {
           "options__1": {
@@ -1198,8 +1212,7 @@
           "options__3": {
             "label": "Velká"
           },
-          "label": "Šířka obrázku na počítači",
-          "info": "Obrázek se automaticky optimalizuje pro mobilní prostředí."
+          "label": "Šířka"
         },
         "desktop_content_alignment": {
           "options__1": {
@@ -1211,7 +1224,7 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu na počítači"
+          "label": "Zarovnání"
         },
         "desktop_content_position": {
           "options__1": {
@@ -1223,7 +1236,7 @@
           "options__3": {
             "label": "Dole"
           },
-          "label": "Pozice obsahu na počítači"
+          "label": "Pozice"
         },
         "content_layout": {
           "options__1": {
@@ -1232,7 +1245,7 @@
           "options__2": {
             "label": "S překrytím"
           },
-          "label": "Rozvržení obsahu"
+          "label": "Rozvržení"
         },
         "mobile_content_alignment": {
           "options__1": {
@@ -1244,7 +1257,13 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu v mobilním prostředí"
+          "label": "Vyrovnání mobilních zařízení"
+        },
+        "header": {
+          "content": "obsah"
+        },
+        "header_colors": {
+          "content": "Barvy"
         }
       },
       "blocks": {
@@ -1252,7 +1271,8 @@
           "name": "Nadpis",
           "settings": {
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Obrázek s textem"
             }
           }
         },
@@ -1260,10 +1280,11 @@
           "name": "Text",
           "settings": {
             "text": {
-              "label": "Obsah"
+              "label": "Text",
+              "default": "<p>Zkombinujte text a obrázek, abyste zaměřili pozornost návštěvníků na zvolený produkt, kolekci či blogový příspěvek. Pak můžete připojit podrobnosti o dostupnosti a stylu, nebo dokonce recenzi.</p>"
             },
             "text_style": {
-              "label": "Textový styl",
+              "label": "Styl",
               "options__1": {
                 "label": "Hlavní část"
               },
@@ -1277,14 +1298,15 @@
           "name": "Tlačítko",
           "settings": {
             "button_label": {
-              "label": "Text tlačítka",
-              "info": "Pokud chcete tlačítko skrýt, nezadávejte žádný text."
+              "label": "Štítek",
+              "info": "Pro skrytí nechte prázdné",
+              "default": "Text tlačítka"
             },
             "button_link": {
-              "label": "Tlačítkový odkaz"
+              "label": "Odkaz"
             },
             "outline_button": {
-              "label": "Použít styl tlačítka s obrysem"
+              "label": "Styl osnovy"
             }
           }
         },
@@ -1292,10 +1314,11 @@
           "name": "Titulek",
           "settings": {
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Přidejte slogan"
             },
             "text_style": {
-              "label": "Textový styl",
+              "label": "Styl",
               "options__1": {
                 "label": "Podtitul"
               },
@@ -1304,7 +1327,7 @@
               }
             },
             "caption_size": {
-              "label": "Velikost textu",
+              "label": "Velikost",
               "options__1": {
                 "label": "Malý"
               },
@@ -1329,8 +1352,7 @@
           "name": "Propagovaný obrázek",
           "settings": {
             "image_height": {
-              "label": "Výška propagovaného obrázku",
-              "info": "Nejlepších výsledků dosáhnete pomocí obrázku s poměrem stran 16:9. [Zjistit více](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)",
+              "label": "Výška obrázku",
               "options__1": {
                 "label": "Přizpůsobení obrázku"
               },
@@ -1350,10 +1372,10 @@
           "name": "Název",
           "settings": {
             "blog_show_date": {
-              "label": "Zobrazit datum"
+              "label": "Datum"
             },
             "blog_show_author": {
-              "label": "Zobrazit autora"
+              "label": "Autor"
             }
           }
         },
@@ -1363,14 +1385,9 @@
         "share": {
           "name": "Sdílet",
           "settings": {
-            "featured_image_info": {
-              "content": "Pokud v příspěvcích na sociálních sítích uvedete odkaz, jako náhledový obrázek se zobrazí propagovaný obrázek stránky. [Zjistit více](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)."
-            },
-            "title_info": {
-              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
-            },
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Sdílet"
             }
           }
         }
@@ -1379,34 +1396,26 @@
     "main-blog": {
       "name": "Blogové příspěvky",
       "settings": {
-        "header": {
-          "content": "Karta blogového příspěvku"
-        },
         "show_image": {
-          "label": "Zobrazit propagovaný obrázek"
-        },
-        "paragraph": {
-          "content": "Změňte úryvky tak, že začnete upravovat blogové příspěvky. [Zjistit více](https://help.shopify.com/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+          "label": "Propagovaný obrázek"
         },
         "show_date": {
-          "label": "Zobrazit datum"
+          "label": "Datum"
         },
         "show_author": {
-          "label": "Zobrazit autora"
+          "label": "Autor"
         },
         "layout": {
-          "label": "Rozvržení v počítači",
+          "label": "Rozvržení",
           "options__1": {
             "label": "Mřížka"
           },
           "options__2": {
             "label": "Koláž"
-          },
-          "info": "Příspěvky se v mobilním prostředí zobrazují nad sebou."
+          }
         },
         "image_height": {
-          "label": "Výška propagovaného obrázku",
-          "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 3:2. [Zjistit více](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)",
+          "label": "Výška obrázku",
           "options__1": {
             "label": "Přizpůsobení obrázku"
           },
@@ -1440,14 +1449,13 @@
       "name": "Banner kolekce",
       "settings": {
         "paragraph": {
-          "content": "Přidejte popis nebo obrázek tak, že začnete upravovat příslušnou kolekci. [Zjistit více](https://help.shopify.com/manual/products/collections/collection-layout)"
+          "content": "Podrobnosti o sbírce jsou [spravovány ve správci](https://help.shopify.com/manual/products/collections/collection-layout)"
         },
         "show_collection_description": {
-          "label": "Zobrazit popis kolekce"
+          "label": "Popis"
         },
         "show_collection_image": {
-          "label": "Zobrazit obrázek kolekce",
-          "info": "Nejlepších výsledků dosáhnete pomocí obrázku s poměrem stran 16:9. [Zjistit více](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "label": "Obrázek"
         }
       }
     },
@@ -1473,18 +1481,18 @@
           "label": "Zobrazit druhý obrázek po najetí myší/prstem"
         },
         "show_vendor": {
-          "label": "Zobrazit dodavatele"
+          "label": "Dodavatel"
         },
         "enable_tags": {
-          "label": "Povolit filtrování",
-          "info": "Přizpůsobte si filtry pomocí aplikace Search & Discovery. [Zjistit více](https://help.shopify.com/manual/online-store/search-and-discovery/filters)"
+          "label": "Filtry",
+          "info": "Přizpůsobte si filtry pomocí aplikace [Search & Discovery](https://help.shopify.com/manual/online-store/search-and-discovery/filters)."
         },
         "enable_filtering": {
-          "label": "Povolit filtrování",
-          "info": "Přizpůsobte si filtry pomocí aplikace Search & Discovery. [Zjistit více](https://help.shopify.com/manual/online-store/search-and-discovery/filters)"
+          "label": "Filtry",
+          "info": "Přizpůsobte si filtry pomocí aplikace [Search & Discovery](https://help.shopify.com/manual/online-store/search-and-discovery/filters)"
         },
         "enable_sorting": {
-          "label": "Povolit řazení"
+          "label": "Řazení"
         },
         "header__1": {
           "content": "Filtrování a řazení"
@@ -1493,30 +1501,23 @@
           "content": "Karta produktu"
         },
         "show_rating": {
-          "label": "Zobrazit hodnocení produktů",
-          "info": "Pokud chcete zobrazovat hodnocení, přidejte si aplikaci pro hodnocení produktů. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-grid-section-settings)"
+          "label": "Hodnocení produktu",
+          "info": "Pro hodnocení produktů je nutná aplikace. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types/collection-pages#product-grid-show-product-rating)"
         },
         "columns_desktop": {
-          "label": "Počet sloupců na počítači"
-        },
-        "header_mobile": {
-          "content": "Mobilní rozvržení"
+          "label": "Sloupce"
         },
         "columns_mobile": {
-          "label": "Počet sloupců na mobilu",
+          "label": "Mobilní sloupce",
           "options__1": {
-            "label": "1 sloupec"
+            "label": "1"
           },
           "options__2": {
-            "label": "2 sloupce"
+            "label": "2"
           }
         },
-        "enable_quick_buy": {
-          "label": "Povolit tlačítko Rychlé přidání",
-          "info": "Je optimální pro košík typu vyskakovací okno nebo výsuvný košík."
-        },
         "filter_type": {
-          "label": "Rozvržení filtru v počítači",
+          "label": "Rozvržení filtru",
           "options__1": {
             "label": "Vodorovně"
           },
@@ -1525,8 +1526,15 @@
           },
           "options__3": {
             "label": "Výsuvný panel"
-          },
-          "info": "Výchozí mobilní rozvržení představuje výsuvný panel."
+          }
+        },
+        "quick_add": {
+          "label": "Rychlé přidání",
+          "options": {
+            "option_1": "Žádné",
+            "option_2": "Standardní",
+            "option_3": "Hromadné"
+          }
         }
       }
     },
@@ -1534,10 +1542,11 @@
       "name": "Stránka se seznamem kolekcí",
       "settings": {
         "title": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Kolekce"
         },
         "sort": {
-          "label": "Seřadit kolekce:",
+          "label": "Třídění kolekcí",
           "options__1": {
             "label": "Abecedně, A–Z"
           },
@@ -1559,7 +1568,6 @@
         },
         "image_ratio": {
           "label": "Poměr obrázku",
-          "info": "Přidejte obrázky tak, že začnete upravovat kolekce. [Zjistit více](https://help.shopify.com/manual/products/collections)",
           "options__1": {
             "label": "Přizpůsobení obrázku"
           },
@@ -1571,18 +1579,18 @@
           }
         },
         "columns_desktop": {
-          "label": "Počet sloupců v počítači"
+          "label": "Sloupce"
         },
         "header_mobile": {
           "content": "Mobilní rozvržení"
         },
         "columns_mobile": {
-          "label": "Počet sloupců v mobilním zařízení",
+          "label": "Mobilní sloupce",
           "options__1": {
-            "label": "1 sloupec"
+            "label": "1"
           },
           "options__2": {
-            "label": "2 sloupce"
+            "label": "2"
           }
         }
       }
@@ -1596,11 +1604,8 @@
     "main-password-header": {
       "name": "Záhlaví hesla",
       "settings": {
-        "logo_header": {
-          "content": "Logo"
-        },
         "logo_help": {
-          "content": "Logo upravíte v nastavení motivu."
+          "content": "Logo upravíte v [nastavení motivu](/editor?context=theme&category=logo)."
         }
       }
     },
@@ -1611,10 +1616,11 @@
           "name": "Text",
           "settings": {
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Textový blok"
             },
             "text_style": {
-              "label": "Textový styl",
+              "label": "Styl",
               "options__1": {
                 "label": "Hlavní část"
               },
@@ -1640,12 +1646,25 @@
           "name": "Selektor variant",
           "settings": {
             "picker_type": {
-              "label": "Typ",
+              "label": "Styl",
               "options__1": {
                 "label": "Rozevírací nabídka"
               },
               "options__2": {
                 "label": "Kulaté přepínače"
+              }
+            },
+            "swatch_shape": {
+              "label": "Vzorník",
+              "info": "Zjistěte více o  [vzornících](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) v možnostech produktu",
+              "options__1": {
+                "label": "Kruh"
+              },
+              "options__2": {
+                "label": "Čtverec"
+              },
+              "options__3": {
+                "label": "Žádný"
               }
             }
           }
@@ -1654,12 +1673,12 @@
           "name": "Tlačítka nákupu",
           "settings": {
             "show_dynamic_checkout": {
-              "label": "Zobrazit dynamická tlačítka pokladny",
-              "info": "V rámci platebních metod dostupných v obchodě uvidí zákazníci tu, kterou nejvíce preferují, jako například PayPal nebo Apple Pay. [Zjistit více](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "label": "Dynamická tlačítka pokladny",
+              "info": "Zákazníci uvidí preferovanou možnost platby. [Zjistit více](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
             },
             "show_gift_card_recipient": {
-              "label": "Zobrazit formulář s informacemi o příjemci u dárkových karet",
-              "info": "Umožňuje kupujícím odeslat dárkové karty v naplánované datum společně s osobní zprávou. [Zjistit více](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+              "label": " Možnosti zasílání dárkových karet",
+              "info": "Zákazníci mohou přidat osobní zprávu a naplánovat datum odeslání. [Zjistit více](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
             }
           }
         },
@@ -1672,14 +1691,9 @@
         "share": {
           "name": "Sdílet",
           "settings": {
-            "featured_image_info": {
-              "content": "Pokud v příspěvcích na sociálních sítích uvedete odkaz, jako náhledový obrázek se zobrazí propagovaný obrázek stránky. [Zjistit více](https://help.shopify.com/manual/online-store/images/showing-social-media-thumbnail-images)."
-            },
-            "title_info": {
-              "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
-            },
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Sdílet"
             }
           }
         },
@@ -1687,8 +1701,8 @@
           "name": "Sbalitelný řádek",
           "settings": {
             "heading": {
-              "info": "Připojte nadpis, který popíše obsah.",
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Sbalitelný řádek"
             },
             "content": {
               "label": "Obsah řádku"
@@ -1837,7 +1851,8 @@
           "name": "Automaticky otevírané okno",
           "settings": {
             "link_label": {
-              "label": "Text odkazu"
+              "label": "Text odkazu",
+              "default": "Text odkazu automaticky otevíraného okna"
             },
             "page": {
               "label": "Stránka"
@@ -1848,7 +1863,7 @@
           "name": "Hodnocení produktů",
           "settings": {
             "paragraph": {
-              "content": "Pokud chcete zobrazovat hodnocení, přidejte si aplikaci pro hodnocení produktů. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-rating-block)"
+              "content": "Pro hodnocení produktů je nutná aplikace. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types/product-pages#product-rating-block)"
             }
           }
         },
@@ -1856,25 +1871,26 @@
           "name": "Doplňkové produkty",
           "settings": {
             "paragraph": {
-              "content": "Pokud chcete vybrat doplňkové produkty, přidejte si aplikaci Search & Discovery. [Zjistit více](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+              "content": "Správa doplňkových produktů v aplikaci [Search & Discovery ](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
             },
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Vhodná kombinace:"
             },
             "make_collapsible_row": {
-              "label": "Zobrazit jako sbalitelný řádek"
+              "label": "Sbalitelný řádek"
             },
             "icon": {
-              "info": "Zobrazuje se v případě, že se zobrazuje sbalitelný řádek."
+              "info": "Zobrazuje se, když je vybrán sbalitelný řádek"
             },
             "product_list_limit": {
-              "label": "Maximální počet zobrazovaných produktů"
+              "label": "Počet produktů"
             },
             "products_per_page": {
               "label": "Počet produktů na stránku"
             },
             "pagination_style": {
-              "label": "Styl stránkování",
+              "label": "Stránkování",
               "options": {
                 "option_1": "Tečky",
                 "option_2": "Počítadlo",
@@ -1892,7 +1908,7 @@
               }
             },
             "enable_quick_add": {
-              "label": "Povolit tlačítko Rychlé přidání"
+              "label": "Rychlé přidání"
             }
           }
         },
@@ -1908,39 +1924,48 @@
                 "label": "Svisle"
               }
             },
-            "content": {
-              "label": "Obsah",
-              "info": "Zvolte ikonu nebo přidejte obrázek pro každý sloupec nebo řádek."
-            },
             "heading": {
-              "info": "Pokud chcete sloupec s ikonami skrýt, nechejte popisek záhlaví prázdný."
+              "info": "Pro skrytí tohoto párování ponechte prázdné místo"
             },
             "icon_1": {
-              "label": "První ikona"
+              "label": "Ikona"
             },
             "image_1": {
-              "label": "První obrázek"
+              "label": "Obrázek"
             },
             "heading_1": {
-              "label": "První nadpis"
+              "label": "Nadpis",
+              "default": "Nadpis"
             },
             "icon_2": {
-              "label": "Druhá ikona"
+              "label": "Ikona"
             },
             "image_2": {
-              "label": "Druhý obrázek"
+              "label": "Obrázek"
             },
             "heading_2": {
-              "label": "Druhý nadpis"
+              "label": "nadpisu",
+              "default": "Nadpis"
             },
             "icon_3": {
-              "label": "Třetí ikona"
+              "label": "Ikona"
             },
             "image_3": {
-              "label": "Třetí obrázek"
+              "label": "Obrázek"
             },
             "heading_3": {
-              "label": "Třetí nadpis"
+              "label": "nadpisu",
+              "default": "Nadpis"
+            },
+            "pairing_1": {
+              "label": "Párování 1",
+              "info": "Vyberte si ikonu nebo přidejte obrázek pro každé párování"
+            },
+            "pairing_2": {
+              "label": "Párování 2"
+            },
+            "pairing_3": {
+              "label": "Párování 3"
             }
           }
         },
@@ -1977,31 +2002,29 @@
               }
             },
             "inventory_threshold": {
-              "label": "Práh docházejících skladových zásob",
-              "info": "Zvolte 0, pokud chcete vždy zobrazoval stav Skladem, když je zboží k dispozici."
+              "label": "Práh docházejících skladových zásob"
             },
             "show_inventory_quantity": {
-              "label": "Zobrazovat objem skladových zásob"
+              "label": "Objem skladových zásob"
             }
           }
         }
       },
       "settings": {
         "header": {
-          "content": "Multimédia",
-          "info": "Zjistěte více o [typech multimédií](https://help.shopify.com/manual/products/product-media)."
+          "content": "Multimédia"
         },
         "enable_video_looping": {
-          "label": "Povolit smyčky videa"
+          "label": "Smyčka videa"
         },
         "enable_sticky_info": {
-          "label": "Povolit plovoucí obsah v počítači"
+          "label": "Plovoucí obsah"
         },
         "hide_variants": {
-          "label": "Po výběru varianty skrýt multimédia ostatních variant"
+          "label": "Skrytí ostatních variant médií po výběru jedné z nich"
         },
         "gallery_layout": {
-          "label": "Rozvržení v počítači",
+          "label": "Rozvržení",
           "options__1": {
             "label": "Nad sebou"
           },
@@ -2016,8 +2039,7 @@
           }
         },
         "media_size": {
-          "label": "Šířka multimédií v počítači",
-          "info": "Multimédia se automaticky optimalizují pro mobilní prostředí.",
+          "label": "Šířka",
           "options__1": {
             "label": "Malá"
           },
@@ -2041,8 +2063,7 @@
           }
         },
         "media_position": {
-          "label": "Pozice multimediálního obsahu na počítači",
-          "info": "Pozice se automaticky optimalizuje pro mobilní prostředí.",
+          "label": "Pozice",
           "options__1": {
             "label": "Vlevo"
           },
@@ -2051,8 +2072,7 @@
           }
         },
         "image_zoom": {
-          "label": "Zvětšení obrázků",
-          "info": "Klikněte a podržte kurzor nad výchozími možnostmi. Tím otevřete Lightbox na mobilním zařízení.",
+          "label": "Lupa",
           "options__1": {
             "label": "Otevřít Lightbox"
           },
@@ -2064,10 +2084,10 @@
           }
         },
         "constrain_to_viewport": {
-          "label": "Zmenšit multimédia na výšku obrazovky"
+          "label": "Omezit na výšku obrazovky"
         },
         "media_fit": {
-          "label": "Přizpůsobení multimédií",
+          "label": "Přizpůsobení",
           "options__1": {
             "label": "Originál"
           },
@@ -2096,38 +2116,34 @@
           "label": "Zobrazit druhý obrázek po najetí myší/prstem"
         },
         "show_vendor": {
-          "label": "Zobrazit dodavatele"
+          "label": "Dodavatel"
         },
         "header__1": {
           "content": "Karta produktu"
         },
         "header__2": {
-          "content": "Karta blogu",
-          "info": "Styly karet blogů se ve výsledcích hledání dají nastavit také u karet stránek. Pokud chcete styly karet změnit, aktualizujte nastavení motivu."
+          "content": "Karta blogu"
         },
         "article_show_date": {
-          "label": "Zobrazit datum"
+          "label": "Datum"
         },
         "article_show_author": {
-          "label": "Zobrazit autora"
+          "label": "Autor"
         },
         "show_rating": {
-          "label": "Zobrazit hodnocení produktů",
-          "info": "Pokud chcete zobrazovat hodnocení, přidejte si aplikaci pro hodnocení produktů. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#search-results-section-settings)"
+          "label": "Hodnocení produktu",
+          "info": "Pro hodnocení produktů je nutná aplikace. [Zjistit více](https://help.shopify.com/en/manual/online-store/themes/theme-structure/page-types/search-page)"
         },
         "columns_desktop": {
-          "label": "Počet sloupců na počítači"
-        },
-        "header_mobile": {
-          "content": "Mobilní rozvržení"
+          "label": "Sloupce"
         },
         "columns_mobile": {
-          "label": "Počet sloupců na mobilu",
+          "label": "Mobilní sloupce",
           "options__1": {
-            "label": "1 sloupec"
+            "label": "1"
           },
           "options__2": {
-            "label": "2 sloupce"
+            "label": "2"
           }
         }
       }
@@ -2136,10 +2152,11 @@
       "name": "Více sloupců",
       "settings": {
         "title": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Více sloupců"
         },
         "image_width": {
-          "label": "Šířka obrázku",
+          "label": "Šířka",
           "options__1": {
             "label": "Třetinová šířka sloupce"
           },
@@ -2151,7 +2168,7 @@
           }
         },
         "image_ratio": {
-          "label": "Poměr obrázku",
+          "label": "Poměr",
           "options__1": {
             "label": "Přizpůsobení obrázku"
           },
@@ -2184,28 +2201,42 @@
           }
         },
         "button_label": {
-          "label": "Text tlačítka"
+          "label": "Štítek",
+          "default": "Text tlačítka",
+          "info": "Pro skrytí nechte prázdné"
         },
         "button_link": {
-          "label": "Tlačítkový odkaz"
+          "label": "Odkaz"
         },
         "swipe_on_mobile": {
-          "label": "Povolit potažení prstem na mobilním zařízení"
+          "label": "Karusel"
         },
         "columns_desktop": {
-          "label": "Počet sloupců na počítači"
+          "label": "Sloupce"
         },
         "header_mobile": {
           "content": "Mobilní rozvržení"
         },
         "columns_mobile": {
-          "label": "Počet sloupců na mobilu",
+          "label": "Sloupce",
           "options__1": {
-            "label": "1 sloupec"
+            "label": "1"
           },
           "options__2": {
-            "label": "2 sloupce"
+            "label": "2"
           }
+        },
+        "header_text": {
+          "content": "Nadpis"
+        },
+        "header_image": {
+          "content": "Obrázek"
+        },
+        "header_layout": {
+          "content": "Rozvržení"
+        },
+        "header_button": {
+          "content": "Tlačítko"
         }
       },
       "blocks": {
@@ -2216,13 +2247,16 @@
               "label": "Obrázek"
             },
             "title": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Sloupec"
             },
             "text": {
-              "label": "Popis"
+              "label": "Popis",
+              "default": "<p>Zkombinujte text a obrázek, abyste zaměřili pozornost návštěvníků na zvolený produkt, kolekci či blogový příspěvek. Pak můžete připojit podrobnosti o dostupnosti a stylu, nebo dokonce recenzi.</p>"
             },
             "link_label": {
-              "label": "Text odkazu"
+              "label": "Text odkazu",
+              "info": "Pro skrytí nechte prázdné"
             },
             "link": {
               "label": "Odkaz"
@@ -2238,10 +2272,10 @@
       "name": "Přihlášení k odběru e-mailů",
       "settings": {
         "full_width": {
-          "label": "Nastavit plnou šířku sekce"
+          "label": "Plná šířka"
         },
         "paragraph": {
-          "content": "Každý odběr e-mailů vytvoří zákaznický účet. [Zjistit více](https://help.shopify.com/manual/customers)"
+          "content": "Registrace přidat [profily zákazníků](https://help.shopify.com/manual/customers/manage-customers)"
         }
       },
       "blocks": {
@@ -2249,15 +2283,17 @@
           "name": "Nadpis",
           "settings": {
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Přihlaste se k odběru našich e-mailů"
             }
           }
         },
         "paragraph": {
-          "name": "Podnadpis",
+          "name": "Text",
           "settings": {
             "paragraph": {
-              "label": "Popis"
+              "label": "Text",
+              "default": "<p>Získejte jako první informace o nových kolekcích a exkluzivních nabídkách.</p>"
             }
           }
         },
@@ -2284,7 +2320,7 @@
       "name": "Formát RTF",
       "settings": {
         "full_width": {
-          "label": "Nastavit plnou šířku sekce"
+          "label": "Plná šířka"
         },
         "desktop_content_position": {
           "options__1": {
@@ -2296,8 +2332,7 @@
           "options__3": {
             "label": "Vpravo"
           },
-          "label": "Pozice obsahu v počítači",
-          "info": "Pozice se automaticky optimalizuje pro mobilní prostředí."
+          "label": "Pozice obsahu"
         },
         "content_alignment": {
           "options__1": {
@@ -2317,7 +2352,8 @@
           "name": "Nadpis",
           "settings": {
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Informujte o své značce"
             }
           }
         },
@@ -2325,7 +2361,8 @@
           "name": "Text",
           "settings": {
             "text": {
-              "label": "Popis"
+              "label": "Text",
+              "default": "<p>Informujte zákazníky o své značce. Zároveň můžete popsat některý z produktů, oznámit důležité informace nebo přivítat zákazníky ve svém obchodě.</p>"
             }
           }
         },
@@ -2333,24 +2370,31 @@
           "name": "Tlačítka",
           "settings": {
             "button_label_1": {
-              "label": "První text tlačítka",
-              "info": "Pokud chcete tlačítko skrýt, nezadávejte žádný text."
+              "label": "Štítek",
+              "info": "Pro skrytí nechte prázdné",
+              "default": "Text tlačítka"
             },
             "button_link_1": {
-              "label": "První tlačítkový odkaz"
+              "label": "Odkaz"
             },
             "button_style_secondary_1": {
-              "label": "Použít styl tlačítka s obrysem"
+              "label": "Styl osnovy"
             },
             "button_label_2": {
-              "label": "Druhý text tlačítka",
-              "info": "Pokud chcete tlačítko skrýt, nezadávejte žádný text."
+              "label": "Štítek",
+              "info": "Pokud chcete štítek skrýt, nezadávejte žádný text."
             },
             "button_link_2": {
-              "label": "Druhý tlačítkový odkaz"
+              "label": "Odkaz"
             },
             "button_style_secondary_2": {
-              "label": "Použít styl tlačítka s obrysem"
+              "label": "Styl osnovy"
+            },
+            "header_button1": {
+              "content": "Tlačítko 1"
+            },
+            "header_button2": {
+              "content": "Tlačítko 2"
             }
           }
         },
@@ -2358,10 +2402,11 @@
           "name": "Titulek",
           "settings": {
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Přidejte slogan"
             },
             "text_style": {
-              "label": "Textový styl",
+              "label": "Styl",
               "options__1": {
                 "label": "Podtitul"
               },
@@ -2370,7 +2415,7 @@
               }
             },
             "caption_size": {
-              "label": "Velikost textu",
+              "label": "Velikost",
               "options__1": {
                 "label": "Malý"
               },
@@ -2403,7 +2448,8 @@
       "name": "Video",
       "settings": {
         "heading": {
-          "label": "Záhlaví"
+          "label": "Záhlaví",
+          "default": "Video"
         },
         "cover_image": {
           "label": "Titulní obrázek"
@@ -2414,20 +2460,20 @@
         },
         "description": {
           "label": "Alternativní text videa",
-          "info": "Popište video pro zákazníky používající čtečky obrazovky. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#video)"
+          "info": "Popište video pro zákazníky používající čtečky obrazovky."
         },
         "image_padding": {
           "label": "Přidat vnitřní okraj obrázku",
           "info": "Pokud nechcete, aby došlo k oříznutí vašeho titulního obrázku, vyberte u něj vnitřní okraj."
         },
         "full_width": {
-          "label": "Nastavit plnou šířku sekce"
+          "label": "Plná šířka"
         },
         "video": {
           "label": "Video"
         },
         "enable_video_looping": {
-          "label": "Přehrát video jako smyčku"
+          "label": "Smyčka videa"
         },
         "header__1": {
           "content": "Video hostované Shopify"
@@ -2436,7 +2482,7 @@
           "content": "Nebo vložte video přes URL"
         },
         "header__3": {
-          "content": "Styl"
+          "content": "Rozvržení"
         },
         "paragraph": {
           "content": "Zobrazí se v případě, že není vybráno žádné video hostované Shopify."
@@ -2453,10 +2499,11 @@
           "name": "Text",
           "settings": {
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Textový blok"
             },
             "text_style": {
-              "label": "Textový styl",
+              "label": "Styl",
               "options__1": {
                 "label": "Hlavní část"
               },
@@ -2482,12 +2529,25 @@
           "name": "Selektor variant",
           "settings": {
             "picker_type": {
-              "label": "Typ",
+              "label": "Styl",
               "options__1": {
                 "label": "Rozevírací nabídka"
               },
               "options__2": {
                 "label": "Kulaté přepínače"
+              }
+            },
+            "swatch_shape": {
+              "label": "Vzorník",
+              "info": "Zjistěte více o  [vzornících](https://help.shopify.com/en/manual/online-store/themes/theme-structure/theme-settings#options-with-swatches) v možnostech produktu",
+              "options__1": {
+                "label": "Kruh"
+              },
+              "options__2": {
+                "label": "Čtverec"
+              },
+              "options__3": {
+                "label": "Žádný"
               }
             }
           }
@@ -2496,8 +2556,8 @@
           "name": "Tlačítka nákupu",
           "settings": {
             "show_dynamic_checkout": {
-              "label": "Zobrazit dynamická tlačítka pokladny",
-              "info": "V rámci platebních metod dostupných v obchodě uvidí zákazníci tu, kterou nejvíce preferují, jako například PayPal nebo Apple Pay. [Zjistit více](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "label": "Dynamická tlačítka pokladny",
+              "info": "Zákazníci uvidí preferovanou možnost platby. [Zjistit více](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
             }
           }
         },
@@ -2514,7 +2574,8 @@
               "content": "U náhledového obrázku je uveden také název a popis obchodu. [Zjistit více](https://help.shopify.com/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)"
             },
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "Sdílet"
             }
           }
         },
@@ -2522,7 +2583,7 @@
           "name": "Hodnocení produktů",
           "settings": {
             "paragraph": {
-              "content": "Pokud chcete zobrazovat hodnocení, přidejte si aplikaci pro hodnocení produktů. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
+              "content": "Pro hodnocení produktů je nutná aplikace. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/theme-features#featured-product-rating)"
             }
           }
         },
@@ -2549,20 +2610,19 @@
           "label": "Produkt"
         },
         "secondary_background": {
-          "label": "Zobrazit sekundární pozadí"
+          "label": "Sekundární pozadí"
         },
         "header": {
-          "content": "Multimédia",
-          "info": "Zjistit více o [typech multimédií](https://help.shopify.com/manual/products/product-media)"
+          "content": "Multimédia"
         },
         "enable_video_looping": {
-          "label": "Povolit smyčky videa"
+          "label": "Smyčka videa"
         },
         "hide_variants": {
           "label": "Skrýt v počítači multimédia nevybraných variant"
         },
         "media_position": {
-          "label": "Pozice multimediálního obsahu na počítači",
+          "label": "Pozice",
           "info": "Pozice se automaticky optimalizuje pro mobilní prostředí.",
           "options__1": {
             "label": "Vlevo"
@@ -2580,7 +2640,7 @@
       "name": "Banner přihlášení k odběru e-mailů",
       "settings": {
         "paragraph": {
-          "content": "Každý odběr e-mailů vytvoří zákaznický účet. [Zjistit více](https://help.shopify.com/manual/customers)"
+          "content": "Registrace přidat [profily zákazníků](https://help.shopify.com/manual/customers/manage-customers)"
         },
         "image": {
           "label": "Obrázek na pozadí"
@@ -2589,17 +2649,16 @@
           "label": "Zobrazit obrázek na pozadí"
         },
         "show_text_box": {
-          "label": "Zobrazit kontejner na počítači"
+          "label": "Kontejner"
         },
         "image_overlay_opacity": {
-          "label": "Neprůhlednost překryvu obrázku"
+          "label": "Neprůhlednost překryvu"
         },
         "show_text_below": {
-          "label": "Na mobilním zařízení zobrazovat obsah pod obrázkem",
-          "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 16:9. [Zjistit více](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          "label": "Text pod obrázkem"
         },
         "image_height": {
-          "label": "Výška banneru",
+          "label": "Výška",
           "options__1": {
             "label": "Přizpůsobit velikosti obrázku"
           },
@@ -2611,8 +2670,7 @@
           },
           "options__4": {
             "label": "Velká"
-          },
-          "info": "Nejlepších výsledků dosáhnete použitím obrázku s poměrem stran 16:9. [Zjistit více](https://help.shopify.com/manual/shopify-admin/productivity-tools/image-editor#understanding-image-aspect-ratio)"
+          }
         },
         "desktop_content_position": {
           "options__1": {
@@ -2642,7 +2700,7 @@
           "options__9": {
             "label": "Dole vpravo"
           },
-          "label": "Pozice obsahu na počítači"
+          "label": "Pozice"
         },
         "desktop_content_alignment": {
           "options__1": {
@@ -2654,7 +2712,7 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu na počítači"
+          "label": "Zarovnání"
         },
         "mobile_content_alignment": {
           "options__1": {
@@ -2666,13 +2724,16 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu v mobilním prostředí"
+          "label": "Zarovnání"
         },
         "header": {
           "content": "Mobilní rozvržení"
         },
         "color_scheme": {
           "info": "Zobrazuje se v případě, že se zobrazuje kontejner."
+        },
+        "content_header": {
+          "content": "obsah"
         }
       },
       "blocks": {
@@ -2680,15 +2741,17 @@
           "name": "Záhlaví",
           "settings": {
             "heading": {
-              "label": "Záhlaví"
+              "label": "Záhlaví",
+              "default": "Brzy otevíráme"
             }
           }
         },
         "paragraph": {
-          "name": "Odstavec",
+          "name": "Text",
           "settings": {
             "paragraph": {
-              "label": "Popis"
+              "label": "Text",
+              "default": "<p>Zjistěte jako první, kdy začínáme prodávat.</p>"
             },
             "text_style": {
               "options__1": {
@@ -2697,7 +2760,7 @@
               "options__2": {
                 "label": "Podtitul"
               },
-              "label": "Textový styl"
+              "label": "Styl"
             }
           }
         },
@@ -2718,11 +2781,11 @@
             "label": "Plná šířka"
           },
           "options__2": {
-            "label": "Mřížka"
+            "label": "stránka"
           }
         },
         "slide_height": {
-          "label": "Výška snímku",
+          "label": "Výška",
           "options__1": {
             "label": "Přizpůsobení prvnímu obrázku"
           },
@@ -2737,7 +2800,7 @@
           }
         },
         "slider_visual": {
-          "label": "Styl stránkování",
+          "label": "Stránkování",
           "options__1": {
             "label": "Počítadlo"
           },
@@ -2755,7 +2818,7 @@
           "label": "Změnit snímek co"
         },
         "show_text_below": {
-          "label": "Na mobilním zařízení zobrazovat obsah pod obrázky"
+          "label": "Text pod obrázkem"
         },
         "mobile": {
           "content": "Mobilní rozvržení"
@@ -2763,7 +2826,8 @@
         "accessibility": {
           "content": "Přístupnost",
           "label": "Popis prezentace",
-          "info": "Popište prezentaci pro zákazníky používající čtečky obrazovky."
+          "info": "Popište prezentaci pro zákazníky používající čtečky obrazovky.",
+          "default": "Prezentace o značce"
         }
       },
       "blocks": {
@@ -2774,23 +2838,26 @@
               "label": "Obrázek"
             },
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Obrázkový snímek"
             },
             "subheading": {
-              "label": "Podnadpis"
+              "label": "Podnadpis",
+              "default": "Představte příběh své značky prostřednictvím obrázků"
             },
             "button_label": {
-              "label": "Text tlačítka",
-              "info": "Pokud chcete tlačítko skrýt, nezadávejte žádný text."
+              "label": "Štítek",
+              "info": "Pro skrytí nechte prázdné",
+              "default": "Text tlačítka"
             },
             "link": {
-              "label": "Tlačítkový odkaz"
+              "label": "Odkaz"
             },
             "secondary_style": {
-              "label": "Použít styl tlačítka s obrysem"
+              "label": "Styl osnovy"
             },
             "box_align": {
-              "label": "Pozice obsahu na počítači",
+              "label": "Pozice obsahu",
               "options__1": {
                 "label": "Nahoře vlevo"
               },
@@ -2817,14 +2884,13 @@
               },
               "options__9": {
                 "label": "Dole vpravo"
-              },
-              "info": "Pozice se automaticky optimalizuje pro mobilní prostředí."
+              }
             },
             "show_text_box": {
-              "label": "Zobrazit kontejner na počítači"
+              "label": "Kontejner"
             },
             "text_alignment": {
-              "label": "Zarovnání obsahu na počítači",
+              "label": "Zarovnání obsahu",
               "option_1": {
                 "label": "Doleva"
               },
@@ -2836,7 +2902,7 @@
               }
             },
             "image_overlay_opacity": {
-              "label": "Neprůhlednost překryvu obrázku"
+              "label": "Neprůhlednost překryvu"
             },
             "text_alignment_mobile": {
               "label": "Zarovnání obsahu v mobilním prostředí",
@@ -2849,6 +2915,18 @@
               "options__3": {
                 "label": "Doprava"
               }
+            },
+            "header_button": {
+              "content": "Tlačítko"
+            },
+            "header_layout": {
+              "content": "Rozvržení"
+            },
+            "header_text": {
+              "content": "Text"
+            },
+            "header_colors": {
+              "content": "Barvy"
             }
           }
         }
@@ -2864,7 +2942,8 @@
           "label": "Titulek"
         },
         "heading": {
-          "label": "Nadpis"
+          "label": "Nadpis",
+          "default": "Sbalitelný obsah"
         },
         "heading_alignment": {
           "label": "Zarovnání nadpisu",
@@ -2879,7 +2958,7 @@
           }
         },
         "layout": {
-          "label": "Rozvržení",
+          "label": "Kontejner",
           "options__1": {
             "label": "Žádný kontejner"
           },
@@ -2891,10 +2970,10 @@
           }
         },
         "open_first_collapsible_row": {
-          "label": "Otevřít první sbalitelný řádek"
+          "label": "Otevřít první řádek"
         },
         "header": {
-          "content": "Rozvržení obrázku"
+          "content": "Obrázek"
         },
         "image": {
           "label": "Obrázek"
@@ -2912,18 +2991,22 @@
           }
         },
         "desktop_layout": {
-          "label": "Rozvržení v počítači",
+          "label": "Umístění",
           "options__1": {
             "label": "Obrázek jako první"
           },
           "options__2": {
             "label": "Obrázek jako druhý"
-          },
-          "info": "Obrázek je v mobilním prostředí vždy první."
+          }
         },
         "container_color_scheme": {
-          "label": "Barevné schéma kontejneru",
-          "info": "Zobrazí se v případě, že je rozvržení nastaveno na kontejner řádků nebo sekcí."
+          "label": "Barevné schéma kontejneru"
+        },
+        "layout_header": {
+          "content": "Rozvržení"
+        },
+        "section_color_scheme": {
+          "label": "Barevné schéma sekce"
         }
       },
       "blocks": {
@@ -2931,8 +3014,8 @@
           "name": "Sbalitelný řádek",
           "settings": {
             "heading": {
-              "info": "Připojte nadpis, který popíše obsah.",
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Sbalitelný řádek"
             },
             "row_content": {
               "label": "Obsah řádku"
@@ -3082,27 +3165,6 @@
         "name": "Sbalitelný obsah"
       }
     },
-    "main-account": {
-      "name": "Účet"
-    },
-    "main-activate-account": {
-      "name": "Aktivace účtu"
-    },
-    "main-addresses": {
-      "name": "Adresy"
-    },
-    "main-login": {
-      "name": "Přihlášení"
-    },
-    "main-order": {
-      "name": "Objednávka"
-    },
-    "main-register": {
-      "name": "Registrace"
-    },
-    "main-reset-password": {
-      "name": "Reset hesla"
-    },
     "related-products": {
       "name": "Související produkty",
       "settings": {
@@ -3110,13 +3172,14 @@
           "label": "Nadpis"
         },
         "products_to_show": {
-          "label": "Maximální počet zobrazovaných produktů"
+          "label": "Počet produktů"
         },
         "columns_desktop": {
-          "label": "Počet sloupců v počítači"
+          "label": "Sloupce"
         },
         "paragraph__1": {
-          "content": "Dynamická doporučení využívají informace o objednávkách a produktech, aby se postupem času měnila a vylepšovala. [Zjistit více](https://help.shopify.com/themes/development/recommended-products)"
+          "content": "Související produkty lze spravovat v aplikaci [Search & Discovery](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)",
+          "default": "Mohlo by se vám také líbit"
         },
         "header__2": {
           "content": "Karta produktu"
@@ -3137,22 +3200,19 @@
           "label": "Zobrazit druhý obrázek po najetí myší/prstem"
         },
         "show_vendor": {
-          "label": "Zobrazit dodavatele"
+          "label": "Dodavatel"
         },
         "show_rating": {
-          "label": "Zobrazit hodnocení produktů",
-          "info": "Pokud chcete zobrazovat hodnocení, přidejte si aplikaci pro hodnocení produktů. [Zjistit více](https://help.shopify.com/manual/online-store/themes/theme-structure/page-types#product-recommendations-section-settings)"
-        },
-        "header_mobile": {
-          "content": "Mobilní rozvržení"
+          "label": "Hodnocení produktu",
+          "info": "Pro hodnocení produktů je nutná aplikace. [Zjistit více](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-product-recommendations)"
         },
         "columns_mobile": {
-          "label": "Počet sloupců v mobilním zařízení",
+          "label": "Mobilní sloupce",
           "options__1": {
-            "label": "1 sloupec"
+            "label": "1"
           },
           "options__2": {
-            "label": "2 sloupce"
+            "label": "2"
           }
         }
       }
@@ -3176,7 +3236,7 @@
           "options__4": {
             "label": "Velký"
           },
-          "label": "Výška obrázku"
+          "label": "Výška"
         },
         "desktop_image_width": {
           "options__1": {
@@ -3188,20 +3248,7 @@
           "options__3": {
             "label": "Velký"
           },
-          "label": "Šířka obrázku v počítači",
-          "info": "Obrázek se automaticky optimalizuje pro mobilní prostředí."
-        },
-        "heading_size": {
-          "options__1": {
-            "label": "Malý"
-          },
-          "options__2": {
-            "label": "Střední"
-          },
-          "options__3": {
-            "label": "Velký"
-          },
-          "label": "Velikost nadpisu"
+          "label": "Šířka"
         },
         "text_style": {
           "options__1": {
@@ -3231,7 +3278,7 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu v počítači"
+          "label": "Zarovnání"
         },
         "desktop_content_position": {
           "options__1": {
@@ -3243,8 +3290,7 @@
           "options__3": {
             "label": "Dole"
           },
-          "label": "Pozice obsahu v počítači",
-          "info": "Pozice se automaticky optimalizuje pro mobilní prostředí."
+          "label": "Pozice"
         },
         "image_layout": {
           "options__1": {
@@ -3259,8 +3305,7 @@
           "options__4": {
             "label": "Zarovnání doprava"
           },
-          "label": "Poloha obrázku v počítači",
-          "info": "Poloha se automaticky optimalizuje pro mobilní prostředí."
+          "label": "Umístění"
         },
         "container_color_scheme": {
           "label": "Barevné schéma kontejneru"
@@ -3275,10 +3320,16 @@
           "options__3": {
             "label": "Doprava"
           },
-          "label": "Zarovnání obsahu v mobilním prostředí"
+          "label": "Zarovnání pro mobilní zařízení"
         },
-        "header_mobile": {
-          "content": "Mobilní rozvržení"
+        "header": {
+          "content": "Obrázek"
+        },
+        "header_2": {
+          "content": "obsah"
+        },
+        "header_3": {
+          "content": "Barvy"
         }
       },
       "blocks": {
@@ -3289,16 +3340,21 @@
               "label": "Obrázek"
             },
             "caption": {
-              "label": "Titulek"
+              "label": "Titulek",
+              "default": "Titulek"
             },
             "heading": {
-              "label": "Nadpis"
+              "label": "Nadpis",
+              "default": "Řádek"
             },
             "text": {
-              "label": "Text"
+              "label": "Text",
+              "default": "<p>Zkombinujte text a obrázek, abyste zaměřili pozornost návštěvníků na zvolený produkt, kolekci či blogový příspěvek. Pak můžete připojit podrobnosti o dostupnosti a stylu, nebo dokonce recenzi.</p>"
             },
             "button_label": {
-              "label": "Text tlačítka"
+              "label": "Text tlačítka",
+              "default": "Text tlačítka",
+              "info": "Pro skrytí nechte prázdné"
             },
             "button_link": {
               "label": "Tlačítkový odkaz"
@@ -3314,14 +3370,31 @@
       "name": "Seznam pro rychlé objednávky",
       "settings": {
         "show_image": {
-          "label": "Zobrazit obrázky"
+          "label": "Obrázky"
         },
         "show_sku": {
-          "label": "Zobrazit SKU"
+          "label": "SKU"
+        },
+        "variants_per_page": {
+          "label": "Varianty na stránku"
         }
       },
       "presets": {
         "name": "Seznam pro rychlé objednávky"
+      }
+    },
+    "disclosures": {
+      "name": "Prohlášení",
+      "settings": {
+        "paragraph": {
+          "content": "Povinná bezpečnostní varování a zákonná prohlášení pro tento produkt."
+        },
+        "heading": {
+          "label": "Nadpis"
+        },
+        "open_by_default": {
+          "label": "Otevřeno ve výchozím stavu"
+        }
       }
     }
   }

@@ -13,6 +13,15 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      },
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",

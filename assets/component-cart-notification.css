@@ -117,7 +117,27 @@
   content: none;
 }
 
+.cart-notification-product__title {
+  align-items: flex-start;
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.cart-notification-product__title .cart-notification-product__name {
+  margin: 0;
+}
+
+.cart-notification-product__title .cart-item__disclosure {
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
 .cart-notification-product__name {
   margin-bottom: 0.5rem;
   margin-top: 0;
+}
+
+.cart-notification .cart-item__disclosure-tooltip {
+  bottom: auto;
+  top: calc(100% + 0.9rem);
 }

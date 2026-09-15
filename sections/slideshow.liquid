@@ -52,7 +52,7 @@
   aria-label="{{ section.settings.accessibility_info | escape }}"
 >
   {%- if section.settings.auto_rotate and section.blocks.size > 1 -%}
-    <div class="slideshow__controls slideshow__controls--top slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+    <div class="slideshow__controls slideshow__controls--top slider-buttons{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button
         type="button"
         class="slider-button slider-button--prev"
@@ -60,7 +60,9 @@
         aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
         aria-controls="Slider-{{ section.id }}"
       >
-        {% render 'icon-caret' %}
+        <span class="svg-wrapper">
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
       </button>
       <div class="slider-counter slider-counter--{{ section.settings.slider_visual }}{% if section.settings.slider_visual == 'counter' or section.settings.slider_visual == 'numbers' %} caption{% endif %}">
         {%- if section.settings.slider_visual == 'counter' -%}
@@ -93,35 +95,26 @@
         aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
         aria-controls="Slider-{{ section.id }}"
       >
-        {% render 'icon-caret' %}
+        <span class="svg-wrapper">
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
       </button>
 
       {%- if section.settings.auto_rotate -%}
         <button
           type="button"
-          class="slideshow__autoplay slider-button no-js-hidden{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
+          class="slideshow__autoplay slider-button{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
           aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}"
         >
-          {%- render 'icon-pause' -%}
-          {%- render 'icon-play' -%}
+          <span class="svg-wrapper">
+            {{- 'icon-pause.svg' | inline_asset_content -}}
+          </span>
+          <span class="svg-wrapper">
+            {{- 'icon-play.svg' | inline_asset_content -}}
+          </span>
         </button>
       {%- endif -%}
     </div>
-    <noscript>
-      <div class="slider-buttons">
-        <div class="slider-counter">
-          {%- for block in section.blocks -%}
-            <a
-              href="#Slide-{{ section.id }}-{{ forloop.index }}"
-              class="slider-counter__link link"
-              aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-            >
-              {{ forloop.index }}
-            </a>
-          {%- endfor -%}
-        </div>
-      </div>
-    </noscript>
   {%- endif -%}
 
   <div
@@ -237,7 +230,7 @@
             {%- endif -%}
 
             {%- if block.settings.subheading != blank -%}
-              <div class="banner__text rte" {{ block.shopify_attributes }}>
+              <div class="banner__text rte">
                 <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
@@ -262,7 +255,7 @@
   </div>
 
   {%- if section.blocks.size > 1 and section.settings.auto_rotate == false -%}
-    <div class="slideshow__controls slider-buttons no-js-hidden{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
+    <div class="slideshow__controls slider-buttons{% if section.settings.show_text_below %} slideshow__controls--border-radius-mobile{% endif %}">
       <button
         type="button"
         class="slider-button slider-button--prev"
@@ -270,7 +263,9 @@
         aria-label="{{ 'sections.slideshow.previous_slideshow' | t }}"
         aria-controls="Slider-{{ section.id }}"
       >
-        {% render 'icon-caret' %}
+        <span class="svg-wrapper">
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
       </button>
       <div class="slider-counter slider-counter--{{ section.settings.slider_visual }}{% if section.settings.slider_visual == 'counter' or section.settings.slider_visual == 'numbers' %} caption{% endif %}">
         {%- if section.settings.slider_visual == 'counter' -%}
@@ -303,35 +298,26 @@
         aria-label="{{ 'sections.slideshow.next_slideshow' | t }}"
         aria-controls="Slider-{{ section.id }}"
       >
-        {% render 'icon-caret' %}
+        <span class="svg-wrapper">
+          {{- 'icon-caret.svg' | inline_asset_content -}}
+        </span>
       </button>
 
       {%- if section.settings.auto_rotate -%}
         <button
           type="button"
-          class="slideshow__autoplay slider-button no-js-hidden{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
+          class="slideshow__autoplay slider-button{% if section.settings.auto_rotate == false %} slideshow__autoplay--paused{% endif %}"
           aria-label="{{ 'sections.slideshow.pause_slideshow' | t }}"
         >
-          {%- render 'icon-pause' -%}
-          {%- render 'icon-play' -%}
+          <span class="svg-wrapper">
+            {{- 'icon-pause.svg' | inline_asset_content -}}
+          </span>
+          <span class="svg-wrapper">
+            {{- 'icon-play.svg' | inline_asset_content -}}
+          </span>
         </button>
       {%- endif -%}
     </div>
-    <noscript>
-      <div class="slider-buttons">
-        <div class="slider-counter">
-          {%- for block in section.blocks -%}
-            <a
-              href="#Slide-{{ section.id }}-{{ forloop.index }}"
-              class="slider-counter__link link"
-              aria-label="{{ 'sections.slideshow.load_slide' | t }} {{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
-            >
-              {{ forloop.index }}
-            </a>
-          {%- endfor -%}
-        </div>
-      </div>
-    </noscript>
   {%- endif -%}
 </slideshow-component>
 
@@ -425,10 +411,6 @@
       "default": 5
     },
     {
-      "type": "header",
-      "content": "t:sections.all.animation.content"
-    },
-    {
       "type": "select",
       "id": "image_behavior",
       "options": [
@@ -463,7 +445,7 @@
       "id": "accessibility_info",
       "label": "t:sections.slideshow.settings.accessibility.label",
       "info": "t:sections.slideshow.settings.accessibility.info",
-      "default": "Slideshow about our brand"
+      "default": "t:sections.slideshow.settings.accessibility.default"
     }
   ],
   "blocks": [
@@ -478,14 +460,23 @@
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
         },
         {
-          "type": "image_picker",
-          "id": "image_mobile",
-          "label": "Image - Mobile"
+          "type": "range",
+          "id": "image_overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 10,
+          "unit": "%",
+          "label": "t:sections.slideshow.blocks.slide.settings.image_overlay_opacity.label",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "t:sections.slideshow.blocks.slide.settings.header_text.content"
         },
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "Image slide",
+          "default": "t:sections.slideshow.blocks.slide.settings.heading.default",
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
         },
         {
@@ -510,6 +501,14 @@
             {
               "value": "h0",
               "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            },
+            {
+              "value": "hxxl",
+              "label": "t:sections.all.heading_size.options__5.label"
             }
           ],
           "default": "h1",
@@ -518,14 +517,18 @@
         {
           "type": "inline_richtext",
           "id": "subheading",
-          "default": "Tell your brand's story through images",
+          "default": "t:sections.slideshow.blocks.slide.settings.subheading.default",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
         },
         {
+          "type": "header",
+          "content": "t:sections.slideshow.blocks.slide.settings.header_button.content"
+        },        
+        {
           "type": "text",
           "id": "button_label",
-          "default": "Button label",
-          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
+          "default": "t:sections.slideshow.blocks.slide.settings.button_label.default",
+          "label": "t:sections.slideshow.blocks.slide.settings.button_label.label", 
           "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
         },
         {
@@ -538,6 +541,16 @@
           "id": "button_style_secondary",
           "label": "t:sections.slideshow.blocks.slide.settings.secondary_style.label",
           "default": false
+        },
+        {
+          "type": "header",
+          "content": "t:sections.slideshow.blocks.slide.settings.header_layout.content"
+        },         
+        {
+          "type": "checkbox",
+          "id": "show_text_box",
+          "label": "t:sections.slideshow.blocks.slide.settings.show_text_box.label",
+          "default": true
         },
         {
           "type": "select",
@@ -581,14 +594,7 @@
             }
           ],
           "default": "middle-center",
-          "label": "t:sections.slideshow.blocks.slide.settings.box_align.label",
-          "info": "t:sections.slideshow.blocks.slide.settings.box_align.info"
-        },
-        {
-          "type": "checkbox",
-          "id": "show_text_box",
-          "label": "t:sections.slideshow.blocks.slide.settings.show_text_box.label",
-          "default": true
+          "label": "t:sections.slideshow.blocks.slide.settings.box_align.label"
         },
         {
           "type": "select",
@@ -611,26 +617,6 @@
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment.label"
         },
         {
-          "type": "range",
-          "id": "image_overlay_opacity",
-          "min": 0,
-          "max": 100,
-          "step": 10,
-          "unit": "%",
-          "label": "t:sections.slideshow.blocks.slide.settings.image_overlay_opacity.label",
-          "default": 0
-        },
-        {
-          "type": "color_scheme",
-          "id": "color_scheme",
-          "label": "t:sections.all.colors.label",
-          "default": "background-1"
-        },
-        {
-          "type": "header",
-          "content": "t:sections.slideshow.settings.mobile.content"
-        },
-        {
           "type": "select",
           "id": "text_alignment_mobile",
           "options": [
@@ -649,6 +635,12 @@
           ],
           "default": "center",
           "label": "t:sections.slideshow.blocks.slide.settings.text_alignment_mobile.label"
+        },        
+        {
+          "type": "color_scheme",
+          "id": "color_scheme",
+          "label": "t:sections.all.colors.label",
+          "default": "scheme-1"
         }
       ]
     }

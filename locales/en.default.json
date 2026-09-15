@@ -13,11 +13,11 @@
     "social": {
       "alt_text": {
         "share_on_facebook": "Share on Facebook",
-        "share_on_twitter": "Tweet on Twitter",
+        "share_on_twitter": "Share on X",
         "share_on_pinterest": "Pin on Pinterest"
       },
       "links": {
-        "twitter": "Twitter",
+        "twitter": "X (Twitter)",
         "facebook": "Facebook",
         "pinterest": "Pinterest",
         "instagram": "Instagram",
@@ -129,6 +129,7 @@
         "play_model": "Play 3D Viewer",
         "play_video": "Play video"
       },
+      "nested_label": "{{ title }} for {{ parent_title }}",
       "quantity": {
         "label": "Quantity",
         "input_label": "Quantity for {{ product }}",
@@ -137,14 +138,17 @@
         "minimum_of": "Minimum of {{ quantity }}",
         "maximum_of": "Maximum of {{ quantity }}",
         "multiples_of": "Increments of {{ quantity }}",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> in cart",
+        "min_of": "Min {{ quantity }}",
+        "max_of": "Max {{ quantity }}",
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> in cart",
+        "in_cart_aria_label": "Quantity ({{ quantity }} in cart)",
         "note": "View quantity rules"
       },
       "volume_pricing": {
         "title": "Volume Pricing",
         "note": "Volume pricing available",
         "minimum": "{{ quantity }}+",
-        "price_at_each": "at {{ price }}\/ea",
+        "price_at_each_html": "at {{ price }}/ea",
         "price_range": "{{ minimum }} - {{ maximum }}"
       },
       "pickup_availability": {
@@ -172,8 +176,10 @@
       "view_full_details": "View full details",
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
-      "include_taxes": "Tax included.",
-      "shipping_policy_html": ""
+      "taxes_included": "Taxes included.",
+      "duties_included": "Duties included.",
+      "duties_and_taxes_included": "Duties and taxes included.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout."
     },
     "modal": {
       "label": "Media gallery"
@@ -285,12 +291,18 @@
       "note": "Order special instructions",
       "checkout": "Check out",
       "empty": "Your cart is empty",
+      "product_disclosure": "Product disclosure",
+      "product_disclosures": "Product disclosures",
       "cart_error": "There was an error while updating your cart. Please try again.",
       "cart_quantity_error_html": "You can only add {{ quantity }} of this item to your cart.",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes, Discounts and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
-      "taxes_included_but_shipping_at_checkout": "Tax included and shipping and discounts calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> and discounts calculated at checkout.",
-      "taxes_and_shipping_at_checkout": "Taxes, discounts and shipping calculated at checkout",
+      "duties_and_taxes_included_shipping_at_checkout_with_policy_html": "Duties and taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "duties_and_taxes_included_shipping_at_checkout_without_policy": "Duties and taxes included. Discounts and shipping calculated at checkout.",
+      "taxes_included_shipping_at_checkout_with_policy_html": "Taxes included. Discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "taxes_included_shipping_at_checkout_without_policy": "Taxes included. Discounts and shipping calculated at checkout.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_with_policy_html": "Duties included. Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "duties_included_taxes_at_checkout_shipping_at_checkout_without_policy": "Duties included. Taxes, discounts and shipping calculated at checkout.",
+      "taxes_at_checkout_shipping_at_checkout_with_policy_html": "Taxes, discounts and <a href=\"{{ link }}\">shipping</a> calculated at checkout.",
+      "taxes_at_checkout_shipping_at_checkout_without_policy": "Taxes, discounts and shipping calculated at checkout.",
       "headings": {
         "product": "Product",
         "price": "Price",
@@ -356,16 +368,23 @@
       },
       "product_variants": "Product variants",
       "total_items": "Total items",
+      "remove_all_single_item_confirmation": "Remove 1 item from your cart?",
       "remove_all_items_confirmation": "Remove all {{ quantity }} items from your cart?",
       "remove_all": "Remove all",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "min_error": "This item has a minimum of {{ min }}",
+      "max_error": "This item has a maximum of {{ max }}",
+      "step_error": "You can only add this item in increments of {{ step }}"
     }
   },
   "localization": {
     "country_label": "Country\/region",
     "language_label": "Language",
     "update_language": "Update language",
-    "update_country": "Update country\/region"
+    "update_country": "Update country/region",
+    "search": "Search",
+    "popular_countries_regions": "Popular countries/regions",
+    "country_results_count": "{{ count }} countries/regions found"
   },
   "customer": {
     "account": {
@@ -374,7 +393,6 @@
       "view_addresses": "View addresses",
       "return": "Return to Account details"
     },
-    "account_fallback": "Account",
     "activate_account": {
       "title": "Activate account",
       "subtext": "Create your password to activate your account.",
@@ -418,7 +436,8 @@
       "password": "Password",
       "title": "Login",
       "sign_in": "Sign in",
-      "submit": "Submit"
+      "submit": "Submit",
+      "alternate_provider_separator": "or"
     },
     "order": {
       "title": "Order {{ name }}",
