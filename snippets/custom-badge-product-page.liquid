@@ -10,7 +10,7 @@
   <span
     id="price__badge-image-{{ section_id }}"
   >
-    <img src="{{ custom_badge_image | img_url: 'master' }}" width="{{ custom_badge_image_width }}" height="auto">
+    <img src="{{ custom_badge_image | image_url: 'master' }}" width="{{ custom_badge_image_width }}" height="auto">
   </span>
 {%- elsif custom_badge_option == 'dynamic_image' -%}
   {% if product.metafields.custom.custom_dynamic_badge != null %}
@@ -18,7 +18,7 @@
       id="price__badge-dynamic-image-{{ section_id }}"
     >
       <img
-        src="{{ product.metafields.custom.custom_dynamic_badge | img_url: 'master' }}"
+        src="{{ product.metafields.custom.custom_dynamic_badge | image_url: 'master' }}"
         width="{{ custom_badge_image_width }}"
         height="auto"
       >

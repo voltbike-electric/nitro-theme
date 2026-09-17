@@ -77,8 +77,8 @@
                                         class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
                                       >
                                         {{ childlink.title | escape }}
-                                        {% render 'icon-arrow' %}
-                                        {% render 'icon-caret' %}
+                                        {{ 'icon-arrow' | inline_asset_content }}
+                                        {{  'icon-caret' | inline_asset_content }}
                                       </summary>
                                       <div
                                         id="childlink-{{ childlink.handle | escape }}"
@@ -88,7 +88,7 @@
                                           class="menu-drawer__close-button link link--text focus-inset"
                                           aria-expanded="true"
                                         >
-                                          {% render 'icon-arrow' %}
+                                          {{ 'icon-arrow' | inline_asset_content }}
                                           {{ childlink.title | escape }}
                                         </button>
                                         <ul

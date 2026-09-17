@@ -2,26 +2,6 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 
-<style>
-  .wave-text {
-    display: inline-block;
-  }
-  
-  .wave-letter {
-    display: inline-block;
-    animation: wave-animation 1.5s ease-in-out infinite;
-  }
-  
-  @keyframes wave-animation {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-  }
-</style>
-
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
@@ -144,91 +124,47 @@
           {%- if block.settings.image -%}
             {%- liquid
               assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
-
               if section.settings.image_behavior == 'ambient'
                 assign sizes = '120vw'
                 assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
               else
                 assign sizes = '100vw'
-                assign widths = '375, 550, 750,1100, 1500, 1780, 2000, 3000, 3840'
-                assign widths_array = widths | split: ','
+                assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
               endif
-
-              assign fetch_priority = 'low'
-
-              if forloop.first
+              assign fetch_priority = 'auto'
+              if section.index == 1
                 assign fetch_priority = 'high'
               endif
             -%}
-
-            <picture>
-              <source
-                media="(min-width: 751px)"
-                srcset="
-                  {%- for width in widths_array offset: 3 -%}
-                    {{- block.settings.image | image_url: width: width }} {{ width }}w,
-                  {%- endfor -%}
-                "
-              >
-              <source
-                media="(max-width: 750px)"
-                srcset="
-                  {%- for width in widths_array limit: 3 -%}
-                    {{- block.settings.image_mobile | image_url: width: width }} {{ width }}w,
-                  {%- endfor -%}
-                "
-              >
-              <img
-                src="{{ block.settings.image | image_url: width: 3840 }}"
-                alt="Home Page Banner"
-                height="{{ height }}"
-                width="{{ block.settings.image.width }}"
-                fetchpriority="{{ fetch_priority }}"
-                {% unless forloop.first %}
-                  loading="lazy"
-                {% endunless %}
-                style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
-              >
-            </picture>
-
+            {%- if forloop.first %}
+              {{
+                block.settings.image
+                | image_url: width: 3840
+                | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
+              }}
+            {%- else -%}
+              {{
+                block.settings.image
+                | image_url: width: 3840
+                | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
+              }}
+            {%- endif -%}
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
             {%- if placeholder_slide == 1 -%}
-              <!-- {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }} -->
+              {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- else -%}
-              <!-- {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }} -->
+              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
           {%- endif -%}
         </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}{% if settings.animations_reveal_on_scroll and forloop.index == 1 %} scroll-trigger animate--slide-in{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
-          
-            {% if block.settings.extended and forloop.first %}
-              <h3 class="banner__heading--extended inline-richtext wave-text">
-                <span class="wave-letter" style="animation-delay: 0s;">E</span>
-                <span class="wave-letter" style="animation-delay: 0.2s;">x</span>
-                <span class="wave-letter" style="animation-delay: 0.4s;">t</span>
-                <span class="wave-letter" style="animation-delay: 0.6s;">e</span>
-                <span class="wave-letter" style="animation-delay: 0.8s;">n</span>
-                <span class="wave-letter" style="animation-delay: 1.0s;">d</span>
-                <span class="wave-letter" style="animation-delay: 1.2s;">e</span>
-                <span class="wave-letter" style="animation-delay: 1.4s;">d</span>
-              </h3>
-            {% endif %}
-
             {%- if block.settings.heading != blank -%}
               <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
                 {{ block.settings.heading }}
               </h2>
             {%- endif -%}
-            {%- if template.name == 'index' and forloop.first -%}
-              <ul class="banner__list">                
-                <li>One FREE accessory with each bike. [C$40 value]</li>
-                <li>Save $100 when you purchase two ebikes</li>
-                <li>Save up to C$450 on select door-crashers</li>
-              </ul>
-            {%- endif -%}
-
             {%- if block.settings.subheading != blank -%}
               <div class="banner__text rte">
                 <p>{{ block.settings.subheading }}</p>
@@ -478,13 +414,6 @@
           "id": "heading",
           "default": "t:sections.slideshow.blocks.slide.settings.heading.default",
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "extended",
-          "label": "Extended Sale",
-          "default": false,
-          "info": "If enabled, an 'Extended' caption will be appear above the slide heading. Use the 'banner__heading--extended' class to style the text."
         },
         {
           "type": "select",
