@@ -16,40 +16,36 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Fall_Kickoff_Main_image.png",
-            "image_mobile": "shopify://shop_images/Fall_Kickoff_Main_image.png",
+            "image_overlay_opacity": 0,
             "heading": "The Fall Kickoff Sale",
-            "extended": false,
             "heading_size": "h0",
             "subheading": "<strong>Sale ends October 4</strong>",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
-            "box_align": "middle-left",
             "show_text_box": false,
+            "box_align": "middle-left",
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
-            "text_alignment_mobile": "left"
+            "text_alignment_mobile": "left",
+            "color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a"
           }
         },
         "slide_MVQBDK": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Yukon_Elite_Banner_v1.jpg",
-            "image_mobile": "shopify://shop_images/yukon-elite-banner-mobile-compressed.jpg",
+            "image_overlay_opacity": 0,
             "heading": "<strong>Yukon Elite</strong>",
-            "extended": false,
             "heading_size": "h0",
             "subheading": "Discover the ultimate mid-drive electric bike. Equipped with 20Ah battery. Only <strong>$2949 CAD</strong> with Free Shipping.",
             "button_label": "Learn more",
             "link": "https://voltbike.com/collections/yukon-elite",
             "button_style_secondary": false,
-            "box_align": "middle-left",
             "show_text_box": false,
+            "box_align": "middle-left",
             "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "center",
+            "color_scheme": "background-1"
           }
         }
       },
