@@ -119,6 +119,10 @@
   },
   "settings": [
     {
+      "type": "header",
+      "content": "t:sections.multirow.settings.header.content"
+    },
+    {
       "type": "select",
       "id": "image_height",
       "options": [
@@ -160,8 +164,35 @@
         }
       ],
       "default": "medium",
-      "label": "t:sections.multirow.settings.desktop_image_width.label",
-      "info": "t:sections.multirow.settings.desktop_image_width.info"
+      "label": "t:sections.multirow.settings.desktop_image_width.label"
+    },
+    {
+      "type": "select",
+      "id": "image_layout",
+      "options": [
+        {
+          "value": "alternate-left",
+          "label": "t:sections.multirow.settings.image_layout.options__1.label"
+        },
+        {
+          "value": "alternate-right",
+          "label": "t:sections.multirow.settings.image_layout.options__2.label"
+        },
+        {
+          "value": "align-left",
+          "label": "t:sections.multirow.settings.image_layout.options__3.label"
+        },
+        {
+          "value": "align-right",
+          "label": "t:sections.multirow.settings.image_layout.options__4.label"
+        }
+      ],
+      "default": "alternate-left",
+      "label": "t:sections.multirow.settings.image_layout.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.multirow.settings.header_2.content"
     },
     {
       "type": "select",
@@ -169,19 +200,27 @@
       "options": [
         {
           "value": "h2",
-          "label": "t:sections.multirow.settings.heading_size.options__1.label"
+          "label": "t:sections.all.heading_size.options__1.label"
         },
         {
           "value": "h1",
-          "label": "t:sections.multirow.settings.heading_size.options__2.label"
+          "label": "t:sections.all.heading_size.options__2.label"
         },
         {
           "value": "h0",
-          "label": "t:sections.multirow.settings.heading_size.options__3.label"
+          "label": "t:sections.all.heading_size.options__3.label"
+        },
+        {
+          "value": "hxl",
+          "label": "t:sections.all.heading_size.options__4.label"
+        },
+        {
+          "value": "hxxl",
+          "label": "t:sections.all.heading_size.options__5.label"
         }
       ],
       "default": "h1",
-      "label": "t:sections.multirow.settings.heading_size.label"
+      "label": "t:sections.all.heading_size.label"
     },
     {
       "type": "select",
@@ -233,8 +272,7 @@
         }
       ],
       "default": "middle",
-      "label": "t:sections.multirow.settings.desktop_content_position.label",
-      "info": "t:sections.multirow.settings.desktop_content_position.info"
+      "label": "t:sections.multirow.settings.desktop_content_position.label"
     },
     {
       "type": "select",
@@ -258,47 +296,6 @@
     },
     {
       "type": "select",
-      "id": "image_layout",
-      "options": [
-        {
-          "value": "alternate-left",
-          "label": "t:sections.multirow.settings.image_layout.options__1.label"
-        },
-        {
-          "value": "alternate-right",
-          "label": "t:sections.multirow.settings.image_layout.options__2.label"
-        },
-        {
-          "value": "align-left",
-          "label": "t:sections.multirow.settings.image_layout.options__3.label"
-        },
-        {
-          "value": "align-right",
-          "label": "t:sections.multirow.settings.image_layout.options__4.label"
-        }
-      ],
-      "default": "alternate-left",
-      "label": "t:sections.multirow.settings.image_layout.label",
-      "info": "t:sections.multirow.settings.image_layout.info"
-    },
-    {
-      "type": "color_scheme",
-      "id": "section_color_scheme",
-      "label": "t:sections.all.colors.label",
-      "default": "background-1"
-    },
-    {
-      "type": "color_scheme",
-      "id": "row_color_scheme",
-      "label": "t:sections.multirow.settings.container_color_scheme.label",
-      "default": "background-1"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.multirow.settings.header_mobile.content"
-    },
-    {
-      "type": "select",
       "id": "mobile_content_alignment",
       "options": [
         {
@@ -316,6 +313,22 @@
       ],
       "default": "left",
       "label": "t:sections.multirow.settings.mobile_content_alignment.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.multirow.settings.header_3.content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "section_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "color_scheme",
+      "id": "row_color_scheme",
+      "label": "t:sections.multirow.settings.container_color_scheme.label",
+      "default": "scheme-1"
     },
     {
       "type": "header",
@@ -355,26 +368,27 @@
         {
           "type": "text",
           "id": "caption",
-          "default": "Caption",
+          "default": "t:sections.multirow.blocks.row.settings.caption.default",
           "label": "t:sections.multirow.blocks.row.settings.caption.label"
         },
         {
           "type": "inline_richtext",
           "id": "heading",
-          "default": "Row",
+          "default": "t:sections.multirow.blocks.row.settings.heading.default",
           "label": "t:sections.multirow.blocks.row.settings.heading.label"
         },
         {
           "type": "richtext",
           "id": "text",
-          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "default": "t:sections.multirow.blocks.row.settings.text.default",
           "label": "t:sections.multirow.blocks.row.settings.text.label"
         },
         {
           "type": "text",
           "id": "button_label",
-          "default": "Button label",
-          "label": "t:sections.multirow.blocks.row.settings.button_label.label"
+          "default": "t:sections.multirow.blocks.row.settings.button_label.default",
+          "label": "t:sections.multirow.blocks.row.settings.button_label.label", 
+          "info": "t:sections.multirow.blocks.row.settings.button_label.info"
         },
         {
           "type": "url",

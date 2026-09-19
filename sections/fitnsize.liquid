@@ -112,8 +112,9 @@
                       {%- if product.options contains 'Frame Size' -%}
                         {% assign frame_sizes = '' %}
                         {% assign frame_sizes_ignore = '' %}
+                        {% assign frame_size_options = product.options_by_name['Frame Size'] %}
 
-                        {% for value in product.options_by_name['Frame Size'].values %}
+                        {% for value in frame_size_options.values %}
                           {% unless frame_sizes contains value %}
                             {% unless forloop.first %}
                               {% assign frame_sizes = frame_sizes | append: ',' %}
@@ -380,7 +381,7 @@
             name="previous"
             aria-label="{{ 'general.slider.previous_slide' | t }}"
           >
-            {% render 'icon-caret' %}
+            {{ 'icon-caret.svg' | inline_asset_content }}
           </button>
           <div class="slider-counter caption">
             <span class="slider-counter--current">1</span>
@@ -394,7 +395,7 @@
             name="next"
             aria-label="{{ 'general.slider.next_slide' | t }}"
           >
-            {% render 'icon-caret' %}
+            {{ 'icon-caret.svg' | inline_asset_content }}
           </button>
         </div>
       {%- endif -%}

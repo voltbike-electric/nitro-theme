@@ -25,6 +25,35 @@ class CartNotification extends HTMLElement {
     );
 
     document.body.addEventListener('click', this.onBodyClick);
+
+    this.dispatchCartViewEvent();
+  }
+
+  // The notification's outer element is server-rendered once at page load, so
+  // its `cart` Liquid object reflects the pre-add state. The morphed children
+  // (inserted from the /cart/add.js sections response in renderContents) are
+  // post-add, but they don't expose the full cart shape we need for the event
+  // payload. So we keep an explicit /cart.json fetch on open. Migrating to the
+  // factory + filter would require re-rendering the notification element
+  // itself in sections, which is out of scope for this PR.
+  async dispatchCartViewEvent() {
+    const { CartViewEvent } = window.StandardEvents || {};
+    if (!CartViewEvent) return;
+
+    try {
+      const response = await fetch(`${routes.cart_url}.json`);
+      const cart = await response.json();
+      if (!cart?.currency) return;
+
+      this.dispatchEvent(
+        new CartViewEvent({
+          context: 'dialog',
+          cart: CartViewEvent.createCartFromAjaxResponse(cart),
+        })
+      );
+    } catch (e) {
+      // cart:view is informational; swallow fetch errors
+    }
   }
 
   close() {

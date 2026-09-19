@@ -173,8 +173,12 @@ class PredictiveSearch extends SearchForm {
 
     if (this.cachedResults[queryKey]) {
       this.renderSearchResults(this.cachedResults[queryKey]);
+      const searchDeferred = this.dispatchSearchUpdateEvent(searchTerm);
+      searchDeferred?.resolve({ totalCount: this.getTotalResultCount() });
       return;
     }
+
+    const searchDeferred = this.dispatchSearchUpdateEvent(searchTerm);
 
     fetch(`${routes.predictive_search_url}?q=${encodeURIComponent(searchTerm)}&section_id=predictive-search`, {
       signal: this.abortController.signal,
@@ -197,15 +201,37 @@ class PredictiveSearch extends SearchForm {
           predictiveSearchInstance.cachedResults[queryKey] = resultsMarkup;
         });
         this.renderSearchResults(resultsMarkup);
+
+        searchDeferred?.resolve({ totalCount: this.getTotalResultCount() });
       })
       .catch((error) => {
         if (error?.code === 20) {
           // Code 20 means the call was aborted
+          searchDeferred?.reject(error);
           return;
         }
+        searchDeferred?.reject(error);
         this.close();
         throw error;
       });
+  }
+
+  getTotalResultCount() {
+    return parseInt(this.predictiveSearchResults.querySelector('[data-total-results]')?.dataset.totalResults) || 0;
+  }
+
+  dispatchSearchUpdateEvent(query) {
+    const { SearchUpdateEvent } = window.StandardEvents || {};
+    if (!SearchUpdateEvent) return null;
+
+    const deferred = SearchUpdateEvent.createPromise();
+    this.dispatchEvent(
+      new SearchUpdateEvent({
+        search: { query },
+        promise: deferred.promise,
+      })
+    );
+    return deferred;
   }
 
   setLiveRegionLoadingState() {
@@ -240,7 +266,7 @@ class PredictiveSearch extends SearchForm {
 
   getResultsMaxHeight() {
     this.resultsMaxHeight =
-      window.innerHeight - document.querySelector('.section-header').getBoundingClientRect().bottom;
+      window.innerHeight - document.querySelector('.section-header')?.getBoundingClientRect().bottom;
     return this.resultsMaxHeight;
   }
 

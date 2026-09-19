@@ -64,7 +64,8 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "buy_buttons": {
@@ -109,9 +110,9 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 40,
@@ -131,16 +132,23 @@
       "type": "recommended-accessories",
       "name": "t:product.recommended_accessories.name",
       "settings": {
-        "subheading": "",
-        "heading": "Recommended Accessories",
+        "title": "Recommended Accessories",
+        "description": "",
         "heading_size": "h1",
-        "columns": "4",
-        "columns_mobile": "2",
+        "description_style": "body",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "color_scheme": "background-2",
         "image_ratio": "square",
+        "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "color_scheme": "background-2",
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 100
       }
@@ -200,16 +208,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "custom_liquid_WeMtDF": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "{% render 'product-sizing-metafields' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "custom_liquid_8eq7nr": {
@@ -290,13 +288,13 @@
         "heading_size": "h2",
         "products_to_show": 5,
         "columns_desktop": 5,
+        "columns_mobile": "2",
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -310,7 +308,6 @@
     "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
     "fitnsize_xaVA8C",
-    "custom_liquid_WeMtDF",
     "custom_liquid_8eq7nr",
     "custom_liquid_QHDtRT",
     "170452725046cbedab",

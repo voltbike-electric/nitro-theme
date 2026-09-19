@@ -1,11 +1,11 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
-{%- if predictive_search.performed -%}
-  {% assign first_column_results_size = predictive_search.resources.queries.size
-    | plus: predictive_search.resources.collections.size
-    | plus: predictive_search.resources.pages.size
-    | plus: predictive_search.resources.articles.size
-  %}
-  <div id="predictive-search-results" role="listbox">
+<div id="predictive-search-results" role="listbox">
+  {%- if predictive_search.performed -%}
+    {% assign first_column_results_size = predictive_search.resources.queries.size
+      | plus: predictive_search.resources.collections.size
+      | plus: predictive_search.resources.pages.size
+      | plus: predictive_search.resources.articles.size
+    %}
     {%- if first_column_results_size > 0 or predictive_search.resources.products.size > 0 -%}
       <div
         id="predictive-search-results-groups-wrapper"
@@ -54,7 +54,7 @@
             >
               <a href="{{ collection.url }}" class="predictive-search__item link link--text" tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
-                  <p class="predictive-search__item-heading h5">{{ collection.title }}</p>
+                  <p class="predictive-search__item-heading h5">{{ collection.title | escape }}</p>
                 </div>
               </a>
             </li>
@@ -85,7 +85,7 @@
             >
               <a href="{{ page.url }}" class="predictive-search__item link link--text" tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
-                  <p class="predictive-search__item-heading h5">{{ page.title }}</p>
+                  <p class="predictive-search__item-heading h5">{{ page.title | escape }}</p>
                 </div>
               </a>
             </li>
@@ -99,7 +99,7 @@
             >
               <a href="{{ article.url }}" class="predictive-search__item link link--text" tabindex="-1">
                 <div class="predictive-search__item-content predictive-search__item-content--centered">
-                  <p class="predictive-search__item-heading h5">{{ article.title }}</p>
+                  <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
                 </div>
               </a>
             </li>
@@ -136,33 +136,35 @@
                   role="option"
                   aria-selected="false"
                 >
-                  <a
-                    href="{{ product.url }}"
-                    class="predictive-search__item predictive-search__item--link-with-thumbnail link link--text"
-                    tabindex="-1"
-                  >
-                    {%- if product.featured_media != blank -%}
-                      <img
-                        class="predictive-search__image"
-                        src="{{ product.featured_media | image_url: width: 150 }}"
-                        alt="{{ product.featured_media.alt }}"
-                        width="50"
-                        height="{{ 50 | divided_by: product.featured_media.preview_image.aspect_ratio }}"
-                      >
-                    {%- endif -%}
-                    <div class="predictive-search__item-content{% unless settings.predictive_search_show_vendor or settings.predictive_search_show_price %} predictive-search__item-content--centered{% endunless %}">
-                      {%- if settings.predictive_search_show_vendor -%}
-                        <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
-                        <div class="predictive-search__item-vendor caption-with-letter-spacing">
-                          {{ product.vendor }}
-                        </div>
+                  <product-component view-event-payload="{{ product | standard_event_data: 'view', context: 'search' | escape }}">
+                    <a
+                      href="{{ product.url }}"
+                      class="predictive-search__item predictive-search__item--link-with-thumbnail link link--text"
+                      tabindex="-1"
+                    >
+                      {%- if product.featured_media != blank -%}
+                        <img
+                          class="predictive-search__image"
+                          src="{{ product.featured_media | image_url: width: 150 }}"
+                          alt="{{ product.featured_media.alt | escape }}"
+                          width="50"
+                          height="{{ 50 | divided_by: product.featured_media.preview_image.aspect_ratio }}"
+                        >
                       {%- endif -%}
-                      <p class="predictive-search__item-heading h5">{{ product.title }}</p>
-                      {%- if settings.predictive_search_show_price -%}
-                        {% render 'price', product: product, use_variant: true, show_badges: false %}
-                      {%- endif -%}
-                    </div>
-                  </a>
+                      <div class="predictive-search__item-content{% unless settings.predictive_search_show_vendor or settings.predictive_search_show_price %} predictive-search__item-content--centered{% endunless %}">
+                        {%- if settings.predictive_search_show_vendor -%}
+                          <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
+                          <div class="predictive-search__item-vendor caption-with-letter-spacing">
+                            {{ product.vendor }}
+                          </div>
+                        {%- endif -%}
+                        <p class="predictive-search__item-heading h5">{{ product.title | escape }}</p>
+                        {%- if settings.predictive_search_show_price -%}
+                          {% render 'price', product: product, use_variant: true, show_badges: false %}
+                        {%- endif -%}
+                      </div>
+                    </a>
+                  </product-component>
                 </li>
               {%- endfor -%}
             </ul>
@@ -191,7 +193,7 @@
                 >
                   <a href="{{ page.url }}" class="predictive-search__item link link--text" tabindex="-1">
                     <div class="predictive-search__item-content predictive-search__item-content--centered">
-                      <p class="predictive-search__item-heading h5">{{ page.title }}</p>
+                      <p class="predictive-search__item-heading h5">{{ page.title | escape }}</p>
                     </div>
                   </a>
                 </li>
@@ -205,7 +207,7 @@
                 >
                   <a href="{{ article.url }}" class="predictive-search__item link link--text" tabindex="-1">
                     <div class="predictive-search__item-content predictive-search__item-content--centered">
-                      <p class="predictive-search__item-heading h5">{{ article.title }}</p>
+                      <p class="predictive-search__item-heading h5">{{ article.title | escape }}</p>
                     </div>
                   </a>
                 </li>
@@ -231,30 +233,36 @@
         <span data-predictive-search-search-for-text>
           {{- 'templates.search.search_for' | t: terms: predictive_search.terms -}}
         </span>
-        {% render 'icon-arrow' %}
+        <span class="svg-wrapper">
+          {{- 'icon-arrow.svg' | inline_asset_content -}}
+        </span>
       </button>
     </div>
-  </div>
 
-  <span class="hidden" data-predictive-search-live-region-count-value>
-    {% liquid
-      assign total_results = predictive_search.resources.products.size | plus: first_column_results_size
-      if total_results == 0
-        echo 'templates.search.no_results' | t: terms: predictive_search.terms
-      else
-        echo 'templates.search.results_with_count' | t: count: total_results | append: ': '
-        if predictive_search.resources.queries.size > 0
-          assign count = predictive_search.resources.queries.size | plus: predictive_search.resources.collections.size
-          echo 'templates.search.results_suggestions_with_count' | t: count: count | append: ', '
+    <span
+      class="hidden"
+      data-predictive-search-live-region-count-value
+      data-total-results="{{ predictive_search.resources.products.size | plus: first_column_results_size }}"
+    >
+      {% liquid
+        assign total_results = predictive_search.resources.products.size | plus: first_column_results_size
+        if total_results == 0
+          echo 'templates.search.no_results' | t: terms: predictive_search.terms
+        else
+          echo 'templates.search.results_with_count' | t: count: total_results | append: ': '
+          if predictive_search.resources.queries.size > 0
+            assign count = predictive_search.resources.queries.size | plus: predictive_search.resources.collections.size
+            echo 'templates.search.results_suggestions_with_count' | t: count: count | append: ', '
+          endif
+          if predictive_search.resources.pages.size > 0
+            assign count = predictive_search.resources.pages.size | plus: predictive_search.resources.articles.size
+            echo 'templates.search.results_pages_with_count' | t: count: count | append: ', '
+          endif
+          if predictive_search.resources.products.size > 0
+            echo 'templates.search.results_products_with_count' | t: count: predictive_search.resources.products.size
+          endif
         endif
-        if predictive_search.resources.pages.size > 0
-          assign count = predictive_search.resources.pages.size | plus: predictive_search.resources.articles.size
-          echo 'templates.search.results_pages_with_count' | t: count: count | append: ', '
-        endif
-        if predictive_search.resources.products.size > 0
-          echo 'templates.search.results_products_with_count' | t: count: predictive_search.resources.products.size
-        endif
-      endif
-    %}
-  </span>
-{%- endif -%}
+      %}
+    </span>
+  {%- endif -%}
+</div>
