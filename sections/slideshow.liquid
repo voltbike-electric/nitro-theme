@@ -170,6 +170,16 @@
                 <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
+            {%- if block.settings.slide_content != blank -%}
+              <div class="banner__text rte">
+                {{ block.settings.slide_content }}
+              </div>
+            {%- endif -%}
+            {%- if block.settings.expiry_date != blank -%}
+              <div class="banner__text rte">
+                <p>{{ block.settings.expiry_date }}</p>
+              </div>
+            {%- endif -%}
             {%- if block.settings.button_label != blank -%}
               <div class="banner__buttons">
                 <a
@@ -448,6 +458,16 @@
           "id": "subheading",
           "default": "t:sections.slideshow.blocks.slide.settings.subheading.default",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "slide_content",
+          "label": "Slide content",
+        },
+        {
+          "type": "inline_richtext",
+          "id": "expiry_date",
+          "label": "Expiry date",
         },
         {
           "type": "header",

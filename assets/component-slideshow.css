@@ -212,11 +212,10 @@ slideshow-component:not(.page-width) .slider-buttons {
   font-weight: normal;
 } */
 
-.slideshow__slide:first-of-type .banner__text {
+/* .slideshow__slide:first-of-type .banner__text {
   font-family: monospace;
-  /* filter: brightness(0.75); */
-  
-}
+  filter: brightness(0.75);
+} */
 
 .banner__list {
   list-style: "- " inside none;
