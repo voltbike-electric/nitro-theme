@@ -23,34 +23,12 @@
         "row_TNRYWE": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/ElegantV2-Red-DS-Angled_b1bdd067-8a9c-4df9-9e09-989df0bfbe60.png",
+            "image": "shopify://shop_images/fall_kickoff_buy_two_save_100.jpg",
             "caption": "Fall Kickoff Sale",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 VoltBikes and save $100! Get a bike for yourself and your riding partner and save. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
             "button_link": "shopify://collections/all-bikes"
-          }
-        },
-        "row_BaCQRE": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
-            "caption": "The Fall Kickoff Sale",
-            "heading": "Get One Free Accessory With Each Bike",
-            "text": "<p>Purchase any VoltBike and receive one FREE accessory ($40 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
-            "button_label": "Shop eBIkes",
-            "button_link": "shopify://collections/all-bikes"
-          }
-        },
-        "row_NpzMNY": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
-            "caption": "White Hot Deal!",
-            "heading": "Get a $50 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $50 VoltBike gift card! Just add both the bike and the $50 gift card to your cart—the discount applies automatically. No coupon needed!</p>",
-            "button_label": "Shop Gift Cards",
-            "button_link": "shopify://products/voltbike-gift-card"
           }
         },
         "row_B74rVc": {
@@ -67,12 +45,34 @@
         "row_DGyKJt": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/1409010.png",
+            "image": "shopify://shop_images/fall_thule_deal_advert.jpg",
             "caption": "Take The Fun With You",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
             "button_label": "Shop Thule Racks",
             "button_link": "shopify://collections/vehicle-racks"
+          }
+        },
+        "row_BaCQRE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
+            "caption": "The Fall Kickoff Sale",
+            "heading": "Get One Free Accessory With Each Bike",
+            "text": "<p>Purchase any VoltBike and receive one FREE accessory ($40 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
+            "button_label": "Shop eBikes",
+            "button_link": "shopify://collections/all-bikes"
+          }
+        },
+        "row_NpzMNY": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Fall_Kickoff_Accessories_deal.jpg",
+            "caption": "White Hot Deal!",
+            "heading": "Get a $50 Gift Card with the Yukon 17\" in White",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $50 VoltBike gift card! Just add both the bike and the $50 gift card to your cart—the discount applies automatically. No coupon needed!</p>",
+            "button_label": "Shop Gift Cards",
+            "button_link": "shopify://products/voltbike-gift-card"
           }
         },
         "row_BPbRXR": {
@@ -89,10 +89,10 @@
       },
       "block_order": [
         "row_TNRYWE",
-        "row_BaCQRE",
-        "row_NpzMNY",
         "row_B74rVc",
         "row_DGyKJt",
+        "row_BaCQRE",
+        "row_NpzMNY",
         "row_BPbRXR"
       ],
       "custom_css": [
