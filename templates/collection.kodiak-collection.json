@@ -46,6 +46,37 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_Djzh9q": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zXDLVi": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Utility & Cargo eBikes&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_6xHekj": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><strong>What Makes a Great Utility and Cargo eBike?</strong></h2><p>A great cargo e-bike does more than haul a backpack. It replaces short car trips. The best cargo bikes turn grocery runs, school drop-offs, gear hauls, and last-mile errands into quiet, low-cost rides that still feel like riding a bike.</p><p>Here is what separates a real cargo e-bike from a regular e-bike with a basket:</p><ul><li><strong>Real rear platform capacity.</strong> Both Kodiak models ship with a sturdy aluminum rear rack rated for up to <strong>120 lb</strong> of cargo.</li><li><strong>Total payload for everyday use.</strong> Rider plus cargo capacity is rated up to <strong>300 lb</strong>.</li><li><strong>Step-through frames.</strong> Easy on and off when you are loading bags, kids’ gear, or a second passenger setup.</li><li><strong>Power under load.</strong> Both bikes use a <strong>Bafang 500W (750W peak)</strong> hub motor with <strong>80 Nm</strong> of torque.</li><li><strong>Range for a full day of errands.</strong> Listed range is <strong>80–100+ km</strong> on the Kodiak and <strong>100+ km</strong> on the Kodiak V2 (real-world range varies with load, hills, assist level, and temperature).</li><li><strong>Street-ready stopping power.</strong> Hydraulic disc brakes front and rear (Tektro Auriga) with <strong>180 mm</strong> rotors.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zXDLVi",
+        "text_6xHekj"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 0
+      }
+    },
     "multicolumn_BdE7T9": {
       "type": "multicolumn",
       "blocks": {
@@ -84,7 +115,7 @@
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Multicolumn",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -96,7 +127,7 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
+        "padding_top": 16,
         "padding_bottom": 36
       }
     },
@@ -133,7 +164,7 @@
             "row_8_label": "Bike weight",
             "row_8_kodiak": "About 76 lb",
             "row_8_kodiak_v2": "About 82 lb",
-            "desktop_width_percent": 70,
+            "desktop_width_percent": 100,
             "background_color": "#FFFFFF",
             "text_color": "#020202",
             "header_background": "#F3F3F3",
@@ -169,7 +200,7 @@
             "answer_5": "",
             "alignment": "left",
             "desktop_width_percent": 100,
-            "vertical_padding": 40,
+            "vertical_padding": 30,
             "mobile_padding": 30,
             "heading_size": 38,
             "heading_color": "#020202",
@@ -295,6 +326,7 @@
     "custom_liquid_JQnheJ",
     "banner",
     "product-grid",
+    "rich_text_Djzh9q",
     "multicolumn_BdE7T9",
     "1790204213f79358e9",
     "17902012121581e39a",
