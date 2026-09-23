@@ -184,6 +184,38 @@
     "1767683529cf883fe4": {
       "type": "_blocks",
       "settings": {}
+    },
+    "17901428103f2a14c5": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_356df61_Yqq9nb": {
+          "type": "ai_gen_block_356df61",
+          "settings": {
+            "tabs_label": "Product information",
+            "tab_1_label": "Shipping",
+            "tab_1_icon": "shipping",
+            "tab_1_content": "<p>Add shipping information here.</p>",
+            "tab_2_label": "Warranty",
+            "tab_2_icon": "warranty",
+            "tab_2_content": "<p>Add warranty information here.</p>",
+            "tab_3_label": "Details",
+            "tab_3_icon": "custom",
+            "tab_3_content": "<p>Add additional product information here.</p>",
+            "desktop_width_percent": 100,
+            "body_font": "system_ui_n4",
+            "body_size": 16,
+            "text_color": "#020202",
+            "muted_text_color": "#4A4A4A",
+            "accent_color": "#334FB4",
+            "border_color": "#D9D9D9"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_356df61_Yqq9nb"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -194,6 +226,7 @@
     "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
     "featured_blog_yPgqNG",
-    "1767683529cf883fe4"
+    "1767683529cf883fe4",
+    "17901428103f2a14c5"
   ]
 }
