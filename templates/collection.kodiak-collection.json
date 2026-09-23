@@ -52,8 +52,8 @@
         "column_yta9hD": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "&nbsp;Replace Your Car&nbsp;",
+            "text": "<p>Most everyday Canadian trips are short. A Kodiak covers grocery runs, school pickups, and neighbourhood errands without parking fees or gas. Top speed <strong>32 km/h</strong>. In BC, the Kodiak lineup is eligible for the <strong>SUVI</strong> rebate — up to <strong>$858 CAD</strong> if you qualify.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -61,8 +61,8 @@
         "column_iLKUfU": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "&nbsp;Built to Carry&nbsp;",
+            "text": "<p>Both racks are rated up to <strong>120 lb</strong>. Kodiak includes a large bamboo platform and a UL 2271–certified 19.6Ah Samsung pack. Kodiak V2 adds an extra-long rack, integrated 20Ah battery, and optional front basket / rear passenger bars.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -70,8 +70,8 @@
         "column_qf6bGz": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "&nbsp;Versatile Platforms&nbsp;",
+            "text": "<p>One bike for groceries, commuting with gear, trails-to-town rides, a second passenger with the right accessories, or local last-mile deliveries. Compact enough for apartments, garages, and underground parking.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -88,7 +88,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
@@ -99,6 +99,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "1790204213f79358e9": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_458bb71_dAMpaU": {
+          "type": "ai_gen_block_458bb71",
+          "settings": {
+            "feature_heading": "The VoltBike Kodiak Cargo Lineup",
+            "kodiak_heading": "Kodiak",
+            "kodiak_v2_heading": "Kodiak V2",
+            "row_1_label": "Price",
+            "row_1_kodiak": "$2,049 CAD",
+            "row_1_kodiak_v2": "$2,149 CAD",
+            "row_2_label": "Motor",
+            "row_2_kodiak": "Bafang 500W (750W peak), 80 Nm",
+            "row_2_kodiak_v2": "Bafang 500W (750W peak), 80 Nm w/ Torque Sensor",
+            "row_3_label": "Battery",
+            "row_3_kodiak": "48V 19.6Ah (950Wh) Samsung, UL 2271, clip-on (you may upgrade to 25 Ah)",
+            "row_3_kodiak_v2": "48V 20Ah (960Wh) Samsung, integrated / removable",
+            "row_4_label": "Listed range",
+            "row_4_kodiak": "80–100+ km (120-130km with 25ah)",
+            "row_4_kodiak_v2": "100+ km",
+            "row_5_label": "Suspension Fork",
+            "row_5_kodiak": "Rigid",
+            "row_5_kodiak_v2": "RST Guide suspension with lockout",
+            "row_6_label": "Tires",
+            "row_6_kodiak": "Kenda Kiniption 26×3\"",
+            "row_6_kodiak_v2": "Kenda Kraze 20×4.25\"",
+            "row_7_label": "Rear rack",
+            "row_7_kodiak": "Aluminum + bamboo platform, up to 120 lb",
+            "row_7_kodiak_v2": "Extra-long / wide tubing, up to 120 lb",
+            "row_8_label": "Bike weight",
+            "row_8_kodiak": "About 76 lb",
+            "row_8_kodiak_v2": "About 82 lb",
+            "desktop_width_percent": 70,
+            "background_color": "#FFFFFF",
+            "text_color": "#020202",
+            "header_background": "#F3F3F3",
+            "header_text_color": "#020202",
+            "alternate_row_color": "#FAFAFA",
+            "border_color": "#D9D9D9"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_458bb71_dAMpaU"
+      ],
+      "settings": {}
     },
     "17902012121581e39a": {
       "type": "_blocks",
@@ -202,39 +251,6 @@
       "name": "FAQ accordion",
       "settings": {}
     },
-    "1790201778df813f08": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_6ff55fe_8DMCLC": {
-          "type": "ai_gen_block_6ff55fe",
-          "settings": {
-            "title": "The VoltBike Kodiak Cargo Lineup",
-            "row_title": "",
-            "title_alignment": "left",
-            "product_one": "kodiak",
-            "product_two": "kodiak-v2",
-            "row_1_label": "Listed range",
-            "row_1_one": "Up to 80 km",
-            "row_1_two": "Up to 100 km",
-            "row_2_label": "Motor",
-            "row_2_one": "500 W",
-            "row_2_two": "750 W",
-            "row_3_label": "Battery",
-            "row_3_one": "48 V / 15 Ah",
-            "row_3_two": "48 V / 20 Ah",
-            "row_4_label": "Fork",
-            "row_4_one": "Daily commuting",
-            "row_4_two": "Long-distance rides",
-            "desktop_width_percent": 80
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_6ff55fe_8DMCLC"
-      ],
-      "settings": {}
-    },
     "b50483cb-86c9-4454-a4d6-451bc3e3331c": {
       "type": "rich-text",
       "blocks": {
@@ -256,7 +272,7 @@
         "template--21903643935032__b50483cb-86c9-4454-a4d6-451bc3e3331c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.custom.collection_seo_text | metafield_tag }}</p>"
+            "text": "{{ collection.metafields.custom.collection_seo_text | metafield_tag }}"
           }
         }
       },
@@ -273,55 +289,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "1790204213f79358e9": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_458bb71_dAMpaU": {
-          "type": "ai_gen_block_458bb71",
-          "settings": {
-            "feature_heading": "The VoltBike Kodiak Cargo Lineup",
-            "kodiak_heading": "Kodiak",
-            "kodiak_v2_heading": "Kodiak V2",
-            "row_1_label": "Price",
-            "row_1_kodiak": "$2,049 CAD",
-            "row_1_kodiak_v2": "$2,149 CAD",
-            "row_2_label": "Motor",
-            "row_2_kodiak": "Bafang 500W (750W peak), 80 Nm",
-            "row_2_kodiak_v2": "Bafang 500W (750W peak), 80 Nm w/ Torque Sensor",
-            "row_3_label": "Battery",
-            "row_3_kodiak": "48V 19.6Ah (950Wh) Samsung, UL 2271, clip-on (you may upgrade to 25 Ah)",
-            "row_3_kodiak_v2": "48V 20Ah (960Wh) Samsung, integrated / removable",
-            "row_4_label": "Listed range",
-            "row_4_kodiak": "80–100+ km (120-130km with 25ah)",
-            "row_4_kodiak_v2": "100+ km",
-            "row_5_label": "Suspension Fork",
-            "row_5_kodiak": "Rigid",
-            "row_5_kodiak_v2": "RST Guide suspension with lockout",
-            "row_6_label": "Tires",
-            "row_6_kodiak": "Kenda Kiniption 26×3\"",
-            "row_6_kodiak_v2": "Kenda Kraze 20×4.25\"",
-            "row_7_label": "Rear rack",
-            "row_7_kodiak": "Aluminum + bamboo platform, up to 120 lb",
-            "row_7_kodiak_v2": "Extra-long / wide tubing, up to 120 lb",
-            "row_8_label": "Bike weight",
-            "row_8_kodiak": "About 76 lb",
-            "row_8_kodiak_v2": "About 82 lb",
-            "desktop_width_percent": 70,
-            "background_color": "#FFFFFF",
-            "text_color": "#020202",
-            "header_background": "#F3F3F3",
-            "header_text_color": "#020202",
-            "alternate_row_color": "#FAFAFA",
-            "border_color": "#D9D9D9"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_458bb71_dAMpaU"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -329,10 +296,9 @@
     "banner",
     "product-grid",
     "multicolumn_BdE7T9",
+    "1790204213f79358e9",
     "17902012121581e39a",
     "blocks_FPzFrX",
-    "1790201778df813f08",
-    "b50483cb-86c9-4454-a4d6-451bc3e3331c",
-    "1790204213f79358e9"
+    "b50483cb-86c9-4454-a4d6-451bc3e3331c"
   ]
 }
