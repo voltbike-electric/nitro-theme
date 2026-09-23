@@ -162,6 +162,42 @@
         "padding_bottom": 36
       }
     },
+    "17902012121581e39a": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_1ac40d4_pkDBFH": {
+          "type": "ai_gen_block_1ac40d4",
+          "settings": {
+            "title": "Frequently asked questions",
+            "intro": "Find answers to common questions about our products and service.",
+            "question_1": "What is included with my purchase?",
+            "answer_1": "Each product page lists the items included with your purchase, along with compatibility and installation details.",
+            "question_2": "How long does delivery take?",
+            "answer_2": "Delivery timing varies by destination and product availability. Current estimates are shown during checkout.",
+            "question_3": "What warranty coverage is available?",
+            "answer_3": "Warranty coverage depends on the product. Please review the warranty information on the relevant product page or contact our support team.",
+            "question_4": "Can I get help choosing the right product?",
+            "answer_4": "Contact our team with your requirements and intended use, and we will help you compare suitable options.",
+            "question_5": "How can I contact support?",
+            "answer_5": "Use the contact options on our website and include your order number when asking about an existing purchase.",
+            "alignment": "left",
+            "desktop_width_percent": 100,
+            "vertical_padding": 40,
+            "mobile_padding": 30,
+            "heading_size": 38,
+            "heading_color": "#020202",
+            "text_color": "#121212",
+            "border_color": "#D9D9D9",
+            "focus_color": "#334FB4"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_1ac40d4_pkDBFH"
+      ],
+      "settings": {}
+    },
     "b50483cb-86c9-4454-a4d6-451bc3e3331c": {
       "type": "rich-text",
       "blocks": {
@@ -208,6 +244,7 @@
     "product-grid",
     "multicolumn_BdE7T9",
     "collapsible_content_aDJgN9",
+    "17902012121581e39a",
     "b50483cb-86c9-4454-a4d6-451bc3e3331c"
   ]
 }
