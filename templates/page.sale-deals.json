@@ -26,7 +26,7 @@
             "image": "shopify://shop_images/fall_kickoff_buy_two_save_100.jpg",
             "caption": "Fall Kickoff Sale",
             "heading": "Buy 2 Bikes Save $100",
-            "text": "<p>Purchase 2 VoltBikes and save $100! Get a bike for yourself and your riding partner and save. Discount automatically applied at checkout. No coupon code needed.</p>",
+            "text": "<p>Purchase 2 VoltBikes and save $100! Get a bike for yourself and your riding partner and save.</p><p></p><p> Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
             "button_link": "shopify://collections/all-bikes"
           }
