@@ -1,6 +1,60 @@
+{% doc %}
+  @prompt
+    Create a customizable product information tabs block designed to be added inside the main Product Information section below the product price. Include tabs for product description, specifications, shipping, and warranty. Use the current product’s dynamic information where available, let the merchant edit tab labels and content in the theme editor, match the theme’s typography, colors, spacing, and mobile layout, and keep the interface accessible and easy to scan., Add icons above the tab title
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+{% assign product_description = product.description %}
+
+{% style %}
+  .ai-product-tabs-{{ ai_gen_id }}{display:block;width:{{ block.settings.desktop_width_percent }}%;max-width:100%;color:{{ block.settings.text_color }};font-family:{{ block.settings.body_font.family }}}
+  .ai-product-tabs-{{ ai_gen_id }}__nav{display:flex;gap:0;overflow-x:auto;border-bottom:1px solid {{ block.settings.border_color }};scrollbar-width:thin}
+  .ai-product-tabs-{{ ai_gen_id }}__tab{flex:0 0 auto;appearance:none;border:0;border-bottom:2px solid transparent;background:transparent;color:{{ block.settings.muted_text_color }};cursor:pointer;font:inherit;font-weight:600;padding:12px 18px;min-height:72px;white-space:nowrap;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px}
+  .ai-product-tabs-{{ ai_gen_id }}__icon{width:22px;height:22px;display:block;color:currentColor}
+  .ai-product-tabs-{{ ai_gen_id }}__tab:hover,.ai-product-tabs-{{ ai_gen_id }}__tab:focus-visible{color:{{ block.settings.text_color }}}
+  .ai-product-tabs-{{ ai_gen_id }}__tab[aria-selected="true"]{border-bottom-color:{{ block.settings.accent_color }};color:{{ block.settings.text_color }}}
+  .ai-product-tabs-{{ ai_gen_id }}__tab:focus-visible{outline:2px solid {{ block.settings.accent_color }};outline-offset:-2px}
+  .ai-product-tabs-{{ ai_gen_id }}__panel{padding:22px 4px 8px;font-size:{{ block.settings.body_size }}px;line-height:1.6}
+  .ai-product-tabs-{{ ai_gen_id }}__panel[hidden]{display:none}
+  .ai-product-tabs-{{ ai_gen_id }}__panel p:first-child{margin-top:0}.ai-product-tabs-{{ ai_gen_id }}__panel p:last-child{margin-bottom:0}
+  .ai-product-tabs-{{ ai_gen_id }}__panel a{color:{{ block.settings.link_color }};text-decoration:underline;text-underline-offset:2px}
+  .ai-product-tabs-{{ ai_gen_id }}__panel table{border-collapse:collapse;max-width:100%;width:100%}
+  .ai-product-tabs-{{ ai_gen_id }}__panel th,.ai-product-tabs-{{ ai_gen_id }}__panel td{border-bottom:1px solid {{ block.settings.border_color }};padding:9px 8px 9px 0;text-align:left;vertical-align:top}
+  @media screen and (max-width:749px){.ai-product-tabs-{{ ai_gen_id }}{width:100%}.ai-product-tabs-{{ ai_gen_id }}__tab{padding:10px 14px;font-size:14px}.ai-product-tabs-{{ ai_gen_id }}__panel{padding-top:18px}}
+{% endstyle %}
+
+<product-information-tabs-{{ ai_gen_id }} class="ai-product-tabs-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-product-tabs-{{ ai_gen_id }}__nav" role="tablist" aria-label="{{ block.settings.tabs_label | escape }}">
+    {% for i in (1..4) %}
+      {% liquid
+        assign tab_label_key = 'tab_' | append: i | append: '_label'
+        assign tab_icon_key = 'tab_' | append: i | append: '_icon'
+        assign tab_label = block.settings[tab_label_key]
+        assign tab_icon = block.settings[tab_icon_key]
+      %}
+      <button type="button" class="ai-product-tabs-{{ ai_gen_id }}__tab" id="ai-product-tab-{{ ai_gen_id }}-{{ i }}" role="tab" aria-controls="ai-product-panel-{{ ai_gen_id }}-{{ i }}" aria-selected="{% if i == 1 %}true{% else %}false{% endif %}" tabindex="{% if i == 1 %}0{% else %}-1{% endif %}">
+        {% case tab_icon %}
+          {% when 'description' %}<svg class="ai-product-tabs-{{ ai_gen_id }}__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h9l3 3v15H6z"/><path d="M15 3v4h4M9 11h6M9 15h6M9 19h4"/></svg>
+          {% when 'specifications' %}<svg class="ai-product-tabs-{{ ai_gen_id }}__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v14H4zM8 9h8M8 13h8M8 17h4"/></svg>
+          {% when 'shipping' %}<svg class="ai-product-tabs-{{ ai_gen_id }}__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 6h11v11H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>
+          {% when 'warranty' %}<svg class="ai-product-tabs-{{ ai_gen_id }}__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="m8 12 3 3 5-6"/></svg>
+        {% endcase %}
+        <span>{{ tab_label }}</span>
+      </button>
+    {% endfor %}
+  </div>
+  {% assign panels = 'description,specifications,shipping,warranty' | split: ',' %}
+  {% for panel in panels %}
+    {% assign panel_index = forloop.index %}
+    <div id="ai-product-panel-{{ ai_gen_id }}-{{ panel_index }}" class="ai-product-tabs-{{ ai_gen_id }}__panel" role="tabpanel" aria-labelledby="ai-product-tab-{{ ai_gen_id }}-{{ panel_index }}" tabindex="0"{% unless panel_index == 1 %} hidden{% endunless %}>
+      {% if panel == 'description' %}{% if product_description != blank %}{{ product_description }}{% else %}{{ block.settings.description_fallback }}{% endif %}{% elsif panel == 'specifications' %}{{ block.settings.specifications_content }}{% elsif panel == 'shipping' %}{{ block.settings.shipping_content }}{% else %}{{ block.settings.warranty_content }}{% endif %}
+    </div>
+  {% endfor %}
+</product-information-tabs-{{ ai_gen_id }}>
+
+<script>
+(function(){class ProductInformationTabs{{ ai_gen_id }} extends HTMLElement{connectedCallback(){this.tabs=[...this.querySelectorAll('[role="tab"]')];this.panels=[...this.querySelectorAll('[role="tabpanel"]')];this.tabs.forEach((tab,index)=>{tab.addEventListener('click',()=>this.activate(index));tab.addEventListener('keydown',event=>{let next=null;if(event.key==='ArrowRight'||event.key==='ArrowDown')next=(index+1)%this.tabs.length;if(event.key==='ArrowLeft'||event.key==='ArrowUp')next=(index-1+this.tabs.length)%this.tabs.length;if(event.key==='Home')next=0;if(event.key==='End')next=this.tabs.length-1;if(next!==null){event.preventDefault();this.activate(next,true)}})})}activate(index,focus){this.tabs.forEach((tab,i)=>{tab.setAttribute('aria-selected',i===index?'true':'false');tab.tabIndex=i===index?0:-1});this.panels.forEach((panel,i)=>{panel.hidden=i!==index});if(focus)this.tabs[index].focus()}}if(!customElements.get('product-information-tabs-{{ ai_gen_id }}'))customElements.define('product-information-tabs-{{ ai_gen_id }}',ProductInformationTabs{{ ai_gen_id }})})();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{"name":"Product information tabs","settings":[{"type":"header","content":"Tab labels and icons"},{"type":"text","id":"tabs_label","label":"Accessibility label","default":"Product information"},{"type":"text","id":"tab_1_label","label":"Description tab","default":"Description"},{"type":"select","id":"tab_1_icon","label":"Description icon","options":[{"value":"description","label":"Document"},{"value":"specifications","label":"List"},{"value":"shipping","label":"Truck"},{"value":"warranty","label":"Shield"}],"default":"description"},{"type":"text","id":"tab_2_label","label":"Specifications tab","default":"Specifications"},{"type":"select","id":"tab_2_icon","label":"Specifications icon","options":[{"value":"description","label":"Document"},{"value":"specifications","label":"List"},{"value":"shipping","label":"Truck"},{"value":"warranty","label":"Shield"}],"default":"specifications"},{"type":"text","id":"tab_3_label","label":"Shipping tab","default":"Shipping"},{"type":"select","id":"tab_3_icon","label":"Shipping icon","options":[{"value":"description","label":"Document"},{"value":"specifications","label":"List"},{"value":"shipping","label":"Truck"},{"value":"warranty","label":"Shield"}],"default":"shipping"},{"type":"text","id":"tab_4_label","label":"Warranty tab","default":"Warranty"},{"type":"select","id":"tab_4_icon","label":"Warranty icon","options":[{"value":"description","label":"Document"},{"value":"specifications","label":"List"},{"value":"shipping","label":"Truck"},{"value":"warranty","label":"Shield"}],"default":"warranty"},{"type":"header","content":"Tab content"},{"type":"richtext","id":"description_fallback","label":"Description fallback","default":"<p>Add a product description in the product admin to show it here.</p>"},{"type":"richtext","id":"specifications_content","label":"Specifications","default":"<p>Add product specifications here.</p>"},{"type":"richtext","id":"shipping_content","label":"Shipping","default":"<p>Add shipping information here, including delivery timelines and regional details.</p>"},{"type":"richtext","id":"warranty_content","label":"Warranty","default":"<p>Add warranty information here.</p>"},{"type":"header","content":"Layout and style"},{"type":"range","id":"desktop_width_percent","label":"Desktop width","min":50,"max":100,"step":5,"unit":"%","default":100},{"type":"font_picker","id":"body_font","label":"Body font","default":"sans-serif"},{"type":"range","id":"body_size","label":"Body size","min":12,"max":22,"step":1,"unit":"px","default":16},{"type":"color","id":"text_color","label":"Text","default":"#020202"},{"type":"color","id":"muted_text_color","label":"Muted text","default":"#4A4A4A"},{"type":"color","id":"accent_color","label":"Accent","default":"#334FB4"},{"type":"color","id":"link_color","label":"Links","default":"#334FB4"},{"type":"color","id":"border_color","label":"Borders","default":"#D9D9D9"}],"presets":[{"name":"Product information tabs"}],"tag":null,"class":"product-information-tabs-block"}
 {% endschema %}
