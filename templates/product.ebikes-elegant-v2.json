@@ -53,7 +53,8 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "buy_buttons": {
@@ -97,14 +98,44 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 40,
         "padding_bottom": 80
       }
+    },
+    "1790140504be2d6aca": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_697f4b5_U7rH7H": {
+          "type": "ai_gen_block_697f4b5",
+          "settings": {
+            "desktop_width_percent": 100,
+            "tab_1_title": "Description",
+            "tab_1_icon": "info",
+            "tab_1_description": "<p>Add your product description here.</p>",
+            "tab_2_title": "Details",
+            "tab_2_icon": "wrench",
+            "tab_2_description": "<p>Add product details here.</p>",
+            "tab_3_title": "Shipping",
+            "tab_3_icon": "truck",
+            "tab_3_description": "<p>Add shipping information here.</p>",
+            "background_color": "#FFFFFF",
+            "text_color": "#121212",
+            "accent_color": "#334FB4",
+            "border_color": "#D9D9D9",
+            "border_radius": 10
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_697f4b5_U7rH7H"
+      ],
+      "settings": {}
     },
     "image_banner_fTNmcn": {
       "type": "image-banner",
@@ -133,13 +164,13 @@
         "image": "shopify://shop_images/Elegant_-_Dark_Background_-_FullSize_-_Compressed.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "middle-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "left",
-        "color_scheme": "inverse",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "inverse",
         "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
         "show_text_below": true
       }
     },
@@ -288,13 +319,13 @@
         "heading_size": "h2",
         "products_to_show": 5,
         "columns_desktop": 5,
+        "columns_mobile": "2",
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -303,6 +334,7 @@
   "order": [
     "custom_liquid_wWizfr",
     "main",
+    "1790140504be2d6aca",
     "image_banner_fTNmcn",
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
     "custom_liquid_eVNAhC",
