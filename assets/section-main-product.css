@@ -169,10 +169,8 @@ product-info {
 
 /* Form Elements */
 .product-form__input {
-  /* flex: 0 0 100%; */
   padding: 0;
   margin: 0;
-  /* margin: 0 0 1.2rem 0; */
   max-width: 44rem;
   min-width: fit-content;
   border: none;
@@ -180,12 +178,12 @@ product-info {
 
 variant-radios,
 variant-selects {
-  /* display: block; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 2rem;
-  margin: 3rem 0 2rem 0 !important;
+  margin: 3rem 0 2rem 0 !important;  max-width: 44rem;
+
 }
 
 .product-form__input--dropdown {
