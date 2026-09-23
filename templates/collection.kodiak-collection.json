@@ -320,6 +320,29 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "rich_text_p33rke": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Xg3prA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Safety note:</strong> The standard Kodiak rear rack is not set up for carrying children unless you install rear wheel spoke protection. Use the correct child / passenger accessories and stay within weight limits.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Xg3prA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -328,6 +351,7 @@
     "product-grid",
     "rich_text_Djzh9q",
     "multicolumn_BdE7T9",
+    "rich_text_p33rke",
     "1790204213f79358e9",
     "17902012121581e39a",
     "blocks_FPzFrX",
