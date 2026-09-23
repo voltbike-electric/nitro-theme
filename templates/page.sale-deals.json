@@ -56,18 +56,18 @@
         "row_BaCQRE": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
+            "image": "shopify://shop_images/Fall_Kickoff_Accessories_deal.jpg",
             "caption": "The Fall Kickoff Sale",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive one FREE accessory ($40 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
-            "button_label": "Shop eBikes",
+            "button_label": "Shop eBIkes",
             "button_link": "shopify://collections/all-bikes"
           }
         },
         "row_NpzMNY": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Fall_Kickoff_Accessories_deal.jpg",
+            "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
             "caption": "White Hot Deal!",
             "heading": "Get a $50 Gift Card with the Yukon 17\" in White",
             "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $50 VoltBike gift card! Just add both the bike and the $50 gift card to your cart—the discount applies automatically. No coupon needed!</p>",
