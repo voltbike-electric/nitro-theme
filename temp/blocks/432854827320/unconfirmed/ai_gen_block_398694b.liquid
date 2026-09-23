@@ -1,6 +1,364 @@
+{% doc %}
+  @prompt
+    Create a customizable product information tabs block designed to be added inside the main Product Information section below the product price. Include tabs for product description, specifications, shipping, and warranty. Use the current product’s dynamic information where available, let the merchant edit tab labels and content in the theme editor, match the theme’s typography, colors, spacing, and mobile layout, and keep the interface accessible and easy to scan.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+{% assign product_description = product.description %}
+
+{% style %}
+  .ai-product-tabs-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    color: {{ block.settings.text_color }};
+    font-family: {{ block.settings.body_font.family }};
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__nav {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    border-bottom: 1px solid {{ block.settings.border_color }};
+    scrollbar-width: thin;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__tab {
+    flex: 0 0 auto;
+    appearance: none;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    color: {{ block.settings.muted_text_color }};
+    cursor: pointer;
+    font: inherit;
+    font-weight: 600;
+    padding: 14px 18px;
+    min-height: 48px;
+    white-space: nowrap;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__tab:hover,
+  .ai-product-tabs-{{ ai_gen_id }}__tab:focus-visible {
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__tab[aria-selected="true"] {
+    border-bottom-color: {{ block.settings.accent_color }};
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__tab:focus-visible {
+    outline: 2px solid {{ block.settings.accent_color }};
+    outline-offset: -2px;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__panel {
+    padding: 22px 4px 8px;
+    font-size: {{ block.settings.body_size }}px;
+    line-height: 1.6;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__panel[hidden] {
+    display: none;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__panel p:first-child {
+    margin-top: 0;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__panel p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__panel a {
+    color: {{ block.settings.link_color }};
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__panel table {
+    border-collapse: collapse;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .ai-product-tabs-{{ ai_gen_id }}__panel th,
+  .ai-product-tabs-{{ ai_gen_id }}__panel td {
+    border-bottom: 1px solid {{ block.settings.border_color }};
+    padding: 9px 8px 9px 0;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-product-tabs-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-product-tabs-{{ ai_gen_id }}__tab {
+      padding: 12px 14px;
+      font-size: 14px;
+    }
+
+    .ai-product-tabs-{{ ai_gen_id }}__panel {
+      padding-top: 18px;
+    }
+  }
+{% endstyle %}
+
+<product-information-tabs-{{ ai_gen_id }}
+  class="ai-product-tabs-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-product-tabs-{{ ai_gen_id }}__nav" role="tablist" aria-label="{{ block.settings.tabs_label | escape }}">
+    {% for i in (1..4) %}
+      {% liquid
+        assign tab_label_key = 'tab_' | append: i | append: '_label'
+        assign tab_label = block.settings[tab_label_key]
+      %}
+      <button
+        type="button"
+        class="ai-product-tabs-{{ ai_gen_id }}__tab"
+        id="ai-product-tab-{{ ai_gen_id }}-{{ i }}"
+        role="tab"
+        aria-controls="ai-product-panel-{{ ai_gen_id }}-{{ i }}"
+        aria-selected="{% if i == 1 %}true{% else %}false{% endif %}"
+        tabindex="{% if i == 1 %}0{% else %}-1{% endif %}"
+      >
+        {{ tab_label }}
+      </button>
+    {% endfor %}
+  </div>
+
+  <div
+    id="ai-product-panel-{{ ai_gen_id }}-1"
+    class="ai-product-tabs-{{ ai_gen_id }}__panel"
+    role="tabpanel"
+    aria-labelledby="ai-product-tab-{{ ai_gen_id }}-1"
+    tabindex="0"
+  >
+    {% if product_description != blank %}
+      {{ product_description }}
+    {% else %}
+      {{ block.settings.description_fallback }}
+    {% endif %}
+  </div>
+
+  <div
+    id="ai-product-panel-{{ ai_gen_id }}-2"
+    class="ai-product-tabs-{{ ai_gen_id }}__panel"
+    role="tabpanel"
+    aria-labelledby="ai-product-tab-{{ ai_gen_id }}-2"
+    tabindex="0"
+    hidden
+  >
+    {{ block.settings.specifications_content }}
+  </div>
+
+  <div
+    id="ai-product-panel-{{ ai_gen_id }}-3"
+    class="ai-product-tabs-{{ ai_gen_id }}__panel"
+    role="tabpanel"
+    aria-labelledby="ai-product-tab-{{ ai_gen_id }}-3"
+    tabindex="0"
+    hidden
+  >
+    {{ block.settings.shipping_content }}
+  </div>
+
+  <div
+    id="ai-product-panel-{{ ai_gen_id }}-4"
+    class="ai-product-tabs-{{ ai_gen_id }}__panel"
+    role="tabpanel"
+    aria-labelledby="ai-product-tab-{{ ai_gen_id }}-4"
+    tabindex="0"
+    hidden
+  >
+    {{ block.settings.warranty_content }}
+  </div>
+</product-information-tabs-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ProductInformationTabs{{ ai_gen_id }} extends HTMLElement {
+      connectedCallback() {
+        this.tabs = Array.from(this.querySelectorAll('[role="tab"]'));
+        this.panels = Array.from(this.querySelectorAll('[role="tabpanel"]'));
+        this.tabs.forEach((tab, index) => {
+          tab.addEventListener('click', () => this.activate(index));
+          tab.addEventListener('keydown', (event) => {
+            if (event.key === 'ArrowRight' || event.key === 'ArrowDown') {
+              event.preventDefault();
+              this.activate((index + 1) % this.tabs.length, true);
+            }
+            if (event.key === 'ArrowLeft' || event.key === 'ArrowUp') {
+              event.preventDefault();
+              this.activate((index - 1 + this.tabs.length) % this.tabs.length, true);
+            }
+            if (event.key === 'Home') {
+              event.preventDefault();
+              this.activate(0, true);
+            }
+            if (event.key === 'End') {
+              event.preventDefault();
+              this.activate(this.tabs.length - 1, true);
+            }
+          });
+        });
+      }
+
+      activate(index, moveFocus) {
+        this.tabs.forEach((tab, tabIndex) => {
+          const active = tabIndex === index;
+          tab.setAttribute('aria-selected', active ? 'true' : 'false');
+          tab.setAttribute('tabindex', active ? '0' : '-1');
+        });
+        this.panels.forEach((panel, panelIndex) => {
+          panel.hidden = panelIndex !== index;
+        });
+        if (moveFocus) this.tabs[index].focus();
+      }
+    }
+
+    if (!customElements.get('product-information-tabs-{{ ai_gen_id }}')) {
+      customElements.define('product-information-tabs-{{ ai_gen_id }}', ProductInformationTabs{{ ai_gen_id }});
+    }
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Product information tabs",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Tab labels"
+    },
+    {
+      "type": "text",
+      "id": "tabs_label",
+      "label": "Accessibility label",
+      "default": "Product information"
+    },
+    {
+      "type": "text",
+      "id": "tab_1_label",
+      "label": "Description tab",
+      "default": "Description"
+    },
+    {
+      "type": "text",
+      "id": "tab_2_label",
+      "label": "Specifications tab",
+      "default": "Specifications"
+    },
+    {
+      "type": "text",
+      "id": "tab_3_label",
+      "label": "Shipping tab",
+      "default": "Shipping"
+    },
+    {
+      "type": "text",
+      "id": "tab_4_label",
+      "label": "Warranty tab",
+      "default": "Warranty"
+    },
+    {
+      "type": "header",
+      "content": "Tab content"
+    },
+    {
+      "type": "richtext",
+      "id": "description_fallback",
+      "label": "Description fallback",
+      "default": "<p>Add a product description in the product admin to show it here.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "specifications_content",
+      "label": "Specifications",
+      "default": "<p>Add product specifications here.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "shipping_content",
+      "label": "Shipping",
+      "default": "<p>Add shipping information here, including delivery timelines and regional details.</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "warranty_content",
+      "label": "Warranty",
+      "default": "<p>Add warranty information here.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Layout and style"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "font_picker",
+      "id": "body_font",
+      "label": "Body font",
+      "default": "sans-serif"
+    },
+    {
+      "type": "range",
+      "id": "body_size",
+      "label": "Body size",
+      "min": 12,
+      "max": 22,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#020202"
+    },
+    {
+      "type": "color",
+      "id": "muted_text_color",
+      "label": "Muted text",
+      "default": "#4A4A4A"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#334FB4"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Links",
+      "default": "#334FB4"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Borders",
+      "default": "#D9D9D9"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product information tabs"
+    }
+  ],
+  "tag": null,
+  "class": "product-information-tabs-block"
+}
 {% endschema %}
