@@ -1,6 +1,318 @@
+{% doc %}
+  @prompt
+    Create a product comparison block for the Kodiak collection page that preserves the current comparison's content, appearance, and four existing rows, but supports eight comparison rows total. Add four additional rows with blank labels and blank values for both Kodiak and Kodiak V2, editable in the theme editor. Keep the comparison contained within the page width and responsive on smaller screens.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+    color: {{ block.settings.text_color }};
+    background: {{ block.settings.background_color }};
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__scroll {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  .ai-comparison-{{ ai_gen_id }} th,
+  .ai-comparison-{{ ai_gen_id }} td {
+    padding: 16px 20px;
+    border-bottom: 1px solid {{ block.settings.border_color }};
+    vertical-align: middle;
+    text-align: left;
+    line-height: 1.45;
+  }
+
+  .ai-comparison-{{ ai_gen_id }} thead th {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: {{ block.settings.header_background }};
+    color: {{ block.settings.header_text_color }};
+    font-weight: 700;
+  }
+
+  .ai-comparison-{{ ai_gen_id }} thead th:first-child {
+    width: 40%;
+  }
+
+  .ai-comparison-{{ ai_gen_id }} thead th:not(:first-child) {
+    width: 30%;
+    text-align: center;
+  }
+
+  .ai-comparison-{{ ai_gen_id }} tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .ai-comparison-{{ ai_gen_id }} tbody td:not(:first-child) {
+    text-align: center;
+  }
+
+  .ai-comparison-{{ ai_gen_id }} tbody tr:nth-child(even) {
+    background: {{ block.settings.alternate_row_color }};
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__label {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-comparison-{{ ai_gen_id }} th,
+    .ai-comparison-{{ ai_gen_id }} td {
+      padding: 13px 14px;
+      font-size: 14px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-comparison-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-comparison-{{ ai_gen_id }}__scroll">
+    <table class="ai-comparison-{{ ai_gen_id }}__table">
+      <thead>
+        <tr>
+          <th scope="col">{{ block.settings.feature_heading }}</th>
+          <th scope="col">{{ block.settings.kodiak_heading }}</th>
+          <th scope="col">{{ block.settings.kodiak_v2_heading }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in (1..8) %}
+          {% liquid
+            assign label_key = 'row_' | append: i | append: '_label'
+            assign kodiak_key = 'row_' | append: i | append: '_kodiak'
+            assign kodiak_v2_key = 'row_' | append: i | append: '_kodiak_v2'
+          %}
+          <tr>
+            <td class="ai-comparison-{{ ai_gen_id }}__label">{{ block.settings[label_key] }}</td>
+            <td>{{ block.settings[kodiak_key] }}</td>
+            <td>{{ block.settings[kodiak_v2_key] }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Product comparison",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Column headings"
+    },
+    {
+      "type": "text",
+      "id": "feature_heading",
+      "label": "Feature",
+      "default": "Feature"
+    },
+    {
+      "type": "text",
+      "id": "kodiak_heading",
+      "label": "Kodiak",
+      "default": "Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "kodiak_v2_heading",
+      "label": "Kodiak V2",
+      "default": "Kodiak V2"
+    },
+    {
+      "type": "header",
+      "content": "Comparison rows"
+    },
+    {
+      "type": "text",
+      "id": "row_1_label",
+      "label": "Row 1 label"
+    },
+    {
+      "type": "text",
+      "id": "row_1_kodiak",
+      "label": "Row 1 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_1_kodiak_v2",
+      "label": "Row 1 Kodiak V2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_label",
+      "label": "Row 2 label"
+    },
+    {
+      "type": "text",
+      "id": "row_2_kodiak",
+      "label": "Row 2 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_2_kodiak_v2",
+      "label": "Row 2 Kodiak V2"
+    },
+    {
+      "type": "text",
+      "id": "row_3_label",
+      "label": "Row 3 label"
+    },
+    {
+      "type": "text",
+      "id": "row_3_kodiak",
+      "label": "Row 3 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_3_kodiak_v2",
+      "label": "Row 3 Kodiak V2"
+    },
+    {
+      "type": "text",
+      "id": "row_4_label",
+      "label": "Row 4 label"
+    },
+    {
+      "type": "text",
+      "id": "row_4_kodiak",
+      "label": "Row 4 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_4_kodiak_v2",
+      "label": "Row 4 Kodiak V2"
+    },
+    {
+      "type": "text",
+      "id": "row_5_label",
+      "label": "Row 5 label"
+    },
+    {
+      "type": "text",
+      "id": "row_5_kodiak",
+      "label": "Row 5 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_5_kodiak_v2",
+      "label": "Row 5 Kodiak V2"
+    },
+    {
+      "type": "text",
+      "id": "row_6_label",
+      "label": "Row 6 label"
+    },
+    {
+      "type": "text",
+      "id": "row_6_kodiak",
+      "label": "Row 6 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_6_kodiak_v2",
+      "label": "Row 6 Kodiak V2"
+    },
+    {
+      "type": "text",
+      "id": "row_7_label",
+      "label": "Row 7 label"
+    },
+    {
+      "type": "text",
+      "id": "row_7_kodiak",
+      "label": "Row 7 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_7_kodiak_v2",
+      "label": "Row 7 Kodiak V2"
+    },
+    {
+      "type": "text",
+      "id": "row_8_label",
+      "label": "Row 8 label"
+    },
+    {
+      "type": "text",
+      "id": "row_8_kodiak",
+      "label": "Row 8 Kodiak"
+    },
+    {
+      "type": "text",
+      "id": "row_8_kodiak_v2",
+      "label": "Row 8 Kodiak V2"
+    },
+    {
+      "type": "header",
+      "content": "Layout and colors"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#020202"
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "Header background",
+      "default": "#F3F3F3"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text",
+      "default": "#020202"
+    },
+    {
+      "type": "color",
+      "id": "alternate_row_color",
+      "label": "Alternate row",
+      "default": "#FAFAFA"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Borders",
+      "default": "#D9D9D9"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product comparison"
+    }
+  ],
+  "tag": null,
+  "class": "product-comparison-block"
+}
 {% endschema %}
