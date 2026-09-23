@@ -93,7 +93,7 @@
         "column_iLKUfU": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/kodiakcage-onbike1.jpg",
+            "image": "shopify://shop_images/Gemini_Generated_Image_78ihdh78ihdh78ih.jpg",
             "title": "&nbsp;Built to Carry&nbsp;",
             "text": "<p>Both racks are rated up to <strong>120 lb</strong>. Kodiak includes a large bamboo platform and a UL 2271–certified 19.6Ah Samsung pack. Kodiak V2 adds an extra-long rack, integrated 20Ah battery, and optional front basket / rear passenger bars.<br/><br/></p>",
             "link_label": "",
@@ -191,12 +191,12 @@
             "row_8_kodiak": "About 76 lb",
             "row_8_kodiak_v2": "About 82 lb",
             "desktop_width_percent": 100,
-            "background_color": "#FFFFFF",
+            "background_color": "#ffffff",
             "text_color": "#020202",
-            "header_background": "#F3F3F3",
+            "header_background": "#f3f3f3",
             "header_text_color": "#020202",
-            "alternate_row_color": "#FAFAFA",
-            "border_color": "#D9D9D9"
+            "alternate_row_color": "#fafafa",
+            "border_color": "#d9d9d9"
           },
           "blocks": {}
         }
@@ -231,8 +231,8 @@
             "heading_size": 38,
             "heading_color": "#020202",
             "text_color": "#121212",
-            "border_color": "#D9D9D9",
-            "focus_color": "#334FB4"
+            "border_color": "#d9d9d9",
+            "focus_color": "#334fb4"
           },
           "blocks": {}
         }
@@ -267,8 +267,8 @@
             "heading_size": 38,
             "heading_color": "#020202",
             "text_color": "#121212",
-            "border_color": "#D9D9D9",
-            "focus_color": "#334FB4"
+            "border_color": "#d9d9d9",
+            "focus_color": "#334fb4"
           },
           "blocks": {}
         },
@@ -295,8 +295,8 @@
             "heading_size": 38,
             "heading_color": "#020202",
             "text_color": "#121212",
-            "border_color": "#D9D9D9",
-            "focus_color": "#334FB4"
+            "border_color": "#d9d9d9",
+            "focus_color": "#334fb4"
           },
           "blocks": {}
         }
