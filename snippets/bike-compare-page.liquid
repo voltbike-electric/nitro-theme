@@ -54,7 +54,7 @@
           <th scope="row">Price</th>
           {% for ebike in ebikes.products %}
             <td>
-              {{ ebike.price | money_with_currency }}
+              <b>{{ ebike.price | money_with_currency }}</b>
               {%- if ebike.price_varies -%}*Starting price{%- endif -%}
             </td>
           {% endfor %}
