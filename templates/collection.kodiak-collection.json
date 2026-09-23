@@ -83,6 +83,7 @@
         "column_yta9hD": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Aileen_angled_blue_kodiak_v2.png",
             "title": "&nbsp;Replace Your Car&nbsp;",
             "text": "<p>Most everyday Canadian trips are short. A Kodiak covers grocery runs, school pickups, and neighbourhood errands without parking fees or gas. Top speed <strong>32 km/h</strong>. In BC, the Kodiak lineup is eligible for the <strong>SUVI</strong> rebate — up to <strong>$858 CAD</strong> if you qualify.<br/><br/></p>",
             "link_label": "",
@@ -92,6 +93,7 @@
         "column_iLKUfU": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Rear_Rack.jpg",
             "title": "&nbsp;Built to Carry&nbsp;",
             "text": "<p>Both racks are rated up to <strong>120 lb</strong>. Kodiak includes a large bamboo platform and a UL 2271–certified 19.6Ah Samsung pack. Kodiak V2 adds an extra-long rack, integrated 20Ah battery, and optional front basket / rear passenger bars.<br/><br/></p>",
             "link_label": "",
@@ -101,6 +103,7 @@
         "column_qf6bGz": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Kodiak_V2_Seat_Cushions_f3683fda-9f86-4355-82f2-fcdeb881e9ca.png",
             "title": "&nbsp;Versatile Platforms&nbsp;",
             "text": "<p>One bike for groceries, commuting with gear, trails-to-town rides, a second passenger with the right accessories, or local last-mile deliveries. Compact enough for apartments, garages, and underground parking.<br/><br/></p>",
             "link_label": "",
@@ -129,6 +132,29 @@
         "swipe_on_mobile": false,
         "padding_top": 16,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_p33rke": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Xg3prA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Safety note:</strong> The standard Kodiak rear rack is not set up for carrying children unless you install rear wheel spoke protection. Use the correct child / passenger accessories and stay within weight limits.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Xg3prA"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
+        "full_width": true,
+        "padding_top": 24,
+        "padding_bottom": 0
       }
     },
     "1790204213f79358e9": {
@@ -319,29 +345,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "rich_text_p33rke": {
-      "type": "rich-text",
-      "blocks": {
-        "text_Xg3prA": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Safety note:</strong> The standard Kodiak rear rack is not set up for carrying children unless you install rear wheel spoke protection. Use the correct child / passenger accessories and stay within weight limits.<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_Xg3prA"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
-        "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 0
       }
     }
   },
