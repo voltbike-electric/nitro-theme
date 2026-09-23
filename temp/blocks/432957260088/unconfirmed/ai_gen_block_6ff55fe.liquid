@@ -1,6 +1,200 @@
+{% doc %}
+  @prompt
+    make a comparison table for two products with one row title
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #020202;
+    font-family: sans-serif;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__title {
+    margin: 0 0 24px;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: 600;
+    text-align: {{ block.settings.title_alignment }};
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__scroll {
+    overflow-x: auto;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    table-layout: fixed;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__table th,
+  .ai-comparison-{{ ai_gen_id }}__table td {
+    padding: 18px 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__table thead th {
+    background: #f3f3f3;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__table thead th:first-child {
+    width: 31%;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__product {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__image,
+  .ai-comparison-{{ ai_gen_id }}__placeholder {
+    width: 56px;
+    height: 56px;
+    flex: 0 0 56px;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e8e8e8;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__placeholder svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__product-name {
+    color: #020202;
+    text-decoration: none;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__label {
+    font-weight: 600;
+  }
+
+  .ai-comparison-{{ ai_gen_id }}__table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-comparison-{{ ai_gen_id }}__title {
+      font-size: 24px;
+    }
+
+    .ai-comparison-{{ ai_gen_id }}__table th,
+    .ai-comparison-{{ ai_gen_id }}__table td {
+      padding: 14px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-comparison-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.title != blank %}
+    <h2 class="ai-comparison-{{ ai_gen_id }}__title">{{ block.settings.title | escape }}</h2>
+  {% endif %}
+
+  <div class="ai-comparison-{{ ai_gen_id }}__scroll">
+    <table class="ai-comparison-{{ ai_gen_id }}__table">
+      <thead>
+        <tr>
+          <th scope="col">{{ block.settings.row_title | escape }}</th>
+          <th scope="col">
+            {% if block.settings.product_one != blank %}
+              <div class="ai-comparison-{{ ai_gen_id }}__product">
+                {% if block.settings.product_one.featured_image %}
+                  <img class="ai-comparison-{{ ai_gen_id }}__image" src="{{ block.settings.product_one.featured_image | image_url: width: 120 }}" alt="{{ block.settings.product_one.featured_image.alt | default: block.settings.product_one.title | escape }}" width="56" height="56" loading="lazy">
+                {% else %}
+                  <div class="ai-comparison-{{ ai_gen_id }}__placeholder">{{ 'product-apparel-1' | placeholder_svg_tag }}</div>
+                {% endif %}
+                <a class="ai-comparison-{{ ai_gen_id }}__product-name" href="{{ block.settings.product_one.url }}">{{ block.settings.product_one.title | escape }}</a>
+              </div>
+            {% else %}
+              Product one
+            {% endif %}
+          </th>
+          <th scope="col">
+            {% if block.settings.product_two != blank %}
+              <div class="ai-comparison-{{ ai_gen_id }}__product">
+                {% if block.settings.product_two.featured_image %}
+                  <img class="ai-comparison-{{ ai_gen_id }}__image" src="{{ block.settings.product_two.featured_image | image_url: width: 120 }}" alt="{{ block.settings.product_two.featured_image.alt | default: block.settings.product_two.title | escape }}" width="56" height="56" loading="lazy">
+                {% else %}
+                  <div class="ai-comparison-{{ ai_gen_id }}__placeholder">{{ 'product-apparel-1' | placeholder_svg_tag }}</div>
+                {% endif %}
+                <a class="ai-comparison-{{ ai_gen_id }}__product-name" href="{{ block.settings.product_two.url }}">{{ block.settings.product_two.title | escape }}</a>
+              </div>
+            {% else %}
+              Product two
+            {% endif %}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in (1..4) %}
+          {% liquid
+            assign label_key = 'row_' | append: i | append: '_label'
+            assign one_key = 'row_' | append: i | append: '_one'
+            assign two_key = 'row_' | append: i | append: '_two'
+            assign row_label = block.settings[label_key]
+            assign value_one = block.settings[one_key]
+            assign value_two = block.settings[two_key]
+          %}
+          {% if row_label != blank or value_one != blank or value_two != blank %}
+            <tr>
+              <th class="ai-comparison-{{ ai_gen_id }}__label" scope="row">{{ row_label | escape }}</th>
+              <td>{{ value_one | escape }}</td>
+              <td>{{ value_two | escape }}</td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Product comparison",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Compare our models" },
+    { "type": "text", "id": "row_title", "label": "Row title", "default": "Specifications" },
+    { "type": "select", "id": "title_alignment", "label": "Title alignment", "options": [ { "value": "left", "label": "Left" }, { "value": "center", "label": "Center" } ], "default": "left" },
+    { "type": "product", "id": "product_one", "label": "Product one" },
+    { "type": "product", "id": "product_two", "label": "Product two" },
+    { "type": "header", "content": "Comparison rows" },
+    { "type": "text", "id": "row_1_label", "label": "Row 1 label", "default": "Range" },
+    { "type": "text", "id": "row_1_one", "label": "Row 1 product one", "default": "Up to 80 km" },
+    { "type": "text", "id": "row_1_two", "label": "Row 1 product two", "default": "Up to 100 km" },
+    { "type": "text", "id": "row_2_label", "label": "Row 2 label", "default": "Motor" },
+    { "type": "text", "id": "row_2_one", "label": "Row 2 product one", "default": "500 W" },
+    { "type": "text", "id": "row_2_two", "label": "Row 2 product two", "default": "750 W" },
+    { "type": "text", "id": "row_3_label", "label": "Row 3 label", "default": "Battery" },
+    { "type": "text", "id": "row_3_one", "label": "Row 3 product one", "default": "48 V / 15 Ah" },
+    { "type": "text", "id": "row_3_two", "label": "Row 3 product two", "default": "48 V / 20 Ah" },
+    { "type": "text", "id": "row_4_label", "label": "Row 4 label", "default": "Best for" },
+    { "type": "text", "id": "row_4_one", "label": "Row 4 product one", "default": "Daily commuting" },
+    { "type": "text", "id": "row_4_two", "label": "Row 4 product two", "default": "Long-distance rides" },
+    { "type": "range", "id": "desktop_width_percent", "label": "Desktop width", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 }
+  ],
+  "presets": [ { "name": "Product comparison" } ],
+  "tag": null,
+  "class": "product-comparison-block"
+}
 {% endschema %}
