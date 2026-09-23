@@ -106,18 +106,18 @@
         "ai_gen_block_1ac40d4_pkDBFH": {
           "type": "ai_gen_block_1ac40d4",
           "settings": {
-            "title": "Frequently asked questions",
-            "intro": "Find answers to common questions about our products and service.",
-            "question_1": "What is included with my purchase?",
-            "answer_1": "Each product page lists the items included with your purchase, along with compatibility and installation details.",
-            "question_2": "How long does delivery take?",
-            "answer_2": "Delivery timing varies by destination and product availability. Current estimates are shown during checkout.",
-            "question_3": "What warranty coverage is available?",
-            "answer_3": "Warranty coverage depends on the product. Please review the warranty information on the relevant product page or contact our support team.",
-            "question_4": "Can I get help choosing the right product?",
-            "answer_4": "Contact our team with your requirements and intended use, and we will help you compare suitable options.",
-            "question_5": "How can I contact support?",
-            "answer_5": "Use the contact options on our website and include your order number when asking about an existing purchase.",
+            "title": "Choosing Your Bike",
+            "intro": "",
+            "question_1": "Kodiak vs Kodiak V2 — which should I buy?",
+            "answer_1": "Choose the Kodiak if you want the classic bamboo-platform cargo bike, a slightly lighter bike, and a rigid fork that stays predictable under load ($2,049 CAD). Choose the Kodiak V2 if you want front suspension, an integrated battery, a torque sensor, and fatter 20\" tires — especially if you ride rough pavement or want the optional passenger / front-basket setup ($2,149 CAD).\n\nQ2: Can these replace a second car?\nA2: For many households, yes — for trips under about 10–15 km with cargo that fits the rack. You still need a car for long highway trips, large furniture, or multi-stop days beyond battery range. The point is cutting the short, expensive trips.\n\nQ3: Is the Kodiak V2 good for a passenger?\nA3: It can be fitted with optional rear passenger bars with padded seats (rear child carrier listed at $200; front rack $80). Accessories are sold separately. Always follow weight limits and use spoke protection / child-safe setups where required.",
+            "question_2": "Can these replace a second car?",
+            "answer_2": "For many households, yes — for trips under about 10–15 km with cargo that fits the rack. You still need a car for long highway trips, large furniture, or multi-stop days beyond battery range. The point is cutting the short, expensive trips.",
+            "question_3": "Is the Kodiak good for a passenger?",
+            "answer_3": "It can be fitted with optional rear passenger bars, and our Kodiak V2 has optional padded seats. Accessories are sold separately. \nAlways follow weight limits and use spoke protection / child-safe setups where required.",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
             "alignment": "left",
             "desktop_width_percent": 100,
             "vertical_padding": 40,
@@ -134,6 +134,72 @@
       "block_order": [
         "ai_gen_block_1ac40d4_pkDBFH"
       ],
+      "settings": {}
+    },
+    "blocks_FPzFrX": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_1ac40d4_E9kpXz": {
+          "type": "ai_gen_block_1ac40d4",
+          "settings": {
+            "title": "Capacity & Performance",
+            "intro": "",
+            "question_1": "How much can the rear rack hold?",
+            "answer_1": "Both Kodiak and Kodiak V2 rear racks are rated for up to 120 lb of cargo. Total rider-plus-cargo payload is 300 lb. Do not exceed either limit.",
+            "question_2": "What motor and range do I get?",
+            "answer_2": "Both use a Bafang 500W (750W peak) hub motor with 80 Nm torque and a 32 km/h top speed. Listed range: 80–100+ km (Kodiak) and 100+ km (Kodiak V2). Heavy cargo, hills, cold weather, and high assist levels reduce range.",
+            "question_3": "Is there a BC rebate?",
+            "answer_3": "The Kodiak is listed as eligible for BC’s SUVI program — up to $858 CAD if you qualify. Always check current program rules and application steps before ordering.",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
+            "alignment": "left",
+            "desktop_width_percent": 100,
+            "vertical_padding": 40,
+            "mobile_padding": 30,
+            "heading_size": 38,
+            "heading_color": "#020202",
+            "text_color": "#121212",
+            "border_color": "#D9D9D9",
+            "focus_color": "#334FB4"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_1ac40d4_bThtKi": {
+          "type": "ai_gen_block_1ac40d4",
+          "name": "FAQ accordion",
+          "settings": {
+            "title": "Safety",
+            "intro": "",
+            "question_1": "How should I load the rack?",
+            "answer_1": "Keep heavy items low and centred. Secure everything with straps or a net before rolling. Load evenly so the bike does not lean. Check tire pressure and brakes more often when you ride loaded.",
+            "question_2": "Does cargo change braking?",
+            "answer_2": "Yes. Extra weight increases stopping distance. Leave more space, slow earlier, and keep the hydraulic discs in good condition — especially for delivery or family use.",
+            "question_3": "Can I carry a child on the original Kodiak?",
+            "answer_3": "Not on the stock rear rack setup. Install rear wheel spoke protection (and any required child seat / bars) before carrying a passenger.",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
+            "alignment": "left",
+            "desktop_width_percent": 100,
+            "vertical_padding": 40,
+            "mobile_padding": 30,
+            "heading_size": 38,
+            "heading_color": "#020202",
+            "text_color": "#121212",
+            "border_color": "#D9D9D9",
+            "focus_color": "#334FB4"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_1ac40d4_E9kpXz",
+        "ai_gen_block_1ac40d4_bThtKi"
+      ],
+      "name": "FAQ accordion",
       "settings": {}
     },
     "1790201778df813f08": {
@@ -215,6 +281,7 @@
     "product-grid",
     "multicolumn_BdE7T9",
     "17902012121581e39a",
+    "blocks_FPzFrX",
     "1790201778df813f08",
     "b50483cb-86c9-4454-a4d6-451bc3e3331c"
   ]
