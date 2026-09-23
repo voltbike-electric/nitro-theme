@@ -108,7 +108,7 @@
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>testing</p>",
             "page": ""
           }
         },
