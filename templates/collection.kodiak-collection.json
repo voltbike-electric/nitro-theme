@@ -136,6 +136,39 @@
       ],
       "settings": {}
     },
+    "1790201778df813f08": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6ff55fe_8DMCLC": {
+          "type": "ai_gen_block_6ff55fe",
+          "settings": {
+            "title": "Compare our models",
+            "row_title": "Specifications",
+            "title_alignment": "left",
+            "product_one": "",
+            "product_two": "",
+            "row_1_label": "Range",
+            "row_1_one": "Up to 80 km",
+            "row_1_two": "Up to 100 km",
+            "row_2_label": "Motor",
+            "row_2_one": "500 W",
+            "row_2_two": "750 W",
+            "row_3_label": "Battery",
+            "row_3_one": "48 V / 15 Ah",
+            "row_3_two": "48 V / 20 Ah",
+            "row_4_label": "Best for",
+            "row_4_one": "Daily commuting",
+            "row_4_two": "Long-distance rides",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6ff55fe_8DMCLC"
+      ],
+      "settings": {}
+    },
     "b50483cb-86c9-4454-a4d6-451bc3e3331c": {
       "type": "rich-text",
       "blocks": {
@@ -182,6 +215,7 @@
     "product-grid",
     "multicolumn_BdE7T9",
     "17902012121581e39a",
+    "1790201778df813f08",
     "b50483cb-86c9-4454-a4d6-451bc3e3331c"
   ]
 }
