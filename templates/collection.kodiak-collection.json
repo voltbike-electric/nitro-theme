@@ -362,9 +362,9 @@
         "collapsible_row_FiWkiJ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Product Specifications",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Can these replace a second car?",
+            "icon": "none",
+            "row_content": "<p>For many households, yes — for trips under about 10–15 km with cargo that fits the rack. You still need a car for long highway trips, large furniture, or multi-stop days beyond battery range. The point is cutting the short, expensive trips.</p>",
             "page": ""
           }
         },
