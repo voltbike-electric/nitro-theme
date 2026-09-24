@@ -376,22 +376,12 @@
             "row_content": "<p>It can be fitted with optional rear passenger bars, and our Kodiak V2 has optional padded seats. Accessories are sold separately.<br/>Always follow weight limits and use spoke protection / child-safe setups where required.</p>",
             "page": ""
           }
-        },
-        "collapsible_row_Ff4aW4": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Product Specifications",
-            "icon": "check_mark",
-            "row_content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
         "collapsible_row_6KJEtn",
         "collapsible_row_FiWkiJ",
-        "collapsible_row_VAeNRL",
-        "collapsible_row_Ff4aW4"
+        "collapsible_row_VAeNRL"
       ],
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
