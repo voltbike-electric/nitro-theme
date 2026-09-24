@@ -396,7 +396,7 @@
       "name": "t:sections.collapsible_content.presets.name",
       "settings": {
         "caption": "",
-        "heading": "Product Specifications",
+        "heading": "&nbsp;Choosing Your Bike&nbsp;",
         "heading_size": "h1",
         "heading_alignment": "left",
         "layout": "section",
