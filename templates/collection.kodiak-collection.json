@@ -449,7 +449,7 @@
       "settings": {
         "caption": "",
         "heading": "Product Specifications",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "heading_alignment": "left",
         "layout": "none",
         "color_scheme": "",
