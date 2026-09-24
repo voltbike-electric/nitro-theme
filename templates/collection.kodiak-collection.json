@@ -152,7 +152,7 @@
         "desktop_content_position": "left",
         "content_alignment": "left",
         "color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
-        "full_width": true,
+        "full_width": false,
         "padding_top": 24,
         "padding_bottom": 0
       }
