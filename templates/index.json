@@ -164,6 +164,41 @@
         "padding_bottom": 80
       }
     },
+    "179052953696a5fd4b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_7d2c5b3_KtrPrX": {
+          "type": "ai_gen_block_7d2c5b3",
+          "settings": {
+            "desktop_width_percent": 100,
+            "gap": 8,
+            "corner_radius": 10,
+            "text_alignment": "left",
+            "title_size": 24,
+            "subtitle_size": 16,
+            "image_1": "shopify://shop_images/grok-image-a08e1b2a-b604-4ef1-9a91-f17d163c76c9_0966ea4e-75b9-4667-a5ef-afe16cbb058d.jpg",
+            "title_1": "Tile one",
+            "subtitle_1": "Add a short description",
+            "link_1": "",
+            "image_2": "shopify://shop_images/Gemini_Generated_Image_78ihdh78ihdh78ih.jpg",
+            "title_2": "Tile two",
+            "subtitle_2": "Add a short description",
+            "link_2": "",
+            "title_3": "Tile three",
+            "subtitle_3": "Add a short description",
+            "link_3": "",
+            "title_4": "Tile four",
+            "subtitle_4": "Add a short description",
+            "link_4": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_7d2c5b3_KtrPrX"
+      ],
+      "settings": {}
+    },
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
       "settings": {
@@ -189,6 +224,7 @@
     "featured_collection",
     "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
+    "179052953696a5fd4b",
     "featured_blog_yPgqNG"
   ]
 }
