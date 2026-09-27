@@ -170,7 +170,7 @@
         "ai_gen_block_7d2c5b3_KtrPrX": {
           "type": "ai_gen_block_7d2c5b3",
           "settings": {
-            "desktop_width_percent": 100,
+            "desktop_width_percent": 85,
             "gap": 8,
             "corner_radius": 10,
             "text_alignment": "left",
