@@ -177,19 +177,20 @@
             "title_size": 24,
             "subtitle_size": 16,
             "image_1": "shopify://shop_images/809097313_1108985781889430_4947383798418600841_n.jpg",
-            "title_1": "Tile one",
-            "subtitle_1": "Add a short description",
-            "link_1": "",
-            "image_2": "shopify://shop_images/Gemini_Generated_Image_78ihdh78ihdh78ih.jpg",
-            "title_2": "Cargo",
-            "subtitle_2": "Carry everything",
+            "title_1": "Touring Bikes",
+            "subtitle_1": "Lightweight and nimble cruisers",
+            "link_1": "shopify://collections/city",
+            "image_2": "shopify://shop_images/watermarked_img_9934048140130606670.jpg",
+            "title_2": "Off-Road",
+            "subtitle_2": "Capable in rough terrain and everywhere else",
             "link_2": "shopify://collections/cargo",
             "image_3": "shopify://shop_images/Gemini_Generated_Image_wkw5nwwkw5nwwkw5.jpg",
-            "title_3": "Tile three",
-            "subtitle_3": "Add a short description",
-            "link_3": "",
-            "title_4": "Tile four",
-            "subtitle_4": "Add a short description",
+            "title_3": "Cargo Bikes",
+            "subtitle_3": "Built to carry gear and passengers",
+            "link_3": "shopify://collections/cargo",
+            "image_4": "shopify://shop_images/FoldingAnimation-v3.gif",
+            "title_4": "Folding Bikes",
+            "subtitle_4": "Easy to transport with lots of power",
             "link_4": ""
           },
           "blocks": {}
@@ -198,7 +199,6 @@
       "block_order": [
         "ai_gen_block_7d2c5b3_KtrPrX"
       ],
-      "disabled": true,
       "settings": {}
     },
     "featured_blog_yPgqNG": {
