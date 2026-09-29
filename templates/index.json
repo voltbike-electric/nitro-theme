@@ -200,7 +200,7 @@
             "display_order": "media_first",
             "card_grouping": "per_media",
             "columns_desktop": 4,
-            "rows_desktop": 3,
+            "rows_desktop": 2,
             "columns_mobile": "2",
             "rows_mobile": 6,
             "show_stars": true,
