@@ -45,7 +45,7 @@
     <div class="ai-image-tiles-{{ ai_gen_id }}__left">
       <div class="ai-image-tiles-{{ ai_gen_id }}__tile">
       {% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank %}
-      <a class="ai-image-tiles-{{ ai_gen_id }}__button" href="{{ block.settings.button_link_1 }}">
+      <a href="{{ block.settings.button_link_1 }}">
       {% endif %}
 
       {% if block.settings.image_1 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_1 | image_url: width: 1400 }}" alt="{{ block.settings.image_1.alt | escape }}" loading="lazy" width="{{ block.settings.image_1.width }}" height="{{ block.settings.image_1.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}       
