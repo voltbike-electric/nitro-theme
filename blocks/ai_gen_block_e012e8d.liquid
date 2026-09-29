@@ -44,8 +44,9 @@
   <div class="page-width ai-image-tiles-{{ ai_gen_id }}__layout">
     <div class="ai-image-tiles-{{ ai_gen_id }}__left">
       <div class="ai-image-tiles-{{ ai_gen_id }}__tile">
-        {% if block.settings.image_1 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_1 | image_url: width: 1400 }}" alt="{{ block.settings.image_1.alt | escape }}" loading="lazy" width="{{ block.settings.image_1.width }}" height="{{ block.settings.image_1.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
-        <div class="ai-image-tiles-{{ ai_gen_id }}__shade"></div>
+<a href">{% if block.settings.image_1 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_1 | image_url: width: 1400 }}" alt="{{ block.settings.image_1.alt | escape }}" loading="lazy" width="{{ block.settings.image_1.width }}" height="{{ block.settings.image_1.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
+</a>       
+<div class="ai-image-tiles-{{ ai_gen_id }}__shade"></div>
         <div class="ai-image-tiles-{{ ai_gen_id }}__content">
           {% if block.settings.heading_1 != blank %}<h2 class="ai-image-tiles-{{ ai_gen_id }}__heading">{{ block.settings.heading_1 | escape }}</h2>{% endif %}
           {% if block.settings.subtitle_1 != blank %}<p class="ai-image-tiles-{{ ai_gen_id }}__subtitle">{{ block.settings.subtitle_1 | escape }}</p>{% endif %}
