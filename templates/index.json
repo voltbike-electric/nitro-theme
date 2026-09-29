@@ -146,24 +146,6 @@
         "padding_bottom": 40
       }
     },
-    "custom_liquid_kBzfcT": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'home-instagram-feed' %}",
-        "color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 80
-      }
-    },
-    "custom_liquid_eYBC8z": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'homepage-four-box' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 80
-      }
-    },
     "179052953696a5fd4b": {
       "type": "_blocks",
       "blocks": {
@@ -201,6 +183,24 @@
       ],
       "settings": {}
     },
+    "custom_liquid_kBzfcT": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'home-instagram-feed' %}",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 80
+      }
+    },
+    "custom_liquid_eYBC8z": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'homepage-four-box' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 80
+      }
+    },
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
       "settings": {
@@ -223,10 +223,10 @@
     "slideshow_zKTVBD",
     "featured_collection_jHcDgq",
     "170872818678f0ce43",
+    "179052953696a5fd4b",
     "featured_collection",
     "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
-    "179052953696a5fd4b",
     "featured_blog_yPgqNG"
   ]
 }
