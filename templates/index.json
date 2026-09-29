@@ -206,6 +206,7 @@
       "blocks": {
         "ai_gen_block_e012e8d_f7wgzE": {
           "type": "ai_gen_block_e012e8d",
+          "name": "Large Four Tiles",
           "settings": {
             "desktop_width_percent": 100,
             "tile_height": 500,
