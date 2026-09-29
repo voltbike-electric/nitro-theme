@@ -199,7 +199,7 @@
             "show_media_only": false,
             "display_order": "media_first",
             "card_grouping": "per_media",
-            "columns_desktop": 3,
+            "columns_desktop": 4,
             "rows_desktop": 3,
             "columns_mobile": "2",
             "rows_mobile": 6,
