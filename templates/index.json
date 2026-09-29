@@ -101,51 +101,6 @@
         "padding_bottom": 36
       }
     },
-    "170872818678f0ce43": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_featured_carousel_tV3Waz": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "maxwidth": 1600
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_featured_carousel_tV3Waz"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "accessories",
-        "products_to_show": 10,
-        "title": "Featured Accessories",
-        "heading_size": "h2",
-        "description": "<p>VoltBike's most popular best-selling accessories.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 5,
-        "enable_desktop_slider": true,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 40
-      }
-    },
     "179052953696a5fd4b": {
       "type": "_blocks",
       "blocks": {
@@ -182,6 +137,51 @@
         "ai_gen_block_7d2c5b3_KtrPrX"
       ],
       "settings": {}
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "collection": "accessories",
+        "products_to_show": 10,
+        "title": "Featured Accessories",
+        "heading_size": "h2",
+        "description": "<p>VoltBike's most popular best-selling accessories.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 5,
+        "enable_desktop_slider": true,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
+    "170872818678f0ce43": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_tV3Waz": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1600
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_tV3Waz"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     },
     "custom_liquid_kBzfcT": {
       "type": "custom-liquid",
@@ -222,9 +222,9 @@
   "order": [
     "slideshow_zKTVBD",
     "featured_collection_jHcDgq",
-    "170872818678f0ce43",
     "179052953696a5fd4b",
     "featured_collection",
+    "170872818678f0ce43",
     "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
     "featured_blog_yPgqNG"
