@@ -216,7 +216,7 @@
             "heading_size": 30,
             "overlay_opacity": 60,
             "button_radius": 10,
-            "button_background_color": "#FFFFFF",
+            "button_background_color": "#ffffff",
             "button_text_color": "#111111",
             "heading_1": "Explore the collection",
             "subtitle_1": "Discover gear for your next ride",
@@ -241,6 +241,7 @@
       "block_order": [
         "ai_gen_block_e012e8d_f7wgzE"
       ],
+      "disabled": true,
       "settings": {}
     },
     "featured_blog_yPgqNG": {
