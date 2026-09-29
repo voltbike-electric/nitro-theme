@@ -201,6 +201,47 @@
         "include_margins": true
       }
     },
+    "17907108797900d5df": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e012e8d_f7wgzE": {
+          "type": "ai_gen_block_e012e8d",
+          "settings": {
+            "desktop_width_percent": 100,
+            "tile_height": 500,
+            "tile_gap": 10,
+            "corner_radius": 10,
+            "content_padding": 25,
+            "heading_size": 30,
+            "overlay_opacity": 60,
+            "button_radius": 10,
+            "button_background_color": "#FFFFFF",
+            "button_text_color": "#111111",
+            "heading_1": "Explore the collection",
+            "subtitle_1": "Discover gear for your next ride",
+            "button_label_1": "Shop now",
+            "button_link_1": "",
+            "heading_2": "Find your next upgrade",
+            "subtitle_2": "Parts to make every ride better",
+            "button_label_2": "Discover",
+            "button_link_2": "",
+            "heading_3": "Built for the ride",
+            "subtitle_3": "Comfort and control on every route",
+            "button_label_3": "View gear",
+            "button_link_3": "",
+            "heading_4": "Ready for every route",
+            "subtitle_4": "Equip yourself for the journey ahead",
+            "button_label_4": "Explore",
+            "button_link_4": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e012e8d_f7wgzE"
+      ],
+      "settings": {}
+    },
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
       "settings": {
@@ -227,6 +268,7 @@
     "custom_liquid_eYBC8z",
     "custom_liquid_kBzfcT",
     "170872818678f0ce43",
+    "17907108797900d5df",
     "featured_blog_yPgqNG"
   ]
 }
