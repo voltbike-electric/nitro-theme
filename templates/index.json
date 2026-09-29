@@ -184,18 +184,44 @@
         "padding_bottom": 80
       }
     },
-    "170872818678f0ce43": {
+    "1790719470bbba4594": {
       "type": "apps",
       "blocks": {
-        "judge_me_reviews_featured_carousel_tV3Waz": {
-          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "judge_me_reviews_reviews_grid_widget_KEU7Ye": {
+          "type": "shopify://apps/judge-me-reviews/blocks/reviews_grid_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "maxwidth": 1600
+            "show_sample_reviews": true,
+            "review_selection": "all",
+            "products": [],
+            "filter_pinned": false,
+            "filter_featured": false,
+            "filter_custom_tags": "",
+            "show_media_only": false,
+            "display_order": "media_first",
+            "card_grouping": "per_media",
+            "columns_desktop": 3,
+            "rows_desktop": 3,
+            "columns_mobile": "2",
+            "rows_mobile": 6,
+            "show_stars": true,
+            "show_reviewer_name": true,
+            "show_review_title_on_hover_desktop": true,
+            "max_width": 1100,
+            "corner_styling": "soft",
+            "card_spacing": "medium",
+            "header_text_color": "#000000",
+            "star_and_reviewer_name_color": "#F9F9F9",
+            "drop_shadow_color": "#000000",
+            "overlay_and_background_color": "#000000",
+            "content_color": "#F9F9F9",
+            "header_text": "From our customers",
+            "show_average_rating": true,
+            "rating_display": "default"
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_featured_carousel_tV3Waz"
+        "judge_me_reviews_reviews_grid_widget_KEU7Ye"
       ],
       "settings": {
         "include_margins": true
@@ -269,7 +295,7 @@
     "featured_collection",
     "custom_liquid_eYBC8z",
     "custom_liquid_kBzfcT",
-    "170872818678f0ce43",
+    "1790719470bbba4594",
     "17907108797900d5df",
     "featured_blog_yPgqNG"
   ]
