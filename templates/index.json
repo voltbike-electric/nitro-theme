@@ -166,21 +166,21 @@
         "padding_bottom": 40
       }
     },
-    "custom_liquid_kBzfcT": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'home-instagram-feed' %}",
-        "color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 80
-      }
-    },
     "custom_liquid_eYBC8z": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{% render 'homepage-four-box' %}",
         "color_scheme": "",
         "padding_top": 40,
+        "padding_bottom": 80
+      }
+    },
+    "custom_liquid_kBzfcT": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'home-instagram-feed' %}",
+        "color_scheme": "",
+        "padding_top": 20,
         "padding_bottom": 80
       }
     },
@@ -224,8 +224,8 @@
     "179052953696a5fd4b",
     "featured_collection_jHcDgq",
     "featured_collection",
-    "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
+    "custom_liquid_kBzfcT",
     "170872818678f0ce43",
     "featured_blog_yPgqNG"
   ]
