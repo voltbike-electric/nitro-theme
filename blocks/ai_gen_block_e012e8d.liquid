@@ -53,7 +53,7 @@
         <div class="ai-image-tiles-{{ ai_gen_id }}__content">
           {% if block.settings.heading_1 != blank %}<h2 class="ai-image-tiles-{{ ai_gen_id }}__heading">{{ block.settings.heading_1 | escape }}</h2>{% endif %}
           {% if block.settings.subtitle_1 != blank %}<p class="ai-image-tiles-{{ ai_gen_id }}__subtitle">{{ block.settings.subtitle_1 | escape }}</p>{% endif %}
-          {% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank %}<div class="ai-image-tiles-{{ ai_gen_id }}__button">{{ block.settings.button_label_1 | escape }}</div>{% endif %}
+          {% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank %}{{ block.settings.button_label_1 | escape }}{% endif %}
         </div>
         {% if block.settings.button_label_1 != blank and block.settings.button_link_1 != blank %}
         </a>
