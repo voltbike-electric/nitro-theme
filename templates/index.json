@@ -206,7 +206,7 @@
             "show_stars": true,
             "show_reviewer_name": true,
             "show_review_title_on_hover_desktop": true,
-            "max_width": 1100,
+            "max_width": 1200,
             "corner_styling": "soft",
             "card_spacing": "medium",
             "header_text_color": "#000000",
