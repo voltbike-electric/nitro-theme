@@ -68,8 +68,8 @@
           "settings": {
             "image": "shopify://shop_images/team_photo.jpg",
             "caption": "",
-            "heading": "Celebrating 11 Years",
-            "text": "<p>VoltBike has been a trusted name in the e-bike industry for 11 years. While many e-bike companies come and go within just a few years, VoltBike has remained strong, offering over a decade of reliable customer service. Our commitment to continuous improvement is reflected in our ever-evolving bike models, which is why our e-bikes are known for their exceptional reliability. With us, you can have peace of mind knowing we're here to stay and support your riding journey.</p>",
+            "heading": "Celebrating 13 Years",
+            "text": "<p>VoltBike has been a trusted name in the e-bike industry for 13 years. While many e-bike companies come and go within just a few years, VoltBike has remained strong, offering over a decade of reliable customer service. Our commitment to continuous improvement is reflected in our ever-evolving bike models, which is why our e-bikes are known for their exceptional reliability. With us, you can have peace of mind knowing we're here to stay and support your riding journey.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -85,15 +85,15 @@
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
+        "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "secondary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "mobile_content_alignment": "left",
         "section_color_scheme": "",
         "row_color_scheme": "",
-        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
