@@ -105,13 +105,21 @@
         {% endif %}
         </div>
         <div class="ai-image-tiles-{{ ai_gen_id }}__tile">
-          {% if block.settings.image_4 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_4 | image_url: width: 900 }}" alt="{{ block.settings.image_4.alt | escape }}" loading="lazy" width="{{ block.settings.image_4.width }}" height="{{ block.settings.image_4.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
+        
+        {% if block.settings.button_label_4 != blank and block.settings.button_link_4 != blank %}
+        <a href="{{ block.settings.button_link_4 }}" style="text-decoration: none;">
+        {% endif %}
+        
+        {% if block.settings.image_4 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_4 | image_url: width: 900 }}" alt="{{ block.settings.image_4.alt | escape }}" loading="lazy" width="{{ block.settings.image_4.width }}" height="{{ block.settings.image_4.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
           <div class="ai-image-tiles-{{ ai_gen_id }}__shade"></div>
           <div class="ai-image-tiles-{{ ai_gen_id }}__content">
             {% if block.settings.heading_4 != blank %}<h2 class="ai-image-tiles-{{ ai_gen_id }}__heading">{{ block.settings.heading_4 | escape }}</h2>{% endif %}
             {% if block.settings.subtitle_4 != blank %}<p class="ai-image-tiles-{{ ai_gen_id }}__subtitle">{{ block.settings.subtitle_4 | escape }}</p>{% endif %}
             {% if block.settings.button_label_4 != blank and block.settings.button_link_4 != blank %}<a class="ai-image-tiles-{{ ai_gen_id }}__button" href="{{ block.settings.button_link_4 }}">{{ block.settings.button_label_4 | escape }}</a>{% endif %}
           </div>
+          {% if block.settings.button_label_4 != blank and block.settings.button_link_4 != blank %}
+          </a>
+        {% endif %}
         </div>
       </div>
     </div>
