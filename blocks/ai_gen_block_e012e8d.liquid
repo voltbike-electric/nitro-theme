@@ -70,13 +70,21 @@
     </div>
     <div class="ai-image-tiles-{{ ai_gen_id }}__right">
       <div class="ai-image-tiles-{{ ai_gen_id }}__tile">
-        {% if block.settings.image_2 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_2 | image_url: width: 1200 }}" alt="{{ block.settings.image_2.alt | escape }}" loading="lazy" width="{{ block.settings.image_2.width }}" height="{{ block.settings.image_2.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
+      
+      {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}
+      <a href="{{ block.settings.button_link_2 }}" style="text-decoration: none;">
+      {% endif %}
+      
+      {% if block.settings.image_2 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_2 | image_url: width: 1200 }}" alt="{{ block.settings.image_2.alt | escape }}" loading="lazy" width="{{ block.settings.image_2.width }}" height="{{ block.settings.image_2.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
         <div class="ai-image-tiles-{{ ai_gen_id }}__shade"></div>
         <div class="ai-image-tiles-{{ ai_gen_id }}__content">
           {% if block.settings.heading_2 != blank %}<h2 class="ai-image-tiles-{{ ai_gen_id }}__heading">{{ block.settings.heading_2 | escape }}</h2>{% endif %}
           {% if block.settings.subtitle_2 != blank %}<p class="ai-image-tiles-{{ ai_gen_id }}__subtitle">{{ block.settings.subtitle_2 | escape }}</p>{% endif %}
           {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}<a class="ai-image-tiles-{{ ai_gen_id }}__button" href="{{ block.settings.button_link_2 }}">{{ block.settings.button_label_2 | escape }}</a>{% endif %}
         </div>
+        {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}
+        </a>
+        {% endif %}
       </div>
       <div class="ai-image-tiles-{{ ai_gen_id }}__bottom-row">
         <div class="ai-image-tiles-{{ ai_gen_id }}__tile">
