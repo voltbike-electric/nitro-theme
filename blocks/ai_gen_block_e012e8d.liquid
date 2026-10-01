@@ -88,6 +88,11 @@
       </div>
       <div class="ai-image-tiles-{{ ai_gen_id }}__bottom-row">
         <div class="ai-image-tiles-{{ ai_gen_id }}__tile">
+       
+        {% if block.settings.button_label_3 != blank and block.settings.button_link_3 != blank %}
+        <a href="{{ block.settings.button_link_3 }}" style="text-decoration: none;">
+        {% endif %}
+
           {% if block.settings.image_3 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_3 | image_url: width: 900 }}" alt="{{ block.settings.image_3.alt | escape }}" loading="lazy" width="{{ block.settings.image_3.width }}" height="{{ block.settings.image_3.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
           <div class="ai-image-tiles-{{ ai_gen_id }}__shade"></div>
           <div class="ai-image-tiles-{{ ai_gen_id }}__content">
@@ -95,6 +100,9 @@
             {% if block.settings.subtitle_3 != blank %}<p class="ai-image-tiles-{{ ai_gen_id }}__subtitle">{{ block.settings.subtitle_3 | escape }}</p>{% endif %}
             {% if block.settings.button_label_3 != blank and block.settings.button_link_3 != blank %}<a class="ai-image-tiles-{{ ai_gen_id }}__button" href="{{ block.settings.button_link_3 }}">{{ block.settings.button_label_3 | escape }}</a>{% endif %}
           </div>
+          {% if block.settings.button_label_3 != blank and block.settings.button_link_3 != blank %}
+          </a>
+        {% endif %}
         </div>
         <div class="ai-image-tiles-{{ ai_gen_id }}__tile">
           {% if block.settings.image_4 != blank %}<img class="ai-image-tiles-{{ ai_gen_id }}__image" src="{{ block.settings.image_4 | image_url: width: 900 }}" alt="{{ block.settings.image_4.alt | escape }}" loading="lazy" width="{{ block.settings.image_4.width }}" height="{{ block.settings.image_4.height }}">{% else %}<div class="ai-image-tiles-{{ ai_gen_id }}__placeholder">{{ 'image' | placeholder_svg_tag }}</div>{% endif %}
