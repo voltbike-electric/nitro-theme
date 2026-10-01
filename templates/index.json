@@ -259,11 +259,11 @@
             "corner_styling": "soft",
             "header_text_color": "#000000",
             "text_color": "#000000",
-            "card_color": "#F9F9F9",
-            "stars_color": "#EFEB03",
+            "card_color": "#f9f9f9",
+            "stars_color": "#efeb03",
             "arrows_color": "#000000",
             "transition_speed": 5,
-            "header_text": "Customers are saying",
+            "header_text": "See What Everyone’s Saying",
             "show_average_rating": true,
             "rating_display": "default"
           }
