@@ -80,7 +80,7 @@
         <div class="ai-image-tiles-{{ ai_gen_id }}__content">
           {% if block.settings.heading_2 != blank %}<h2 class="ai-image-tiles-{{ ai_gen_id }}__heading">{{ block.settings.heading_2 | escape }}</h2>{% endif %}
           {% if block.settings.subtitle_2 != blank %}<p class="ai-image-tiles-{{ ai_gen_id }}__subtitle">{{ block.settings.subtitle_2 | escape }}</p>{% endif %}
-          {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}<a class="ai-image-tiles-{{ ai_gen_id }}__button" href="{{ block.settings.button_link_2 }}">{{ block.settings.button_label_2 | escape }}</a>{% endif %}
+          {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}<div class="ai-image-tiles-{{ ai_gen_id }}__button">{{ block.settings.button_label_2 | escape }}</div>{% endif %}
         </div>
         {% if block.settings.button_label_2 != blank and block.settings.button_link_2 != blank %}
         </a>
