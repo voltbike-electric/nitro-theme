@@ -250,7 +250,7 @@
             "review_length": "medium",
             "text_size": "medium",
             "image_ratio": "1",
-            "reviews_shown": 4,
+            "reviews_shown": 3,
             "show_reviewer_name": true,
             "show_product_name": true,
             "hide_arrows_mobile": true,
@@ -273,7 +273,7 @@
         "judge_me_reviews_cards_carousel_NJ38Td"
       ],
       "custom_css": [
-        "jdgm-cards-wrapper {max-width: none;}"
+        ".jdgm-cards-wrapper {max-width: none;}"
       ],
       "settings": {
         "include_margins": true
