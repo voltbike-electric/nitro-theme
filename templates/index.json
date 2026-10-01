@@ -250,7 +250,7 @@
             "review_length": "medium",
             "text_size": "medium",
             "image_ratio": "1",
-            "reviews_shown": 5,
+            "reviews_shown": 4,
             "show_reviewer_name": true,
             "show_product_name": true,
             "hide_arrows_mobile": true,
