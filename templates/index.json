@@ -272,6 +272,9 @@
       "block_order": [
         "judge_me_reviews_cards_carousel_NJ38Td"
       ],
+      "custom_css": [
+        "jdgm-cards-wrapper {max-width: none;}"
+      ],
       "settings": {
         "include_margins": true
       }
