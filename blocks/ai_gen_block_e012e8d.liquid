@@ -29,6 +29,11 @@
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0.1) 100%);
   transition: transform 0.2s ease-in-out;
   }
+
+  .ai-image-tiles-{{ ai_gen_id }}__image:hover {
+    transform: scale(1.05);
+  }
+
   .ai-image-tiles-{{ ai_gen_id }}__placeholder { display: flex; align-items: center; justify-content: center; background: #e9e9e9; }
   .ai-image-tiles-{{ ai_gen_id }}__placeholder svg { width: 100%; height: 100%; color: #777; }
   .ai-image-tiles-{{ ai_gen_id }}__shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(0,0,0,0) 20%, rgba(0,0,0,{{ block.settings.overlay_opacity | divided_by: 100.0 }}) 100%); }
