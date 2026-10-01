@@ -115,7 +115,7 @@
           <div class="ai-image-tiles-{{ ai_gen_id }}__content">
             {% if block.settings.heading_4 != blank %}<h2 class="ai-image-tiles-{{ ai_gen_id }}__heading">{{ block.settings.heading_4 | escape }}</h2>{% endif %}
             {% if block.settings.subtitle_4 != blank %}<p class="ai-image-tiles-{{ ai_gen_id }}__subtitle">{{ block.settings.subtitle_4 | escape }}</p>{% endif %}
-            {% if block.settings.button_label_4 != blank and block.settings.button_link_4 != blank %}<a class="ai-image-tiles-{{ ai_gen_id }}__button" href="{{ block.settings.button_link_4 }}">{{ block.settings.button_label_4 | escape }}</a>{% endif %}
+            {% if block.settings.button_label_4 != blank and block.settings.button_link_4 != blank %}<div class="ai-image-tiles-{{ ai_gen_id }}__button">{{ block.settings.button_label_4 | escape }}</div>{% endif %}
           </div>
           {% if block.settings.button_label_4 != blank and block.settings.button_link_4 != blank %}
           </a>
