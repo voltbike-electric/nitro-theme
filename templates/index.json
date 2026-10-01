@@ -260,7 +260,7 @@
             "header_text_color": "#000000",
             "text_color": "#000000",
             "card_color": "#F9F9F9",
-            "stars_color": "",
+            "stars_color": "#EFEB03",
             "arrows_color": "#000000",
             "transition_speed": 5,
             "header_text": "Customers are saying",
