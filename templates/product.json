@@ -48,6 +48,13 @@
             "title": "Compatible with:"
           }
         },
+        "product_compatibility_6gp6nQ": {
+          "type": "product_compatibility",
+          "settings": {
+            "show_compatibility_icon": true,
+            "title": "Product Compatibility"
+          }
+        },
         "custom_liquid_6KQb4w": {
           "type": "custom_liquid",
           "settings": {
@@ -90,6 +97,7 @@
         "19bbc261-446d-4362-ac75-156cf142620b",
         "description",
         "product_compatibility_8JbpnN",
+        "product_compatibility_6gp6nQ",
         "custom_liquid_6KQb4w",
         "price",
         "variant_picker",
@@ -104,9 +112,9 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "hover",
-        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 36,
@@ -138,13 +146,13 @@
         "heading_size": "h2",
         "products_to_show": 4,
         "columns_desktop": 4,
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 36,
         "padding_bottom": 28
       }
@@ -154,7 +162,12 @@
       "blocks": {
         "1b1ca003-1038-4a89-abdc-84ea049a36bf": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
