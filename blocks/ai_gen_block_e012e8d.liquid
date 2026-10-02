@@ -11,7 +11,7 @@
     max-width: 100%;
   }
 
-  .ai-image-tiles-{{ ai_gen_id }}__layout { display: grid; grid-template-columns: 1fr 1fr; gap: {{ block.settings.tile_gap }}px; }
+  .ai-image-tiles-{{ ai_gen_id }}__layout { display: grid; grid-template-columns: 1fr 1fr; gap: {{ block.settings.tile_gap }}px; height: 600px; }
   .ai-image-tiles-{{ ai_gen_id }}__left, .ai-image-tiles-{{ ai_gen_id }}__right { min-width: 0; }
   .ai-image-tiles-{{ ai_gen_id }}__left { min-height: {{ block.settings.tile_height }}px; }
   .ai-image-tiles-{{ ai_gen_id }}__right { display: grid; grid-template-rows: 1fr 1fr; gap: {{ block.settings.tile_gap }}px; }
