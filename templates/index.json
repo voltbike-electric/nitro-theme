@@ -17,11 +17,11 @@
           "settings": {
             "image": "shopify://shop_images/Fall_Kickoff_Main_image.png",
             "image_overlay_opacity": 0,
-            "heading": "The Fall Kickoff Sale",
+            "heading": "Thanksgiving Sale",
             "heading_size": "h0",
             "subheading": "",
             "slide_content": "<ul><li>One FREE accessory with each bike. [C$40 value]</li><li>Save $100 when you purchase two ebikes</li><li>Save up to C$450 on select door-crashers</li></ul>",
-            "expiry_date": "Sale ends October 4",
+            "expiry_date": "Sale ends October 18",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
