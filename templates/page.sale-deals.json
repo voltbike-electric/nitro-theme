@@ -160,7 +160,7 @@
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "columns_desktop": 3,
         "column_alignment": "left",
@@ -175,7 +175,7 @@
   },
   "order": [
     "main",
-    "multirow_WDcQHG",
-    "multicolumn_pqHG4i"
+    "multicolumn_pqHG4i",
+    "multirow_WDcQHG"
   ]
 }
