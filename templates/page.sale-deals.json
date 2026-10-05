@@ -26,8 +26,8 @@
             "image": "shopify://shop_images/Thanksgiving_Sale_Front_and_Rear_Basket_Combo.jpg",
             "title": "&nbsp;VoltBike Comfort Package&nbsp;",
             "text": "<p>Our new Comfort Bundle ensures the most pleasant of fall rides. Our Large Comfort Saddle & a SR Suntour NCX Suspension Seat Post. Softer ride, most relaxation. Choose the combo to fit your VoltBike</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": " VoltBike Comfort Package ",
+            "link": "shopify://products/voltbike-comfort-package"
           }
         },
         "column_URj8MW": {
@@ -36,7 +36,7 @@
             "image": "shopify://shop_images/Thanksgiving_Fall_Tire_Bundle.jpg",
             "title": "Yukon Tire & Tube Deals",
             "text": "<p>Keep your Yukon 750 ready for any terrain with our <strong>Kenda Juggernaut Fat Tire Bundle</strong>! This bundle includes two original 26x4\"and &nbsp;two premium 26x4\" Kenda inner tubes to complete the package. Priced to perfection, so you Save $54 by bundling.<br/><br/></p>",
-            "link_label": "",
+            "link_label": "Yukon Tire & Tube Deals",
             "link": "shopify://products/kenda-juggernaut-fat-tire-bundle"
           }
         },
@@ -46,7 +46,7 @@
             "image": "shopify://shop_images/02-square-accessories.jpg",
             "title": "Accessory Bundle Deals",
             "text": "<p>Combine and Save with VoltBike's most popular accessories. Our accessories are designed to fit perfectly with our bikes, unlocking the true utility of our bikes. Lots of great bundles to choose from!</p>",
-            "link_label": "",
+            "link_label": "Accessory Bundle Deals",
             "link": "shopify://products/gift-box"
           }
         }
