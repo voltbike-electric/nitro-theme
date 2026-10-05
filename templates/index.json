@@ -15,7 +15,7 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Fall_Kickoff_Main_image.png",
+            "image": "shopify://shop_images/thanksgiving_front_page_hero_image.jpg",
             "image_overlay_opacity": 0,
             "heading": "Thanksgiving Sale",
             "heading_size": "h0",
@@ -29,7 +29,7 @@
             "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "left",
-            "color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a"
+            "color_scheme": "scheme-8f423b99-4897-4d8e-a2cc-57bdefc73e58"
           }
         },
         "slide_MVQBDK": {
