@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Proudly Canadian! 🍁Thanksgiving Sale! Get a FREE accessory ($40 value) with every bike!",
+            "text": "🍁Thanksgiving Sale! Get a FREE accessory ($40 value) with every bike!",
             "link": "shopify://pages/sale"
           }
         }
