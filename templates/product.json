@@ -41,11 +41,11 @@
           "type": "description",
           "settings": {}
         },
-        "product_compatibility_8JbpnN": {
-          "type": "product_compatibility",
+        "compatible_with_EHcCHW": {
+          "type": "compatible_with",
           "settings": {
             "show_compatibility_icon": true,
-            "title": "Compatible with:"
+            "title": "Product Compatibility"
           }
         },
         "custom_liquid_6KQb4w": {
@@ -89,7 +89,7 @@
         "title",
         "19bbc261-446d-4362-ac75-156cf142620b",
         "description",
-        "product_compatibility_8JbpnN",
+        "compatible_with_EHcCHW",
         "custom_liquid_6KQb4w",
         "price",
         "variant_picker",

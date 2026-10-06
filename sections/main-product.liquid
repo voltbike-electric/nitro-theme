@@ -688,6 +688,34 @@
                   </product-recommendations>
                 {%- when 'icon-with-text' -%}
                   {% render 'icon-with-text', block: block %}
+                {%- when 'compatible_with' -%}
+                  {%- liquid
+                    assign compatibility_values = product.metafields.custom.compatible_with.value
+                  -%}
+
+                  {% if compatibility_values != blank %}
+                    <section
+                      class="product-compatibility__container"
+                      aria-labelledby="product-compatibility-{{ block.id }}"
+                      {{ block.shopify_attributes }}
+                    >
+                      <h3 id="product-compatibility-{{ block.id }}" class="product-compatibility__title">
+                        {%- if block.settings.show_compatibility_icon -%}
+                          {{- 'icon-wrench.svg' | inline_asset_content -}}
+                        {%- endif -%}
+                        {{ block.settings.title | default: 'Compatible with' }}
+                      </h3>
+
+                      <ul class="product-compatibility__list">
+                        {% for value in compatibility_values %}
+                          {% assign label = value | strip %}
+                          {% if label != blank %}
+                            <li class="product-compatibility__list-item">{{ label }}</li>
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </section>
+                  {% endif %}
               {%- endcase -%}
             {%- endfor -%}
             <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2146,7 +2174,7 @@
       ]
     },
     {
-      "type": "product_compatibility",
+      "type": "compatible_with",
       "name": "Product Compatibility",
       "settings": [
         {
@@ -2162,7 +2190,6 @@
           "default": "Product Compatibility"
         }
       ]
-      
     }
   ],
   "settings": [
@@ -2243,7 +2270,7 @@
         {
           "value": "thumbnail_slider",
           "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
-        },
+        }
       ],
       "default": "stacked",
       "label": "t:sections.main-product.settings.gallery_layout.label"
