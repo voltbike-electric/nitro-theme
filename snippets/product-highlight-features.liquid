@@ -78,7 +78,7 @@
     {% for field in field_values %}
       {% if product.metafields.highlights[field] != empty %}
         <div class="highlight-features__feature">
-          <div class="feature__icon">{%- render 'icon-product-highlights' | icon_type: field -%}</div>
+          <div class="feature__icon">{%- render 'icon-product-highlights', icon_type: field -%}</div>
           <div class="feature__content">
             <div class="feature__content--label caption-with-letter-spacing">{{- field_names[forloop.index0] -}}</div>
             <div class="feature__content--value">
@@ -104,3 +104,13 @@
     {% endfor %}
   </div>
 {% endif %}
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- render 'icon-product-highlights' | icon_type: field -%}"
+  to: "{%- render 'icon-product-highlights', icon_type: field -%}"
+  position: 1811..1869
+{% endcomment %}
