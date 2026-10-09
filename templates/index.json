@@ -51,33 +51,11 @@
             "text_alignment_mobile": "center",
             "color_scheme": "scheme-1"
           }
-        },
-        "slide_MVQBDK": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Yukon_Elite_Banner_v1.jpg",
-            "image_overlay_opacity": 0,
-            "heading": "<strong>Yukon Elite</strong>",
-            "heading_size": "h0",
-            "subheading": "Discover the ultimate mid-drive electric bike. Equipped with 20Ah battery. Only <strong>$2949 CAD</strong> with Free Shipping.",
-            "slide_content": "",
-            "expiry_date": "",
-            "button_label": "Learn more",
-            "link": "https://voltbike.com/collections/yukon-elite",
-            "button_style_secondary": false,
-            "show_text_box": false,
-            "box_align": "middle-left",
-            "text_alignment": "left",
-            "text_alignment_mobile": "center",
-            "color_scheme": "background-1"
-          }
         }
       },
       "block_order": [
         "slide_TgWykU",
-        "slide_C6cYzf",
-        "slide_MVQBDK"
+        "slide_C6cYzf"
       ],
       "custom_css": [
         ".banner:first-of-type h2 {font-weight: 900;}",
