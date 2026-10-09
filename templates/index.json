@@ -37,7 +37,7 @@
           "settings": {
             "image": "shopify://shop_images/yukon-core-hunt-3-cabin.jpg",
             "image_overlay_opacity": 0,
-            "heading": "",
+            "heading": "Yukon Core",
             "heading_size": "h1",
             "subheading": "",
             "slide_content": "",
@@ -54,6 +54,7 @@
         },
         "slide_MVQBDK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Yukon_Elite_Banner_v1.jpg",
             "image_overlay_opacity": 0,
