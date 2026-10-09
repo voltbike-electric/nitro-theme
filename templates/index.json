@@ -32,6 +32,26 @@
             "color_scheme": "scheme-8f423b99-4897-4d8e-a2cc-57bdefc73e58"
           }
         },
+        "slide_C6cYzf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/yukon-core-hunt-3-cabin.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "slide_content": "",
+            "expiry_date": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "bottom-right",
+            "text_alignment": "center",
+            "text_alignment_mobile": "center",
+            "color_scheme": "scheme-1"
+          }
+        },
         "slide_MVQBDK": {
           "type": "slide",
           "settings": {
@@ -55,6 +75,7 @@
       },
       "block_order": [
         "slide_TgWykU",
+        "slide_C6cYzf",
         "slide_MVQBDK"
       ],
       "custom_css": [
