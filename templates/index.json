@@ -166,24 +166,6 @@
         "padding_bottom": 40
       }
     },
-    "custom_liquid_eYBC8z": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'homepage-four-box' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 80
-      }
-    },
-    "custom_liquid_kBzfcT": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'home-instagram-feed' %}",
-        "color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 80
-      }
-    },
     "17907108797900d5df": {
       "type": "_blocks",
       "blocks": {
@@ -229,6 +211,25 @@
         "ai_gen_block_e012e8d_f7wgzE"
       ],
       "settings": {}
+    },
+    "custom_liquid_eYBC8z": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% render 'homepage-four-box' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 80
+      }
+    },
+    "custom_liquid_kBzfcT": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'home-instagram-feed' %}",
+        "color_scheme": "",
+        "padding_top": 20,
+        "padding_bottom": 80
+      }
     },
     "1790894177c6f810af": {
       "type": "apps",
@@ -302,9 +303,9 @@
     "179052953696a5fd4b",
     "featured_collection_jHcDgq",
     "featured_collection",
+    "17907108797900d5df",
     "custom_liquid_eYBC8z",
     "custom_liquid_kBzfcT",
-    "17907108797900d5df",
     "1790894177c6f810af",
     "featured_blog_yPgqNG"
   ]
