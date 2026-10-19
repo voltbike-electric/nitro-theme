@@ -228,7 +228,7 @@
             "badge_color": "#F9F9F9",
             "active_badge_color": "#E0E0E0",
             "badge_text_color": "#000000",
-            "max_width": 760,
+            "max_width": 900,
             "heading_text": "Frequently asked questions"
           }
         }
