@@ -20,6 +20,16 @@
     "multicolumn_pqHG4i": {
       "type": "multicolumn",
       "blocks": {
+        "column_6nyJDj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/voltbike-halloween-bundle-square-2026-10-19.jpg",
+            "title": "Halloween Accessory Bundles",
+            "text": "<p>Combine and Save with VoltBike's most popular accessories for nighttime riders. Make the most of the long nights with our powerful lights and convenient storage optiosn Lots of great bundles to choose from!</p><p></p>",
+            "link_label": "Accessory Bundle Deals",
+            "link": "shopify://products/gift-box"
+          }
+        },
         "column_JFNCLH": {
           "type": "column",
           "settings": {
@@ -39,22 +49,12 @@
             "link_label": "Yukon Tire & Tube Deals",
             "link": "shopify://products/kenda-juggernaut-fat-tire-bundle"
           }
-        },
-        "column_6nyJDj": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/02-square-accessories.jpg",
-            "title": "Accessory Bundle Deals",
-            "text": "<p>Combine and Save with VoltBike's most popular accessories. Our accessories are designed to fit perfectly with our bikes, unlocking the true utility of our bikes. Lots of great bundles to choose from!</p>",
-            "link_label": "Accessory Bundle Deals",
-            "link": "shopify://products/gift-box"
-          }
         }
       },
       "block_order": [
+        "column_6nyJDj",
         "column_JFNCLH",
-        "column_URj8MW",
-        "column_6nyJDj"
+        "column_URj8MW"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
