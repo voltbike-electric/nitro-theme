@@ -17,11 +17,11 @@
           "settings": {
             "image": "shopify://shop_images/thanksgiving_front_2.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Thanksgiving Sale",
+            "heading": "Halloween Sale",
             "heading_size": "h0",
             "subheading": "",
             "slide_content": "<ul><li>One FREE accessory with each bike. [C$40 value]</li><li>Save $100 when you purchase two ebikes</li><li>Save up to C$450 on select door-crashers</li></ul>",
-            "expiry_date": "Sale ends October 18",
+            "expiry_date": "Sale ends November 2nd",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
