@@ -58,7 +58,7 @@
         "slide_C6cYzf"
       ],
       "custom_css": [
-        ".banner:first-of-type h2 {font-weight: 900;}",
+        ".banner:first-of-type h2 {font-weight: 900; color: #f88404;}",
         ".banner:first-of-type .banner__media picture img {object-position: center right;}",
         ".banner__heading--extended {text-transform: uppercase; margin-bottom: 0; color: #ff0000;}"
       ],
