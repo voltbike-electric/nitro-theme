@@ -302,6 +302,7 @@
       "block_order": [
         "betterdocs_app_faq_block_DMarXd"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
