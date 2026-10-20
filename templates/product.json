@@ -131,6 +131,24 @@
         "include_margins": true
       }
     },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "1792536966cdf4af02": {
       "type": "apps",
       "blocks": {
@@ -163,24 +181,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "columns_mobile": "2",
-        "color_scheme": "scheme-1",
-        "image_ratio": "square",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "padding_top": 36,
-        "padding_bottom": 28
       }
     },
     "17044205140d0763f7": {
@@ -220,8 +220,8 @@
     "1712914485586b43de",
     "1712914513287548ab",
     "17129145239af3d3a6",
-    "1792536966cdf4af02",
     "related-products",
+    "1792536966cdf4af02",
     "17044205140d0763f7",
     "custom_liquid_HXkYpB"
   ]
