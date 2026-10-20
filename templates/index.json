@@ -46,7 +46,7 @@
             "link": "shopify://products/yukon-core",
             "button_style_secondary": false,
             "show_text_box": false,
-            "box_align": "top-left",
+            "box_align": "middle-left",
             "text_alignment": "left",
             "text_alignment_mobile": "left",
             "color_scheme": "inverse"
