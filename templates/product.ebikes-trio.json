@@ -64,7 +64,8 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "button"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
         "buy_buttons": {
@@ -109,9 +110,9 @@
         "constrain_to_viewport": true,
         "media_fit": "contain",
         "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
         "media_position": "left",
         "image_zoom": "lightbox",
-        "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
         "padding_top": 40,
@@ -153,13 +154,13 @@
         "image": "shopify://shop_images/Trio_-_Dark_Background_-_3x2_73cb9244-101d-44a2-afd2-a9fc9fea703d.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "desktop_content_position": "middle-left",
-        "show_text_box": true,
-        "desktop_content_alignment": "left",
-        "color_scheme": "inverse",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "desktop_content_position": "middle-left",
+        "desktop_content_alignment": "left",
+        "show_text_box": true,
+        "color_scheme": "inverse",
         "stack_images_on_mobile": true,
+        "mobile_content_alignment": "center",
         "show_text_below": true
       }
     },
@@ -188,6 +189,40 @@
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "17925243497758cf77": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_product_faqs_3mTAVc": {
+          "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "widget_type": "accordion",
+            "container_style": "card",
+            "card_color": "#F9F9F9",
+            "chevron_button_shape": "round",
+            "question_text_size": "medium",
+            "answer_text_size": "medium",
+            "corner_styling": "soft",
+            "text_color": "#000000",
+            "lighter_text_color": "#7B7B7B",
+            "badge_color": "#F9F9F9",
+            "active_badge_color": "#E0E0E0",
+            "badge_text_color": "#000000",
+            "max_width": 760,
+            "heading_text": "Frequently asked questions"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_product_faqs_3mTAVc"
+      ],
+      "custom_css": [
+        ".jdgm-product-faqs-widget {max-width: none !important;}",
+        ".jm-cluster.jm-faq-widget__disclaimer {display: none;}"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "custom_liquid_8eq7nr": {
@@ -268,13 +303,13 @@
         "heading_size": "h2",
         "products_to_show": 5,
         "columns_desktop": 5,
+        "columns_mobile": "2",
         "color_scheme": "background-1",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "columns_mobile": "2",
         "padding_top": 100,
         "padding_bottom": 100
       }
@@ -288,6 +323,7 @@
     "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
     "custom_liquid_WeMtDF",
+    "17925243497758cf77",
     "custom_liquid_8eq7nr",
     "custom_liquid_QHDtRT",
     "170452725046cbedab",
