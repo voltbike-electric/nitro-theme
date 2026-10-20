@@ -131,6 +131,36 @@
         "include_margins": true
       }
     },
+    "1792536966cdf4af02": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_product_faqs_9weiT9": {
+          "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "widget_type": "accordion",
+            "container_style": "card",
+            "card_color": "#F9F9F9",
+            "chevron_button_shape": "round",
+            "question_text_size": "medium",
+            "answer_text_size": "medium",
+            "corner_styling": "soft",
+            "text_color": "#000000",
+            "lighter_text_color": "#7B7B7B",
+            "badge_color": "#F9F9F9",
+            "active_badge_color": "#E0E0E0",
+            "badge_text_color": "#000000",
+            "max_width": 760,
+            "heading_text": "Frequently asked questions"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_product_faqs_9weiT9"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -186,6 +216,7 @@
     "1712914485586b43de",
     "1712914513287548ab",
     "17129145239af3d3a6",
+    "1792536966cdf4af02",
     "related-products",
     "17044205140d0763f7",
     "custom_liquid_HXkYpB"
