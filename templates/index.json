@@ -51,11 +51,32 @@
             "text_alignment_mobile": "left",
             "color_scheme": "inverse"
           }
+        },
+        "slide_qFKx4G": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/voltbike-preowned-hero-halloween-b-v2-2026-10-23.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Pre-Owned VoltBikes",
+            "heading_size": "hxl",
+            "subheading": "<strong>Professionally Tuned-Up and Ready for New Home</strong>",
+            "slide_content": "<ul><li>Excellent savings on quality used bikes</li><li>Tuned up at our Port Coquitlam HQ</li><li>Shipping available across Canada<br/><br/></li></ul>",
+            "expiry_date": "",
+            "button_label": "Shop Pre-Owned",
+            "link": "shopify://collections/pre-owned-electric-bicycles",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "middle-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "inverse"
+          }
         }
       },
       "block_order": [
         "slide_TgWykU",
-        "slide_C6cYzf"
+        "slide_C6cYzf",
+        "slide_qFKx4G"
       ],
       "custom_css": [
         ".banner:first-of-type h2 {font-weight: 900; color: #f88404;}",
