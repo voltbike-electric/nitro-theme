@@ -71,12 +71,33 @@
             "text_alignment_mobile": "left",
             "color_scheme": "inverse"
           }
+        },
+        "slide_xCqMzc": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/voltbike-elegant-v2-dual-battery-homepage-hero-no-text-2026-10-27.jpg",
+            "image_overlay_opacity": 0,
+            "heading": "Elegant V2 Dual Battery",
+            "heading_size": "hxl",
+            "subheading": "NEW: DUAL-BATTERY OPTION",
+            "slide_content": "<ul><li>32.5Ah combined capacity and a reinforced frame</li><li>Now in Grey and White<br/>Dual-Battery from $2,499.</li></ul>",
+            "expiry_date": "",
+            "button_label": "Shop Elegant V2",
+            "link": "https://voltbike.com/products/elegant-v2",
+            "button_style_secondary": false,
+            "show_text_box": false,
+            "box_align": "top-left",
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "color_scheme": "background-1"
+          }
         }
       },
       "block_order": [
         "slide_TgWykU",
         "slide_C6cYzf",
-        "slide_qFKx4G"
+        "slide_qFKx4G",
+        "slide_xCqMzc"
       ],
       "custom_css": [
         ".banner:first-of-type h2 {font-weight: 900; color: #f88404;}",
