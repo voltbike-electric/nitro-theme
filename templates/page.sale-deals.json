@@ -80,23 +80,12 @@
         "row_TNRYWE": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/fall_kickoff_buy_two_save_100_square.jpg",
-            "caption": "Thanksgiving Sale",
+            "image": "shopify://shop_images/voltbike-elegant-v2-older-couple-seawall-gemini-2026-10-21.jpg",
+            "caption": "Early Black Friday Deals",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 VoltBikes and save $100! Get a bike for yourself and your riding partner and save.</p><p></p><p>&nbsp;Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
             "button_link": "shopify://collections/all-bikes"
-          }
-        },
-        "row_icJJ8h": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/hero_1_halloween.jpg",
-            "caption": "StarFire Twin Force light Upgrade Deal",
-            "heading": "Light Up the Night for $99",
-            "text": "<p>Dark fall evenings are no time to ride blind. The StarFire Twin Force puts out 4,000 lumens, enough to cut through fog, rain and pitch-black trails, so you can see clearly and be seen from far away. Add it to your new VoltBike order for just $99 during our Halloween Sale</p><p>Offer ends November 2nd.</p>",
-            "button_label": "Starfire Light",
-            "button_link": "shopify://products/starfire-twin-force-light"
           }
         },
         "row_B74rVc": {
@@ -125,7 +114,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Fall_Kickoff_Accessories_deal_square.jpg",
-            "caption": "Thanksgiving Sale",
+            "caption": "Early Black Friday Deals",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive one FREE accessory ($40 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
@@ -157,7 +146,6 @@
       },
       "block_order": [
         "row_TNRYWE",
-        "row_icJJ8h",
         "row_B74rVc",
         "row_DGyKJt",
         "row_BaCQRE",
