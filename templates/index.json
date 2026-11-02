@@ -15,13 +15,13 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/hero_1_halloween_1.jpg",
+            "image": "shopify://shop_images/6459b7f4edc6ef7e9e22111d4a63f91a63961324a88f7b5f1c3404a038d1302f.jpg",
             "image_overlay_opacity": 0,
-            "heading": "Halloween Sale",
+            "heading": "&nbsp;Black Friday Early Access&nbsp;",
             "heading_size": "h0",
             "subheading": "",
-            "slide_content": "<ul><li>One FREE accessory with each bike. [C$40 value]</li><li>Save $100 when you purchase two ebikes</li><li>Save up to C$450 on select door-crashers</li><li>$99 StarFire Front Light Upgrades on bike orders.</li><li>Save BIG on our Halloween Bundle</li></ul>",
-            "expiry_date": "Sale ends November 2nd",
+            "slide_content": "<ul><li>TWO FREE accessory with each bike. [C$80 value]</li><li>Save $100 when you purchase two ebikes</li><li>Save up to C$450 on select door-crashers</li><li>Save BIG on our Accessory Bundles</li></ul>",
+            "expiry_date": "Sale ends November 15th",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
