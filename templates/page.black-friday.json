@@ -142,6 +142,7 @@
         "row_xzPLe4",
         "row_DGyKJt"
       ],
+      "disabled": true,
       "custom_css": [
         ".image-with-text__media-item {padding: 20px; background-color: #bfe1ce;}",
         ".image-with-text__media-item img {border-radius: 10px;}"
@@ -149,15 +150,15 @@
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "small",
+        "image_layout": "alternate-left",
         "heading_size": "h1",
         "text_style": "body",
         "button_style": "primary",
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
+        "mobile_content_alignment": "left",
         "section_color_scheme": "background-1",
         "row_color_scheme": "scheme-482a4469-4f8b-45aa-b981-821255a890bc",
-        "mobile_content_alignment": "left",
         "padding_top": 64,
         "padding_bottom": 24
       }
