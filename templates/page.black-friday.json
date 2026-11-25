@@ -13,7 +13,7 @@
       "type": "main-page",
       "custom_css": [
         ".page-width--narrow {max-width: 129.6rem !important;}",
-        "main-page-title page-title h0 scroll-trigger animate--fade-in {display: none;}"
+        "h1.main-page-title {display: none;}"
       ],
       "settings": {
         "padding_top": 28,
