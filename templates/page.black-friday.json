@@ -12,7 +12,8 @@
     "main": {
       "type": "main-page",
       "custom_css": [
-        ".page-width--narrow {max-width: 129.6rem !important;}"
+        ".page-width--narrow {max-width: 129.6rem !important;}",
+        "main-page-title page-title h0 scroll-trigger animate--fade-in {display: none;}"
       ],
       "settings": {
         "padding_top": 28,
